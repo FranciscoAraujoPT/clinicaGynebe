@@ -1,0 +1,17 @@
+/* Stuck menu styles
+========================================================*/
+.isStuck {
+  z-index: 999;
+  position: fixed;
+  background: #FFF;
+  #search {
+    display: none;
+  }
+}
+@media only screen and (max-width: 979px) {
+  .isStuck {
+    display: none !important;
+  }
+}
+
+@import "mixins.less";
