@@ -9,27 +9,18 @@ navButton.addEventListener("click", () => {
     });
 });
 
-//-------------------------------------------------------------\\
+//------------------------------------------------------\\
 
 const header = document.querySelector("#header");
-const section = document.querySelector("#content");
 
-const options = {
-    root: null,
-    rootMargin: `0px 0px ${-window.innerHeight+header.offsetHeight}px 0px`,
-    threshold: 0
+window.onscroll = function () {
+    scrollFunction();
 };
 
-const observer = new IntersectionObserver(function (entries) {
-
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            header.classList.add("scroll");
-        } else {
-            header.classList.remove("scroll");
-        }
-    });
-
-}, options);
-
-observer.observe(section);
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        header.classList.add("scroll");
+    } else {
+        header.classList.remove("scroll");
+    }
+}
