@@ -5,7 +5,7 @@ const sliders = document.querySelectorAll(".slide-in")
 const appearOptions = {
     root: null,
     rootMargin: `0px 0px 0px 0px`,
-    threshold: 0.3
+    threshold: 0
 }
 
 const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
