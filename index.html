@@ -49,16 +49,87 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
+            <div class="dropdownBackground">
+                <span class="arrow"></span>
+            </div>
             <ul class="sf-menu">
-                <li class="nav-link current" data-nav="products"><a href="index.html">Início</a></li>
-                <li class="nav-link" data-nav="developers"><a href="specialties.html">Especialidades</a></li>
-                <li class="nav-link" data-nav="company"><a href="agreements.html">Convenções</a></li>
-                <li class="nav-link" data-nav="products2"><a href="galeria.html">Clínicas</a></li>
-                <li class="nav-link" data-nav="developers2"><a href="contacts.html">Contactos</a>
-                    <!-- <ul>
-                        <li><a href="contacts.html">Porto</a></li>
-                        <li><a href="contacts_santo_tirso.html">Santo Tirso</a></li>
-                    </ul> -->
+                <li>
+                    <a href="index.html">Início</a>
+                    <div class="dropdown dropdownIndex">
+                        <ul>
+                            <li>
+                                <i class="fas fa-user-md"></i><a href="#wrapper2">A nossa Missão</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-friends"></i><a href="#wrapper3">A Equipa</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-hospital-user"></i><a href="#wrapper4">Provinding the best care</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="specialties.html">Especialidades</a>
+                    <div class="dropdown dropdownSpecialties">
+                        <ul>
+                            <li><i class="fas fa-female"></i><a href="#">Ginecologia/Obstetrícia</a></li>
+                            <li><i class="fas fa-baby"></i><a href="#">Pediatria</a></li>
+                            <li><i class="fas fa-pills"></i><a href="#">Endocrinologia</a></li>
+                            <li><i class="fas fa-comment-medical"></i><a href="#">Psicologia</a></li>
+                            <li><i class="fas fa-utensils"></i><a href="#">Nutrição</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="agreements.html">Convenções</a>
+                    <div class="dropdown dropdownAgreements">
+                        <ul>
+                            <li><img src="images/advanceCare_logo.png" alt="Advancecare Logo">
+                                <a href="#">AdvanceCare</a>
+                            </li>
+                            <li><img src="images/allianz_logo.png" alt="Allianz Logo">
+                                <a href="#">Allianz</a>
+                            </li>
+                            <li><img src="images/fh_logo.png" alt="Future Healthcare Logo">
+                                <a href="#">Future Healthcare</a>
+                            </li>
+                            <li><img src="images/medicare_logo.png" alt="Medicare Logo">
+                                <a href="#">Medicare</a>
+                            </li>
+                            <li><img src="images/medis_logo.png" alt="Médis Logo">
+                                <a href="#">Médis</a>
+                            </li>
+                            <li><img src="images/rna_logo.png" alt="RNA Logo">
+                                <a href="#">RNA</a>
+                            </li>
+                            <li><img src="images/sib_logo.png" alt="SAMS/SIB Logo">
+                                <a href="#">SAMS/SIB</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="gallery.html">Clínicas</a>
+                    <div class="dropdown dropdownGallery">
+                        <ul>
+                            <li><i class="fas fa-images"></i><a href="#">Clínica do Porto</a></li>
+                            <li><i class="far fa-images"></i><a href="#">Clínica de Santo Tirso</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="contacts.html">Contactos</a>
+                    <div class="dropdown dropdownContacts">
+                        <ul>
+                            <li><i class="fas fa-address-book"></i>
+                                <a href="contacts.html">Clínica do Porto</a>
+                            </li>
+                            <li><i class="far fa-address-book"></i>
+                                <a href="contacts_santo_tirso.html">Clínica de Santo Tirso</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -102,7 +173,7 @@
                 <a class="control next"></a>
             </div>
         </div>
-        <div class="wrapper2 wrapper2__inset1">
+        <div id="wrapper2" class="wrapper2 wrapper2__inset1">
             <div class="container">
                 <div class="heading1 wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
                     <h2>A nossa Missão</h2>
@@ -123,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper3">
+        <div id="wrapper3" class="wrapper3">
             <div class="container">
                 <div class="heading2 wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
                     <h5>A Equipa</h5>
@@ -193,7 +264,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper4">
+        <div id="wrapper4" class="wrapper4">
             <div class="container">
                 <div class="heading1 wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
                     <h2>Providing the best of care</h2>
@@ -281,7 +352,8 @@
                     <ul class="socials1">
                         <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
                             <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
-                                    class="fa fa-facebook"></i></a></li>
+                                    class="fa fa-facebook"></i></a>
+                        </li>
                         <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i
                                     class="fa fa-instagram"></i></a></li>
                     </ul>
