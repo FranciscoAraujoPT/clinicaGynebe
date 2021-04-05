@@ -15,7 +15,6 @@ containers.forEach(container => container.addEventListener("click", (event) => {
     containers.forEach(cont => {
         const ul = cont.nextElementSibling;
         const lis = ul.querySelectorAll("li");
-        c
         if (ulTarget !== ul) {
             if (ul.classList.contains("active")) {
                 removeUl(ul, lis);
