@@ -448,7 +448,7 @@ h1 a .second {
                     CONTENT styles
 =========================================================*/
 #content {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
