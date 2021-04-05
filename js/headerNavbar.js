@@ -2,10 +2,9 @@ const triggers = document.querySelectorAll(".sf-menu > li");
 const background = document.querySelector(".dropdownBackground");
 const nav = document.querySelector(".headerNav");
 const notNav = document.querySelectorAll("#header > div, #content, #footer");
-const dropdownPad = 20;
 
 function touchHandlerEnter(event) {
-    const target = event.target.closest("li");
+    const target = event.target.closest("li.top");
 
     if (target === null) {
         return;
@@ -42,17 +41,14 @@ function touchHandlerLeave(event) {
 
 
 function handleEnter(event) {
-    const target = event.target.closest("li");
+    const target = event.target.closest("li.top");
 
     if (target === null) {
         return;
     }
 
     target.classList.add("trigger-enter");
-
-    setTimeout(() => {
-        return target.classList.add("trigger-enter-active");
-    }, 100);
+    setTimeout(() => target.classList.add("trigger-enter-active"), 100);
     background.classList.add("open");
 
     const dropdown = target.querySelector(".dropdown");
@@ -62,8 +58,8 @@ function handleEnter(event) {
     const coords = {
         height: dropdownCoords.height,
         width: dropdownCoords.width,
-        top: dropdownCoords.top - navCoords.top - dropdownPad,
-        left: dropdownCoords.left
+        top: dropdownCoords.top - navCoords.top,
+        left: dropdownCoords.left - navCoords.left
     }
 
     background.style.setProperty("width", `${coords.width}px`);
@@ -72,7 +68,7 @@ function handleEnter(event) {
 }
 
 function handleLeave(event) {
-    const target = event.target.closest("li");
+    const target = event.target.closest("li.top");
 
     if (target === null) {
         return;

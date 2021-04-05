@@ -3,6 +3,7 @@ const navLinks = document.querySelector(".sf-menu");
 const links = document.querySelectorAll(".sf-menu li");
 
 navButton.addEventListener("click", () => {
+    document.body.classList.toggle("open");
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
