@@ -146,6 +146,9 @@ h7 a:hover {
     z-index: 0;
 }
 
+.wrapper1 h2 {
+    margin-bottom: 50px;
+}
 
 .wrapper1__inset1 {
     padding-bottom: 71px;
@@ -221,6 +224,9 @@ h7 a:hover {
 }
 
 .wrapper6 {
+    position: relative;
+    top: 0px;
+    z-index: 5;
     box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.03);
     background: #FFF;
     border-bottom-left-radius: 50% 49px;
@@ -229,9 +235,7 @@ h7 a:hover {
 }
 
 .wrapper6__inset1 {
-    position: relative;
-    top: 0px;
-    z-index: -1;
+    z-index: 0;
     margin-top: -49px;
     padding-top: 81px;
     background: url(../images/backgroundAgreements.jpg) no-repeat center;
@@ -261,7 +265,6 @@ h7 a:hover {
 
 #header {
     display: flex;
-    justify-content: space-between;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -447,12 +450,6 @@ h1 a .second {
 /*========================================================
                     CONTENT styles
 =========================================================*/
-#content {
-    overflow: hidden;
-}
-
-
-
 .img-container {
     position: absolute;
     top: -10%;
@@ -628,31 +625,6 @@ h1 a .second {
     border-bottom-right-radius: 50% 17px;
     border-bottom-left-radius: 50% 17px;
     overflow: hidden;
-}
-
-.box1 .content {
-    color: #FFF;
-    padding: 22px 20px 35px;
-}
-
-.box1 .content h3 {
-    margin-bottom: 7px;
-}
-
-.box1 .content__inset1 {
-    background: #00284d;
-}
-
-.box1 .content__inset2 {
-    background: #00284d;
-}
-
-.box1 .content__inset3 {
-    background: #00284d;
-}
-
-.box1__inset1 .content {
-    padding-top: 23px;
 }
 
 .box1__inset1 time {
@@ -892,21 +864,6 @@ h1 a .second {
     transform: scale(0.8);
 }
 
-/* ======= Galerias ========== */
-.box6 {
-    text-align: center;
-}
-
-.box6 h2 {
-    margin-bottom: 100;
-}
-
-.box6-wrapper1 {
-    margin-top: -89px;
-    position: relative;
-    z-index: 2;
-}
-
 /* ======= Post 1 News and announcements ======= */
 .post1 {
     position: relative;
@@ -1021,28 +978,16 @@ h1 a .second {
 }
 
 
-/* ======= Box 6 Privacy Policy ======= */
-.box6 {
-    text-align: center;
+/* ======= Box 6 Gallery======= */
+.box6{
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.box6 .h7 {
-    margin-bottom: 2px;
+.img-content-hover {
+    display: none;
 }
-
-.box6-wrapper1 {
-    text-align: center;
-    margin-top: 34px;
-}
-
-.box6-wrapper1 .box6 {
-    margin-bottom: 19px;
-}
-
-.box6-wrapper1>.simple-link {
-    margin-top: 28px;
-}
-
 
 /* ======= Simple link ======= */
 .simple-link {
@@ -1192,6 +1137,8 @@ h1 a .second {
     opacity: 0;
     transform: translateX(50%);
     transition: all 0.5s ease;
+    position: relative;
+    overflow-y: hidden;
 }
 
 .slide-in.appear {
@@ -1327,6 +1274,8 @@ h1 a .second {
     .slider {
         margin-top: 60%;
     }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -1342,11 +1291,13 @@ h1 a .second {
         height: inherit;
         width: inherit;
         flex-direction: row;
+        justify-content: center;
         pointer-events: all;
         color: #00284d;
     }
 
     .sf-menu > li {
+        font: 400 16px/25px "Roboto Slab", sans-serif;
         position: relative;
         display: flex;
         justify-content: center;
@@ -1430,18 +1381,6 @@ h1 a .second {
         color: #00284d;
     }
 
-    .box3-wrapper1 {
-        grid-template-columns: repeat(4, 200px);
-        justify-content: center;
-    }
-
-    .list1-wrapper1 {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-        grid-gap: 1rem;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
     .box2-wrapper1 {
         width: 80%;
     }
@@ -1457,6 +1396,7 @@ h1 a .second {
 
     .box2-wrapper6{
         display: block;
+        opacity: 1;
     }
 
     .box2-wrapper6 p {
@@ -1469,6 +1409,18 @@ h1 a .second {
 
     .title {
         display: block;
+    }
+
+    .box3-wrapper1 {
+        grid-template-columns: repeat(4, 200px);
+        justify-content: center;
+    }
+
+    .list1-wrapper1 {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-gap: 1rem;
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .box3:nth-child(4n-3) {
@@ -1499,15 +1451,185 @@ h1 a .second {
         padding-top: 0px;
         border-top: 0;
     }
+    
+    .box6:hover .img-content-hover {
+        display: block;
+    }
+    
+    .img-content-hover {
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        padding: 1rem;
+        background: #FFF;
+        margin-top: 1.25rem;
+        margin-left: -2rem;
+    }
+    
+    .img-content-hover h4 {
+        text-align: left;
+        font: 400 31px/33px "Roboto Slab", sans-serif;
+        color: #00284d;
+    }
+    
+    .img-content-hover h5 {
+        text-align: left;
+        font: 300 24px/33px "Roboto Slab", sans-serif;
+        color: #00284d;
+    }
+    
+    .box6 img{
+        display: block;
+        height: 400px;
+        width: 100%;
+        object-position: center bottom;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .box6 img:hover {
+        transform: scale(1.05);
+    }
+    
+    .box6-wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:"img1 img1 img2 img3"
+                            "img4 img5 img6 img6"
+                            "img4 img7 img7 img8"
+                            "img9 img9 img10 img8"
+                            "img12 img12 img13 img13"
+                            "img15 img11 img17 img16"
+                            "img15 img14 img14 img16";
+    }
+    
+    .box6-wrapper1__inset1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:"img18 img18 img19 img19"
+                            "img20 img21 img21 img22"
+                            "img20 img23 img24 img24";
+    }
+    
+    .box6.img1 {
+        grid-area: img1;
+    }
+    
+    .box6.img2 {
+        grid-area: img2;
+    }
+    
+    .box6.img3 {
+        grid-area: img3;
+    }
+    
+    .box6.img4 {
+        grid-area: img4;
+    }
+    
+    .box6.img5 {
+        grid-area: img5;
+    }
+    
+    .box6.img6 {
+        grid-area: img6;
+    }
+    
+    .box6.img7 {
+        grid-area: img7;
+    }
+    
+    .box6.img8 {
+        grid-area: img8;
+    }
+    
+    .box6.img9 {
+        grid-area: img9;
+    }
+    
+    .box6.img10 {
+        grid-area: img10;
+    }
+    
+    .box6.img11 {
+        grid-area: img11;
+    }
+    
+    .box6.img12 {
+        grid-area: img12;
+    }
+    
+    .box6.img13 {
+        grid-area: img13;
+    }
+    
+    .box6.img14 {
+        grid-area: img14;
+    }
+    
+    .box6.img15 {
+        grid-area: img15;
+    }
+    
+    .box6.img16 {
+        grid-area: img16;
+    }
+    
+    .box6.img17 {
+        grid-area: img17;
+    }
+    
+    .box6.img18 {
+        grid-area: img18;
+    }
+    
+    .box6.img19 {
+        grid-area: img19;
+    }
+    
+    .box6.img20 {
+        grid-area: img20;
+    }
+    
+    .box6.img21 {
+        grid-area: img21;
+    }
+    
+    .box6.img22 {
+        grid-area: img22;
+    }
+    
+    .box6.img23 {
+        grid-area: img23;
+    }
+    
+    .box6.img24 {
+        grid-area: img24;
+    }
+    
+    .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
+        min-height: 810px;
+    }
 }
 
 
 @media (min-width: 1336px) {
+    #header {
+        justify-content: space-between;
+    }
+
     #header .phone {
         display: block;
     }
 
     .sf-menu > li{
+        font: 400 19px/28px "Roboto Slab", sans-serif;
         right: 70px;
     }
 
@@ -1541,6 +1663,14 @@ h1 a .second {
 
     .box3-wrapper1 {
         grid-template-columns: repeat(4, 300px);
+    }
+
+    .box6 img{
+        height: 500px;
+    }
+
+    .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
+        min-height: 1010px;
     }
 
     .list1-wrapper1 {
@@ -1585,9 +1715,12 @@ h1 a .second {
     .box2-wrapper6 .insurence{
         width: 30%;
     }
+
+    .box6 img{
+        height: 700px;
+    }
+
+    .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
+        min-height: 1410px;
+    }
 }
-
-/* .phone {
-    display: block;
-} */
-

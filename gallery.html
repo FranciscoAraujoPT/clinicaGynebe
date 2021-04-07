@@ -2,11 +2,11 @@
 <html lang="pt">
 
 <head>
-    <title>Galeria</title>
+    <title>Galeria Porto</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
-
+    <script src="https://kit.fontawesome.com/9e78371ef2.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -25,15 +25,125 @@
                           HEADER
 =========================================================-->
     <header id="header">
-        <div class="info">
-            <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+        <div id="logo">
+            <h1 class="wow fadeInDown">
                 <a href="index.html">
                     <span class="second">Clínica</span>
                     <span class="first">Gynébe</span>
                 </a>
             </h1>
         </div>
-        <div class="phone wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+        <nav class="headerNav">
+            <div class="navButton">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="dropdownBackground">
+                <span class="arrow"></span>
+            </div>
+            <ul class="sf-menu">
+                <li class="top">
+                    <a href="index.html">Início</a>
+                    <div class="dropdown dropdownIndex">
+                        <ul>
+                            <li>
+                                <i class="fas fa-user-md"></i><a href="index.html#wrapper2">A Nossa Missão</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-friends"></i><a href="index.html#wrapper3">A Equipa</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-hospital-user"></i><a href="index.html#wrapper4">Provinding the best
+                                    care</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="specialties.html">Especialidades</a>
+                    <div class="dropdown dropdownSpecialties">
+                        <ul>
+                            <li>
+                                <i class="fas fa-female"></i>
+                                <a href="specialties.html#gyne">Ginecologia/Obstetrícia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-baby"></i>
+                                <a href="specialties.html#ped">Pediatria</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-pills"></i>
+                                <a href="specialties.html#endo">Endocrinologia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-comment-medical"></i>
+                                <a href="specialties.html#psy">Psicologia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-utensils"></i>
+                                <a href="specialties.html#nut">Nutrição</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-spa"></i>
+                                <a href="specialties.html#fisio">Fisioterapia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="agreements.html">Convenções</a>
+                    <div class="dropdown dropdownAgreements">
+                        <ul>
+                            <li><img src="images/advanceCare_logo.png" alt="Advancecare Logo">
+                                <a href="agreements.html#advanceCare">AdvanceCare</a>
+                            </li>
+                            <li><img src="images/allianz_logo.png" alt="Allianz Logo">
+                                <a href="agreements.html#allianz">Allianz</a>
+                            </li>
+                            <li><img src="images/fh_logo.png" alt="Future Healthcare Logo">
+                                <a href="agreements.html#furureHealth">Future Healthcare</a>
+                            </li>
+                            <li><img src="images/medicare_logo.png" alt="Medicare Logo">
+                                <a href="agreements.html#medicare">Medicare</a>
+                            </li>
+                            <li><img src="images/medis_logo.png" alt="Médis Logo">
+                                <a href="agreements.html#medis">Médis</a>
+                            </li>
+                            <li><img src="images/rna_logo.png" alt="RNA Logo">
+                                <a href="agreements.html#rna">RNA</a>
+                            </li>
+                            <li><img src="images/sib_logo.png" alt="SAMS/SIB Logo">
+                                <a href="agreements.html#samsSib">SAMS/SIB</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="gallery.html">Clínicas</a>
+                    <div class="dropdown dropdownGallery">
+                        <ul>
+                            <li><i class="fas fa-images"></i><a href="#">Clínica do Porto</a></li>
+                            <li><i class="far fa-images"></i><a href="galleryST.html">Clínica de Santo Tirso</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="contacts.html">Contactos</a>
+                    <div class="dropdown dropdownContacts">
+                        <ul>
+                            <li><i class="fas fa-address-book"></i>
+                                <a href="contacts.html">Clínica do Porto</a>
+                            </li>
+                            <li><i class="far fa-address-book"></i>
+                                <a href="contacts_santo_tirso.html">Clínica de Santo Tirso</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="phone slide-in">
             <span class="first">Ligue-nos:</span>
             <a href="tel:00351225432135">
                 <address>225 432 135</address>
@@ -43,153 +153,155 @@
             </a>
             <p>Disponível 24h</p>
         </div>
-        </div>
-        <div id="stuck_container">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_9">
-                        <nav>
-                            <ul class="sf-menu">
-                                <li><a href="index.html">Início</a></li>
-                                <li><a href="specialties.html">Especialidades</a></li>
-                                <li><a href="agreements.html">Convenções</a></li>
-                                <li class="current"><a href="galeria.html">Clínicas</a></li>
-                                <li><a href="contacts.html">Contactos</a></li>
-                                <ul>
-                                    <li><a href="contacts.html">Porto</a></li>
-                                    <li><a href="contacts_santo_tirso.html">Santo Tirso</a></li>
-                                </ul>
-                                </li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-
 
     <!--========================================================
                           CONTENT
 =========================================================-->
     <section id="content">
         <div class="wrapper1">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_12">
-                        <div class="box6-wrapper1">
-                            <div class="row">
-                                <br style="line-height:100px;">
-                                <div class="grid_12">
-                                    <div class="heading1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                                        <h2>Os nossos serviços</h2>
-                                    </div>
-                                    <br style="line-height:60px;">
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                                        <img src="images/page4_img4.png" alt="" />
-                                        <div class="content content__inset1 maxheight">
-                                            <p>1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                        <img src="images/page1_img1.png" alt="" />
-                                        <div class="content content__inset2 maxheight">
-                                            <p>2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>&nbsp;</p>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>5</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>6</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>&nbsp;</p>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>7</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>8</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>9</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>&nbsp;</p>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>10</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>11</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid_4">
-                                    <div class="box1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <img src="images/page1_img2.png" alt="" />
-                                        <div class="content content__inset3 maxheight">
-                                            <p>12</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="heading1 fade-in">
+                <h2>Clínica Gynébe do Porto</h2>
+            </div>
+            <div class="box2-wrapper2">
+                <h6 class="fade-in"><a href="#">Aliquam
+                        dapibus tincidunt metus praesent justo
+                        quis, lobortis dignissim.</a></h6>
+                <p class="fade-in">Lorem ipsum dolor sit
+                    amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit.
+                    Praesent vestibulum
+                    molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
+                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient
+                    montes,
+                    nascetur ridiculus mus.</p>
+            </div>
+        </div>
+        <div class="box6-wrapper1">
+            <div class="box6 img1 fade-in">
+                <img src="images/gynebePorto/EVO_1662.jpg" alt="Sala de Espera" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Espera</h4>
+                </span>
+            </div>
+            <div class="box6 img2 fade-in">
+                <img src="images/gynebePorto/EVO_1675.jpg" alt="Sala de Espera" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Espera</h4>
+                </span>
+            </div>
+            <div class="box6 img3 fade-in">
+                <img src="images/gynebePorto/EVO_1687.jpg" alt="Sala de Espera" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Espera</h4>
+                </span>
+            </div>
+            <div class="box6 img4 fade-in">
+                <img src="images/gynebePorto/EVO_1711.jpg" alt="Corredor" />
+                <span class="img-content-hover">
+                    <h4>Corredor</h4>
+                </span>
+            </div>
+            <div class="box6 img5 fade-in">
+                <img src="images/gynebePorto/EVO_1714.jpg" alt="Sala de Pediatria" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Pediatria</h4>
+                </span>
+            </div>
+            <div class="box6 img6 fade-in">
+                <img src="images/gynebePorto/EVO_1720.jpg" alt="Sala de Pediatria" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Pediatria</h4>
+                </span>
+            </div>
+            <div class="box6 img7 fade-in">
+                <img src="images/gynebePorto/EVO_1725.jpg" alt="Sala de Pediatria" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Pediatria</h4>
+                </span>
+            </div>
+            <div class="box6 img8 fade-in">
+                <img src="images/gynebePorto/EVO_1732.jpg" alt="Sala de Exames" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Exames</h4>
+                </span>
+            </div>
+            <div class="box6 img9 fade-in">
+                <img src="images/gynebePorto/EVO_1737.jpg" alt="Sala de Exames" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Exames</h4>
+                </span>
+            </div>
+            <div class="box6 img10 fade-in">
+                <img src="images/gynebePorto/EVO_1744.jpg" alt="Sala de Ginecologia e Obstetrícia" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Ginecologia e Obstetrícia</h4>
+                </span>
+            </div>
+            <div class="box6 img11 fade-in">
+                <img src="images/gynebePorto/EVO_1747.jpg" alt="Sala de Ginecologia e Obstetrícia" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Ginecologia e Obstetrícia</h4>
+                </span>
+            </div>
+            <div class="box6 img12 fade-in">
+                <img src="images/gynebePorto/EVO_1750.jpg" alt="Sala de Ginecologia e Obstetrícia" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Ginecologia e Obstetrícia</h4>
+                </span>
+            </div>
+            <div class="box6 img13 fade-in">
+                <img src="images/gynebePorto/EVO_1755.jpg" alt="Sala de Ginecologia e Obstetrícia" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Ginecologia e Obstetrícia</h4>
+                </span>
+            </div>
+            <div class="box6 img14 fade-in">
+                <img src="images/gynebePorto/EVO_1768.jpg" alt="Sala de Ginecologia e Obstetrícia" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Ginecologia e Obstetrícia</h4>
+                </span>
+            </div>
+            <div class="box6 img15 fade-in">
+                <img src="images/gynebePorto/EVO_1782.jpg" alt="Copa" />
+                <span class="img-content-hover">
+                    <h4>Copa</h4>
+                </span>
+            </div>
+            <div class="box6 img16 fade-in">
+                <img src="images/gynebePorto/EVO_1790.jpg" alt="Quarto de Banho" />
+                <span class="img-content-hover">
+                    <h5>Fraldário/</h5>
+                    <h4>Quarto de Banho</h4>
+                </span>
+            </div>
+            <div class="box6 img17 fade-in">
+                <img src="images/gynebePorto/EVO_1795.jpg" alt="Sala de Esterilização" />
+                <span class="img-content-hover">
+                    <h5>Sala de</h5>
+                    <h4>Esterilização</h4>
+                </span>
             </div>
         </div>
     </section>
@@ -199,97 +311,43 @@
                           FOOTER
 =========================================================-->
     <footer id="footer">
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_12">
-                        <div class="footer_menu">
-                            <div class="socials">
-                                <ul class="socials1">
-                                    <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
-                                        <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><a
-                                            href="#"><i class="fa fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <nav>
-                                <ul>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"><a
-                                            href="index.html">Início</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><a
-                                            href="specialties.html">Especialidades</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"><a
-                                            href="agreements.html">Convenções</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><a
-                                            href="contacts.html">Contactos</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="row">
-                            <div class="grid_10 preffix_1">
-                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor
-                                    sit
-                                    amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore
-                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
-                            </div>
-                        </div>
-                        <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year"></span>. <a
-                                href="privacy.html">Política de Privacidade</a><br><a>Design by Francisco Araújo</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="footer_menu">
+            <div class="socials">
+                <ul class="socials1">
+                    <li class="wow fade-in">
+                        <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
             </div>
+            <nav>
+                <ul>
+                    <li class="wow fade-in"><a href="index.html">Início</a>
+                    </li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a
+                            href="specialties.html">Especialidades</a></li>
+                    <li class="wow fade-in"><a href="agreements.html">Convenções</a></li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.5s"><a
+                            href="contacts.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="wow fade-in">Lorem ipsum dolor
+            sit
+            amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
+        <div class="privacy-block wow fade-in">
+            <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year"></span>. <a
+                href="privacy.html">Política de Privacidade </a><br><a>Design by Francisco Araújo</a>
         </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<div id="ie6-alert" style="width: 100%; text-align:center;">
-    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0"
-         usemap="#Map" longdesc="http://die6.frontcube.com"/>
-    <map name="Map" id="Map">
-        <area shape="rect" coords="496,201,604,329"
-              href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"
-              alt="Download Interent Explorer"/>
-        <area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank"
-              alt="Download Apple Safari"/>
-        <area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank"
-              alt="Download Opera"/>
-        <area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank"
-              alt="Download Firefox"/>
-        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank"
-              alt="Download Google Chrome"/>
-    </map>
-</div>
-<![endif]-->
-    <!-- build:js js/vendor.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/wow/dist/wow.js"></script>
-    <script src="../bower_components/matchHeight/dist/jquery.matchHeight.js"></script>
-    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="../bower_components/superfish/dist/js/superfish.js"></script>
-    <script src="../bower_components/superfish/dist/js/hoverIntent.js"></script>
-    <!-- endbower -->
-    <script src="js/device.min.js"></script>
-    <script src="js/tmstickup.js"></script>
-    <script src="js/jquery.mobilemenu.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/app.js -->
-    <script src="js/script.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/camera.js -->
-    <script src="js/camera.js"></script>
-    <script src="js/camera.config.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/gmap_porto.js -->
-    <script src="js/gmap_porto.js"></script>
-    <!-- endbuild -->
+    <script src="js/app.js"></script>
+    <script src="js/intersectionObservers.js"></script>
+    <script src="js/headerNavbar.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
