@@ -1,10 +1,12 @@
 const navButton = document.querySelector(".navButton");
 const navLinks = document.querySelector(".sf-menu");
 const links = document.querySelectorAll(".sf-menu li");
+const logo = document.querySelector("#logo");
 
 navButton.addEventListener("click", () => {
     document.body.classList.toggle("open");
     navLinks.classList.toggle("open");
+    logo.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
     });

@@ -332,6 +332,7 @@ h7 a:hover {
     position: fixed;
     top: 0;
     right: 0;
+    color: #c0c0c0;
     background-color: #00284d;
     display: flex;
     flex-direction: column;
@@ -400,8 +401,25 @@ h7 a:hover {
     transition: all 0.5s ease 0.6s;
 }
 
-.sf-menu li.fade {
+.sf-menu > li.fade {
     opacity: 1;
+}
+
+.sf-menu > li li {
+    display: none;
+}
+
+.sf-menu .dropdownContacts, .sf-menu .dropdownGallery{
+    background-color: #66b3ff;
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.sf-menu .dropdownContacts li, .sf-menu .dropdownGallery li {
+    display: block;
+    color: #00284d;
 }
 
 .dropdownAgreements img {
@@ -414,8 +432,19 @@ h7 a:hover {
     position: relative;
     top: 0;
     padding: 10px 0 10px 10px;
-    z-index: 1;
+    z-index: 10;
     width: max-content;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#logo.open span{
+    opacity: 1;
+    color: #c0c0c0;
+}
+
+#logo.open h1 a::before{
+    opacity: 1;
+    background: url(../images/logoWhite.png) no-repeat center bottom / contain;
 }
 
 h1 a {
@@ -725,6 +754,7 @@ h1 a .second {
     width: 50px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    background-color: #FFF;
     bottom: -20px;
     border: 0;
 }
@@ -964,17 +994,20 @@ h1 a .second {
 }
 
 .contacts-address {
+    font: 400 16px/18px "Roboto Slab", sans-serif;
     text-align: left;
     display: block;
+    width: max-content;
+    margin: 0 auto;
 }
 
-.contacts-address .wrapper {
+.contacts-address .wrapper-info {
     display: block;
+    border-bottom: 1px solid rgba(0, 40, 77, 0.3);
 }
 
 .contacts-address .wide {
     display: inline-block;
-    min-width: 75px;
 }
 
 
@@ -1082,7 +1115,7 @@ h1 a .second {
 }
 
 /* ======= Social buttons 1 ======= */
-.socials1 li {
+.socials1 li, .socials2 li {
     display: inline-block;
 }
 
@@ -1120,6 +1153,16 @@ h1 a .second {
     background: #66b3ff;
 }
 
+.socials2{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.socials2 li+li {
+    margin-left: 20px;
+}
 /* ======= Animations on scroll  ======= */
 
 .fade-in {
@@ -1146,7 +1189,7 @@ h1 a .second {
     opacity: 1;
 }
 
-/* ======= Gallery  ======= */
+/* ======= Gallery ======= */
 .gallery_image a.big-image {
     display: block;
     position: relative;
@@ -1175,7 +1218,27 @@ h1 a .second {
     margin-left: -17px;
 }
 
+/* ======= Maps ======= */
+#map {
+    width: 90%;
+    height: 20vh;
+    margin: 50px auto;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+}
 
+#map a{
+    color: #00284d;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+}
+
+.tac{
+    text-align: center;
+}
 
 /*========================================================
                     FOOTER styles
@@ -1275,7 +1338,14 @@ h1 a .second {
         margin-top: 60%;
     }
 
+    .contacts-address {
+        font: 400 19px/28px "Roboto Slab", sans-serif;
+    }
 
+    #map {
+        width: 80%;
+        height: 40vh;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1304,6 +1374,21 @@ h1 a .second {
         border-radius: 20px;
         padding: 47.5px 25px;
         opacity: 1;
+    }
+
+    .sf-menu > li li {
+        display: block;
+    }
+
+    .sf-menu .dropdownContacts, .sf-menu .dropdownGallery{
+        background-color: transparent;
+        margin: 0;
+        padding: 20px;
+        border-radius: unset;
+    }
+
+    .sf-menu .socials2 {
+        display: none;
     }
     
     .dropdown {
@@ -1464,6 +1549,7 @@ h1 a .second {
         display: none;
         padding: 1rem;
         background: #FFF;
+        border-radius: 16px;
         margin-top: 1.25rem;
         margin-left: -2rem;
     }
@@ -1615,6 +1701,11 @@ h1 a .second {
     
     .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
         min-height: 810px;
+    }
+
+    #map {
+        width: 60%;
+        height: 60vh;
     }
 }
 
