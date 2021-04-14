@@ -157,7 +157,6 @@ function slide(wrapper, items, prev, next) {
         }
 
         if (index === slidesLength) {
-            console.log(slideSize);
             items.style.left = -(1 * slideSize) + "px";
             index = 0;
         }

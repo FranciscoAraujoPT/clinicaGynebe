@@ -167,7 +167,8 @@ h7 a:hover {
 }
 
 .wrapper2 {
-    margin-top: -40px;
+    /* margin-top: -40px; */
+    margin-top: 350px;
     background: #f7f7f7;
     padding: 50px 0 105px;
 }
@@ -294,6 +295,7 @@ h7 a:hover {
 }
 
 #header .phone {
+    position: relative;
     display: none;
     margin: 10px 20px 0px;
     padding: 5px 5px 0px;
@@ -425,6 +427,30 @@ h7 a:hover {
 .dropdownAgreements img {
     display: none;
 }
+
+/* .sf-menu .top a::before {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    right: 20px;
+    width: 80%;
+    height: 15px;
+    background-color: #FFF;
+    z-index: -5;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.sf-menu .top a:hover::before {
+    transform: scale(1);
+}
+
+.sf-menu .top a:hover {
+    color: unset;
+} */
+
 /* ======= Logo ======= */
 
 #logo {
@@ -529,34 +555,52 @@ h1 a .second {
 }
 
 /* ======= Slider ======= */
+.backgroundCover {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.backgroundCover.active {
+    display: block;
+}
 
 .slider {
-    position: relative;
-    bottom: 0;
+    position: fixed;
+    z-index: 7;
+    top: 50%;
+    transition: transform 0.3s ease;
+    transform: translateY(-50%) scale(0);
     width: 80%;
-    max-width: 370px;
-    margin: 120% auto 0px;
+    height: 80%;
+    left: 10%;
+    right: 10%;
     border-radius: 5%;
+}
+
+.slider.transition {
+    transform: translateY(-50%) scale(1);
 }
 
 .wrapper {
     height: 100%;
     overflow: hidden;
-    position: relative;
-    border-radius: 5%;
+    border-radius: 16px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
     display: flex;
-    align-items: center;
     position: relative;
     left: -100%;
     height: 100%;
 }
 
 .slides.shifting {
-    transition: left 0.5s ease-out;
+    transition: left 1s ease-in-out;
 }
 
 .slide {
@@ -568,9 +612,15 @@ h1 a .second {
     transition: all 1s;
 }
 
+.slide img {
+    object-fit: cover;
+}
+
 .control {
     position: absolute;
-    top: 42.5%;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
     width: 50px;
     height: 50px;
     background: #fff;
@@ -600,13 +650,13 @@ h1 a .second {
 
 .prev:active,
 .next:active {
-    transform: scale(0.8);
+    transform: translateY(-50%) scale(0.8);
 }
 
 .sliderBullets {
-    display: flex;
     justify-content: center;
     padding: 10px 0;
+    display: none;
 }
 
 .bullets {
@@ -646,7 +696,7 @@ h1 a .second {
     left: -100%*4;
 }
 
-/* ======= Box 1======= */
+/* ======= Box 1 ======= */
 .box1 {
     text-align: center;
     border-top-left-radius: 50% 17px;
@@ -1011,7 +1061,7 @@ h1 a .second {
 }
 
 
-/* ======= Box 6 Gallery======= */
+/* ======= Box 6 Gallery ======= */
 .box6{
     width: 100%;
     cursor: pointer;
@@ -1189,39 +1239,34 @@ h1 a .second {
     opacity: 1;
 }
 
-/* ======= Gallery ======= */
-.gallery_image a.big-image {
-    display: block;
-    position: relative;
-    background: #00284d;
+/* ======= Schedule ======= */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.gallery_image a.big-image img {
-    width: 100%;
+.schedule h3 {
+    font-weight: 400;
+    color: #00284d;
+    margin-top: 50px;
 }
 
-.gallery_image a.big-image .gallery_hover {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+.schedule li {
+    font-weight: 300;
 }
 
-.gallery_image a.big-image .gallery_hover i {
-    font-size: 40px;
-    color: #FFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -20px;
-    margin-left: -17px;
+.schedule li+li {
+    border-top: 1px solid rgba(0, 40, 77, 0.3);
 }
 
+.schedule li strong {
+    font-weight: 400;
+}
 /* ======= Maps ======= */
 #map {
     width: 90%;
-    height: 20vh;
+    height: 250px;
     margin: 50px auto;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
@@ -1287,8 +1332,8 @@ h1 a .second {
 =========================================================*/
 
 @media (min-width: 376px) {
-    .slider {
-        margin-top: 135%;
+    .wrapper2 {
+        margin-top: 450px;
     }
 
     .box2-wrapper1 {
@@ -1301,6 +1346,10 @@ h1 a .second {
 }
 
 @media (min-width: 501px) {
+    .wrapper2 {
+        margin-top: 300px;
+    }
+
     #logo {
         padding: 20px 25px;
     }
@@ -1334,21 +1383,21 @@ h1 a .second {
         width: inherit;
     }
 
-    .slider {
-        margin-top: 60%;
-    }
-
     .contacts-address {
         font: 400 19px/28px "Roboto Slab", sans-serif;
     }
 
     #map {
         width: 80%;
-        height: 40vh;
+        height: 350px;
     }
 }
 
 @media (min-width: 1024px) {
+    .wrapper2 {
+        margin-top: 700px;
+    }
+
     .navButton {
         display: none;
     }
@@ -1466,6 +1515,10 @@ h1 a .second {
         color: #00284d;
     }
 
+    .sliderBullets {
+        display: flex;
+    }
+    
     .box2-wrapper1 {
         width: 80%;
     }
@@ -1502,10 +1555,10 @@ h1 a .second {
     }
 
     .list1-wrapper1 {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-columns: repeat(3, minmax(100px, 400px));
         grid-gap: 1rem;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .box3:nth-child(4n-3) {
@@ -1522,6 +1575,11 @@ h1 a .second {
 
     .box3:nth-child(4n) {
         transition: all 0.5s ease 0.4s;
+    }
+
+    .box4-wrapper1 {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .box5-wrapper1 {
@@ -1705,7 +1763,7 @@ h1 a .second {
 
     #map {
         width: 60%;
-        height: 60vh;
+        height: 450px;
     }
 }
 
@@ -1721,7 +1779,6 @@ h1 a .second {
 
     .sf-menu > li{
         font: 400 19px/28px "Roboto Slab", sans-serif;
-        right: 70px;
     }
 
     .img-container {
@@ -1738,10 +1795,6 @@ h1 a .second {
 
     .teaser .second {
         font: 300 2.5rem/2.5rem "Roboto Slab", sans-serif;
-    }
-
-    .slider {
-        margin-top: 50%;
     }
 
     .box2-wrapper1 {
@@ -1763,13 +1816,19 @@ h1 a .second {
     .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
         min-height: 1010px;
     }
+}
 
-    .list1-wrapper1 {
-        width: 80%;
+@media (min-width: 1670px) {
+    .wrapper2 {
+        margin-top: 800px;
     }
 }
 
 @media (min-width: 1949px) {
+    .wrapper2 {
+        margin-top: 700px;
+    }
+
     .img-container {
         top: -40%;
     }
@@ -1780,10 +1839,6 @@ h1 a .second {
 
     .teaser {
         top: 60%;
-    }
-
-    .slider {
-        margin-top: 800px;
     }
 
     .box {
@@ -1807,11 +1862,19 @@ h1 a .second {
         width: 30%;
     }
 
+    .box4-wrapper1 {
+        width: 60%;
+    }
+
     .box6 img{
         height: 700px;
     }
 
     .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
         min-height: 1410px;
+    }
+
+    #map {
+        height: 750px;
     }
 }

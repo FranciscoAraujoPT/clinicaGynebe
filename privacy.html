@@ -6,14 +6,17 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- build:css({.tmp,src}) css/style.css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
+    <script src="https://kit.fontawesome.com/9e78371ef2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,61 +24,143 @@
                           HEADER
 =========================================================-->
     <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="grid_12">
-                    <div class="info">
-                        <div class="row">
-                            <div class="grid_6">
-                                <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
-                                    <a href="index.html">
-                                        <span class="second">Clínica</span>
-                                        <span class="first">Gynébe</span>
-                                    </a>
-                                </h1>
-                            </div>
-                            <div class="grid_6">
-                                <div class="phone wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    <span class="first">Ligue-nos:</span>
-                                    <a href="tel:00351225432135">
-                                        <address>225 432 135</address>
-                                    </a>
-                                    <a href="tel:00351915424413">
-                                        <address>915 424 413</address>
-                                    </a>
-                                    <p>Disponível 24h</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
+        <div id="logo">
+            <h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                <a href="index.html">
+                    <span class="second">Clínica</span>
+                    <span class="first">Gynébe</span>
+                </a>
+            </h1>
         </div>
-        <div id="stuck_container">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_9">
-                        <nav>
-                            <ul class="sf-menu">
-                                <li class="current"><a href="index.html">Home</a></li>
-                                <li><a href="specialties.html">Especialidades</a></li>
-                                <li><a href="agreements.html">Convenções</a></li>
-                                <li><a href="contacts.html">Contactos</a>
-                                    <ul>
-                                        <li><a href="contacts.html">Porto</a></li>
-                                        <li><a href="contacts_santo_tirso.html">Santo Tirso</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </nav>
-                    </div>
-                </div>
+        <nav class="headerNav">
+            <div class="navButton">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
+            <div class="dropdownBackground">
+                <span class="arrow"></span>
+            </div>
+            <ul class="sf-menu">
+                <li class="top">
+                    <a href="index.html">Início</a>
+                    <div class="dropdown dropdownIndex">
+                        <ul>
+                            <li>
+                                <i class="fas fa-user-md"></i><a href="index.html#wrapper2">A Nossa Missão</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-friends"></i><a href="index.html#wrapper3">A Equipa</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-hospital-user"></i><a href="index.html#wrapper4">Provinding the best
+                                    care</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="specialties.html">Especialidades</a>
+                    <div class="dropdown dropdownSpecialties">
+                        <ul>
+                            <li>
+                                <i class="fas fa-female"></i>
+                                <a href="specialties.html#gyne">Ginecologia/Obstetrícia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-baby"></i>
+                                <a href="specialties.html#ped">Pediatria</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-pills"></i>
+                                <a href="specialties.html#endo">Endocrinologia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-comment-medical"></i>
+                                <a href="specialties.html#psy">Psicologia</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-utensils"></i>
+                                <a href="specialties.html#nut">Nutrição</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-spa"></i>
+                                <a href="specialties.html#fisio">Fisioterapia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="agreements.html">Convenções</a>
+                    <div class="dropdown dropdownAgreements">
+                        <ul>
+                            <li><img src="images/advanceCare_logo.png" alt="Advancecare Logo">
+                                <a href="agreements.html#advanceCare">AdvanceCare</a>
+                            </li>
+                            <li><img src="images/allianz_logo.png" alt="Allianz Logo">
+                                <a href="agreements.html#allianz">Allianz</a>
+                            </li>
+                            <li><img src="images/fh_logo.png" alt="Future Healthcare Logo">
+                                <a href="agreements.html#furureHealth">Future Healthcare</a>
+                            </li>
+                            <li><img src="images/medicare_logo.png" alt="Medicare Logo">
+                                <a href="agreements.html#medicare">Medicare</a>
+                            </li>
+                            <li><img src="images/medis_logo.png" alt="Médis Logo">
+                                <a href="agreements.html#medis">Médis</a>
+                            </li>
+                            <li><img src="images/rna_logo.png" alt="RNA Logo">
+                                <a href="agreements.html#rna">RNA</a>
+                            </li>
+                            <li><img src="images/sib_logo.png" alt="SAMS/SIB Logo">
+                                <a href="agreements.html#samsSib">SAMS/SIB</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="gallery.html">Clínicas</a>
+                    <div class="dropdown dropdownGallery">
+                        <ul>
+                            <li><i class="fas fa-images"></i><a href="gallery.html">Clínica do Porto</a></li>
+                            <li><i class="far fa-images"></i><a href="galleryST.html">Clínica de Santo Tirso</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top">
+                    <a href="contacts.html">Contactos</a>
+                    <div class="dropdown dropdownContacts">
+                        <ul>
+                            <li><i class="fas fa-address-book"></i>
+                                <a href="contacts.html">Clínica do Porto</a>
+                            </li>
+                            <li><i class="far fa-address-book"></i>
+                                <a href="contacts_santo_tirso.html">Clínica de Santo Tirso</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <ul class="socials2">
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
+            </ul>
+        </nav>
+        <div class="phone">
+            <span class="first">Ligue-nos:</span>
+            <a href="tel:00351225432135">
+                <address>225 432 135</address>
+            </a>
+            <a href="tel:00351915424413">
+                <address>915 424 413</address>
+            </a>
+            <p>Atendimento telefónico<br>de urgência 24h</p>
         </div>
     </header>
-
 
     <!--========================================================
                           CONTENT
@@ -273,90 +358,43 @@
                           FOOTER
 =========================================================-->
     <footer id="footer">
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="grid_12">
-                        <div class="footer_menu">
-                            <div class="socials">
-                                <ul class="socials1">
-                                    <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
-                                        <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
-                                                class="fa fa-facebook"></i></a></li>
-                                    <li class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s"><a
-                                            href="#"><i class="fa fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <nav>
-                                <ul>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"><a
-                                            href="index.html">Home</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><a
-                                            href="agreements.html">Especialidades</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"><a
-                                            href="specialties.html">Convenções</a></li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><a
-                                            href="contacts.html">Contactos</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="row">
-                            <div class="grid_10 preffix_1">
-                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor
-                                    sit
-                                    amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore
-                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
-                            </div>
-                        </div>
-                        <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year"></span>. <a
-                                href="privacy.html">Política de Privacidade</a><br><a>Design by Francisco Araújo</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="footer_menu">
+            <div class="socials">
+                <ul class="socials1">
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
             </div>
+            <nav>
+                <ul>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s"><a href="index.html">Início</a>
+                    </li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.2s"><a
+                            href="specialties.html">Especialidades</a></li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.3s"><a
+                            href="agreements.html">Convenções</a></li>
+                    <li class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.5s"><a
+                            href="contacts.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor
+            sit
+            amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
+        <div class="privacy-block wow fade-in" data-wow-duration="1s" data-wow-delay="0.1s">
+            <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year">2021</span>. <a
+                href="privacy.html">Política de Privacidade </a><br><a>Design by Francisco Araújo</a>
         </div>
     </footer>
-
-
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<div id="ie6-alert" style="width: 100%; text-align:center;">
-    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0"
-         usemap="#Map" longdesc="http://die6.frontcube.com"/>
-    <map name="Map" id="Map">
-        <area shape="rect" coords="496,201,604,329"
-              href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"
-              alt="Download Interent Explorer"/>
-        <area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank"
-              alt="Download Apple Safari"/>
-        <area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank"
-              alt="Download Opera"/>
-        <area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank"
-              alt="Download Firefox"/>
-        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank"
-              alt="Download Google Chrome"/>
-    </map>
-</div>
-<![endif]-->
-    <!-- build:js js/vendor.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/wow/dist/wow.js"></script>
-    <script src="../bower_components/matchHeight/dist/jquery.matchHeight.js"></script>
-    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="../bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="../bower_components/superfish/dist/js/superfish.js"></script>
-    <script src="../bower_components/superfish/dist/js/hoverIntent.js"></script>
-    <!-- endbower -->
-    <script src="js/device.min.js"></script>
-    <script src="js/tmstickup.js"></script>
-    <script src="js/jquery.mobilemenu.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/app.js -->
-    <script src="js/script.js"></script>
-    <!-- endbuild -->
+    <script src="js/app.js"></script>
+    <script src="js/intersectionObservers.js"></script>
+    <script src="js/headerNavbar.js"></script>
 </body>
 
 </html>
