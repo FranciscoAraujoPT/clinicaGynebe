@@ -34,7 +34,7 @@ function carousel(event) {
     sldChildren.style.setProperty("left", `${-100 * (targetIndex + 1)}%`);
     bullToRemove.classList.remove("currentSlide");
     bull[targetIndex].classList.add("currentSlide");
-
+    index = targetIndex;
     background.classList.add("active");
     setTimeout(() => sld.classList.add("transition"), 100);
 }

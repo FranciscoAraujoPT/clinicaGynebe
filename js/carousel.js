@@ -4,6 +4,8 @@ const slider = document.querySelector('.slider'),
     prev = slider.querySelector('.prev'),
     next = slider.querySelector('.next');
 
+let index = 0;
+
 // Inicialize the bullets
 function initBullets() {
     const bulletContainer = document.createElement('div');
@@ -32,7 +34,6 @@ function slide(wrapper, items, prev, next) {
         lastSlide = slides[slidesLength - 1],
         cloneFirst = firstSlide.cloneNode(true),
         cloneLast = lastSlide.cloneNode(true),
-        index = 0,
         allowShift = true;
 
     // Update the bullets

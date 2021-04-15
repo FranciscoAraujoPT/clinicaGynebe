@@ -23,7 +23,7 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<h6>Clínica Gynébe</h6><p>R. de Dom Manuel II 33, 4050-345 Porto<br><a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=41.34035341648697,-8.477143117721402" target="_blank">Direções</a> </p>',
+                            '<h6>Clínica Gynébe</h6><p>Rua D. Nuno Alvares Pereira 11, 1º sala 8 St. Tirso<br><a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=41.34035341648697,-8.477143117721402" target="_blank">Direções</a> </p>',
                         'title': 'Clínica Gynébe'
                     },
                     'geometry': {

@@ -28,7 +28,7 @@ img {
     -webkit-text-size-adjust: none;
 }
 
-button:focus {
+*:focus {
     outline: 0;
 }
 
@@ -168,7 +168,7 @@ h7 a:hover {
 
 .wrapper2 {
     /* margin-top: -40px; */
-    margin-top: 350px;
+    margin-top: 600px;
     background: #f7f7f7;
     padding: 50px 0 105px;
 }
@@ -506,6 +506,10 @@ h1 a .second {
                     CONTENT styles
 =========================================================*/
 .img-container {
+    width: 100%;
+    height: 802px;
+    background: center / cover no-repeat url(../images/baby.jpeg);
+    /* https://unsplash.com/photos/p76UivR30oo */
     position: absolute;
     top: -10%;
     right: 0;
@@ -571,12 +575,12 @@ h1 a .second {
 .slider {
     position: fixed;
     z-index: 7;
-    top: 50%;
+    top: 55%;
     transition: transform 0.3s ease;
     transform: translateY(-50%) scale(0);
-    width: 80%;
-    height: 80%;
-    left: 10%;
+    width: 90%;
+    height: 40%;
+    left: 5%;
     right: 10%;
     border-radius: 5%;
 }
@@ -613,14 +617,15 @@ h1 a .second {
 }
 
 .slide img {
+    width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .control {
     position: absolute;
     z-index: 10;
     top: 50%;
-    transform: translateY(-50%);
     width: 50px;
     height: 50px;
     background: #fff;
@@ -650,7 +655,7 @@ h1 a .second {
 
 .prev:active,
 .next:active {
-    transform: translateY(-50%) scale(0.8);
+    transform: scale(0.8);
 }
 
 .sliderBullets {
@@ -1271,6 +1276,7 @@ h1 a .second {
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     overflow: hidden;
+    
 }
 
 #map a{
@@ -1332,10 +1338,6 @@ h1 a .second {
 =========================================================*/
 
 @media (min-width: 376px) {
-    .wrapper2 {
-        margin-top: 450px;
-    }
-
     .box2-wrapper1 {
         width: max-content;
     }
@@ -1368,19 +1370,21 @@ h1 a .second {
 
     .img-container {
         top: 0;
-    }
-
-    .img-container img {
-        content: url(../images/baby-cover.jpeg);
+        height: 400px;
+        background-image: url(../images/baby-cover.jpeg);
         /* https://unsplash.com/photos/5arky4TZZ0Y */
     }
 
     .teaser {
         top: 50%;
-        left: 0;
+        left: -25%;
         transform: translateY(50%);
-        padding: 0px 0px 0px 60px;
+        /* padding: 0px 0px 0px 60px; */
         width: inherit;
+    }
+
+    .slider {
+        height: 60%;
     }
 
     .contacts-address {
@@ -1395,7 +1399,11 @@ h1 a .second {
 
 @media (min-width: 1024px) {
     .wrapper2 {
-        margin-top: 700px;
+        margin-top: 450px;
+    }
+
+    .img-container {
+        height: 600px;
     }
 
     .navButton {
@@ -1781,20 +1789,18 @@ h1 a .second {
         font: 400 19px/28px "Roboto Slab", sans-serif;
     }
 
-    .img-container {
-        top: -20%;
-    }
-
-    .teaser {
-        left: 10%;
-    }
-
     .teaser .first {
         font: 400 3rem/3rem "Roboto Slab", sans-serif;
     }
 
     .teaser .second {
         font: 300 2.5rem/2.5rem "Roboto Slab", sans-serif;
+    }
+
+    .slider {
+        left: 10%;
+        width: 80%;
+        height: 70%;
     }
 
     .box2-wrapper1 {
@@ -1820,25 +1826,17 @@ h1 a .second {
 
 @media (min-width: 1670px) {
     .wrapper2 {
-        margin-top: 800px;
-    }
-}
-
-@media (min-width: 1949px) {
-    .wrapper2 {
         margin-top: 700px;
     }
 
     .img-container {
-        top: -40%;
+        height: 800px;
     }
+}
 
-    .img-container::after {
-        width: 100vw;
-    }
-
-    .teaser {
-        top: 60%;
+@media (min-width: 1949px) {
+    .slider {
+        height: 80%;
     }
 
     .box {
