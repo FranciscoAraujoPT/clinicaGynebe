@@ -340,8 +340,9 @@ h7 a:hover {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    text-align: center;
+    align-items: center;
     justify-content: center;
+    text-align: left;
     clip-path: circle(0px at 90% -10%);
     -webkit-clip-path: circle(0px at 90% -10%);
     transition: all 1s ease-out;
@@ -357,7 +358,7 @@ h7 a:hover {
 .line {
     width: 30px;
     height: 3px;
-    background-color: #66b3ff;
+    background-color: #c0c0c0;
     margin: 3px;
 }
 
@@ -381,6 +382,8 @@ h7 a:hover {
 
 .sf-menu > li {
     opacity: 0;
+    width: 200px;
+    margin: 5px;
 }
 
 .sf-menu li:nth-child(1) {
@@ -412,16 +415,17 @@ h7 a:hover {
 }
 
 .sf-menu .dropdownContacts, .sf-menu .dropdownGallery{
-    background-color: #66b3ff;
     width: max-content;
-    margin: 0 auto;
     padding: 10px;
-    border-radius: 16px;
 }
 
 .sf-menu .dropdownContacts li, .sf-menu .dropdownGallery li {
     display: block;
-    color: #00284d;
+    color: #c0c0c0;
+}
+
+.sf-menu .dropdownContacts i, .sf-menu .dropdownGallery i {
+    display: none;
 }
 
 .dropdownAgreements img {
@@ -482,7 +486,7 @@ h1 a {
 h1 a::before {
     position: absolute;
     display: block;
-    width: 48px;
+    width: 73px;
     height: 100%;
     content: '';
     left: 0;
@@ -1119,8 +1123,8 @@ h1 a .second {
 
 .list1__inset1 {
     position: absolute;
-    right: 10%;
-    left: 10%;
+    left: 0;
+    right: 0;
     background-color: #FFF;
     padding: 50px 0px;
     transform: translateY(-50%);
@@ -1146,7 +1150,7 @@ h1 a .second {
     text-align: left;
     color: #66b3ff;
     transition: opacity 1s;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     opacity: 0;
 }
@@ -1391,6 +1395,15 @@ h1 a .second {
         font: 400 19px/28px "Roboto Slab", sans-serif;
     }
 
+    .list1__inset1 {
+        left: 10%;
+        right: 10%;
+    }
+
+    .list1__inset1 li {
+        width: 60%;
+    }
+
     #map {
         width: 80%;
         height: 350px;
@@ -1431,6 +1444,7 @@ h1 a .second {
         border-radius: 20px;
         padding: 47.5px 25px;
         opacity: 1;
+        width: max-content;
     }
 
     .sf-menu > li li {
@@ -1443,6 +1457,15 @@ h1 a .second {
         padding: 20px;
         border-radius: unset;
     }
+
+    .sf-menu .dropdownContacts li, .sf-menu .dropdownGallery li {
+        color: #00284d;
+    }
+    
+    .sf-menu .dropdownContacts i, .sf-menu .dropdownGallery i {
+        display: inline;
+    }
+    
 
     .sf-menu .socials2 {
         display: none;
@@ -1769,6 +1792,15 @@ h1 a .second {
         min-height: 810px;
     }
 
+    .list1__inset1 {
+        left: 0%;
+        right: 0%;
+    }
+
+    .list1__inset1 li {
+        width: 80%;
+    }
+
     #map {
         width: 60%;
         height: 450px;
@@ -1832,6 +1864,16 @@ h1 a .second {
     .img-container {
         height: 800px;
     }
+
+    .list1__inset1 {
+        left: 10%;
+        right: 10%;
+    }
+
+    .list1__inset1 li {
+        width: 60%;
+    }
+
 }
 
 @media (min-width: 1949px) {
