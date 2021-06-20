@@ -1,5 +1,4 @@
-
-if (document.documentElement.clientWidth >= 1024) {
+if (document.documentElement.clientWidth >= 1007) {
     const triggers = document.querySelectorAll(".sf-menu > li");
     const background = document.querySelector(".dropdownBackground");
     const nav = document.querySelector(".headerNav");
