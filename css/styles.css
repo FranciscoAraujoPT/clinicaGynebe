@@ -1287,6 +1287,31 @@ h1 a .second {
     text-align: center;
 }
 
+/*  ======= Privacy Policy  ======= */
+.box7-wrapper1 {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+.box7 {
+    margin-bottom: 20px;
+}
+
+.box7 h6 {
+    color: #00284d;
+    margin-bottom: 1em;
+}
+.box7 ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    padding-inline-start: 40px;
+}
+
+.box7 li {
+    margin-bottom: 1em;
+}
+
 /*========================================================
                     FOOTER styles
 =========================================================*/
