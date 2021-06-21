@@ -634,12 +634,12 @@ h1 a .second {
 }
 
 .prev {
-    background-image: url(../images/ChevronLeft-512.webp);
+    background-image: url(../build/images/ChevronLeft-512.png);
     left: -20px;
 }
 
 .next {
-    background-image: url(../images/ChevronRight-512.webp);
+    background-image: url(../build/images/ChevronRight-512.png);
     right: -20px;
 }
 
@@ -1396,7 +1396,7 @@ h1 a .second {
     .img-container {
         top: 0;
         height: 400px;
-        background-image: url(../images/baby-cover.jpeg);
+        background-image: url(../build/images/baby-cover.jpg);
         /* https://unsplash.com/photos/5arky4TZZ0Y */
     }
 
