@@ -16,9 +16,17 @@
     "url": "https://github.com/FranciscoAraujoPT/clinicaGynebe/issues"
   },
   "homepage": "https://github.com/FranciscoAraujoPT/clinicaGynebe#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0",
+    "postcss": "^8.3.5"
+  },
   "dependencies": {
-    "imagemin": "^8.0.0",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-pngquant": "^9.0.2"
+    "gulp-cssnano": "^2.1.3"
   }
 }
