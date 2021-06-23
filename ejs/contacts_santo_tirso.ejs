@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <%- include("parcials/head") %>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="wrapper1 wrapper1__inset3">
+                <div class="heading1 fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <h2>Clinica Gynébe de Santo Tirso</h2>
+                </div>
+                <div class="map-wrapper1 map-wrapper1__offset1">
+                    <div class="google-map2" id="google-map"></div>
+                </div>
+                <div id="map"></div>
+                <address class="our-address fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=41.34035341648697,-8.477143117721402"
+                        target="_blank"><span>Rua D. Nuno Alvares Pereira 11, 1º sala<br />8 St. Tirso</span></a>
+                </address>
+                <address class="contacts-address fadeIn">
+                    <span class="wrapper-info"><span class="wide">Telefone:</span><a href="tel:00351225432135"> +351
+                            252 850 480</a></span>
+                    <span class="wrapper-info">E-mail:
+                        <a href="mailto:geral@clinicagynebe.com.pt" class="simple-link">geral@clinicagynebe.com.pt</a>
+                    </span>
+                </address>
+                <div class="schedule">
+                    <h3>Horario:</h3>
+                    <ul>
+                        <li><strong>Segunda-feira:</strong> 14h-20h</li>
+                        <li><strong>Terça-feira:</strong> Encerrado (exceto para atendimento telefónico)</li>
+                        <li><strong>Quarta-feira:</strong> 09h-14h</li>
+                        <li><strong>Quinta-feira:</strong> Encerrado (exceto para atendimento telefónico)</li>
+                        <li><strong>Sexta-feira:</strong> Encerrado (exceto para atendimento telefónico)</li>
+                        <li><strong>Sábado:</strong> Encerrado (exceto para atendimento telefónico)</li>
+                        <li><strong>Domingo:</strong> Encerrado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/mapST.js"></script>
+</body>
+
+</html>

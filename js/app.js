@@ -5,6 +5,7 @@ const logo = document.querySelector("#logo");
 
 navButton.addEventListener("click", () => {
     document.body.classList.toggle("open");
+    navButton.classList.toggle("open");
     navLinks.classList.toggle("open");
     logo.classList.toggle("open");
     links.forEach(link => {
