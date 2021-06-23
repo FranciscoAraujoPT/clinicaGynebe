@@ -436,29 +436,6 @@ h6 a:hover {
     display: none;
 }
 
-/* .sf-menu .top a::before {
-    content: "";
-    position: absolute;
-    bottom: 45px;
-    left: 20px;
-    right: 20px;
-    width: 80%;
-    height: 15px;
-    background-color: #FFF;
-    z-index: -5;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease;
-}
-
-.sf-menu .top a:hover::before {
-    transform: scale(1);
-}
-
-.sf-menu .top a:hover {
-    color: unset;
-} */
-
 /* ======= Logo ======= */
 
 #logo {
@@ -560,6 +537,37 @@ h1 a .second {
     font-size: 1.5rem;
 }
 
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    display: block;
+    font-size: 20px;
+    z-index: 5;
+    text-shadow: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: translate(-50%, 0%) rotate(45deg);
+    animation: fade_move_down 4s ease-in-out infinite;
+}
+
+@keyframes fade_move_down {
+    0% {
+      transform: translate(-50%, -10px) rotate(45deg);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(-50%, 10px) rotate(45deg);
+      opacity: 0;
+    }
+}
 /* ======= Slider ======= */
 .backgroundCover {
     position: fixed;
@@ -1254,9 +1262,13 @@ h1 a .second {
 
 /* ======= Schedule ======= */
 .schedule {
+    position: relative;
+    font: 400 16px/18px "Roboto Slab", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 90%;
+    left: 5%;
 }
 
 .schedule h3 {
@@ -1416,14 +1428,18 @@ h1 a .second {
         width: inherit;
     }
 
+    .scroll-down {
+        display: none;
+    }
+
     .slider {
         height: 60%;
     }
 
-    .contacts-address {
+    .contacts-address, .schedule {
         font: 400 19px/28px "Roboto Slab", sans-serif;
     }
-
+    
     .list1__inset1 {
         left: 10%;
         right: 10%;
