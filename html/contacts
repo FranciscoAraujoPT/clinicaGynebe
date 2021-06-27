@@ -1,4 +1,33 @@
-<header id="header">
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>
+    Contactos
+</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- build:css({.tmp,src}) css/style.css -->
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/styles.css">
+<!-- endbuild -->
+<script src="https://kit.fontawesome.com/9e78371ef2.js" crossorigin="anonymous"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <header id="header">
     <div id="logo">
         <h1 class="fadeInDown">
             <a href="index">
@@ -138,3 +167,74 @@
         <p>Atendimento telefónico<br>para emergência 24h</p>
     </div>
 </header>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="wrapper1 wrapper1__inset3">
+                <div class="heading1 fadeIn">
+                    <h2>Clínica Gynébe do Porto</h2>
+                </div>
+                <div id="map"></div>
+                <address class="our-address fadeIn">
+                    <a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=41.14735259875789,-8.620945015926148"
+                        target="_blank"><span>Rua D. Manuel II 33, 4º sala 44,<br />4050-345 Porto.</span></a>
+                </address>
+                <address class="contacts-address fadeIn">
+                    <span class="wrapper-info"><span class="wide">Telefone:</span><a href="tel:00351225432135"> +351
+                            225 432 135/6</a></span>
+                    <span class="wrapper-info"><span class="wide">Fax:</span> +351 225 432 209</span>
+                    <span class="wrapper-info">E-mail:
+                        <a href="mailto:geral@clinicagynebe.com.pt" class="simple-link">geral@clinicagynebe.com.pt</a>
+                    </span>
+                </address>
+                <div class="schedule fade-in">
+                    <h3>Horario:</h3>
+                    <ul>
+                        <li><strong>Segunda-feira:</strong> 9h-14h</li>
+                        <li><strong>Terça-feira:</strong> 9h-20h</li>
+                        <li><strong>Quarta-feira:</strong> 14h-20h</li>
+                        <li><strong>Quinta-feira:</strong> Encerrado (exceto para Urgências)</li>
+                        <li><strong>Sexta-feira:</strong> 09h-20h</li>
+                        <li><strong>Sábado:</strong> Encerrado (exceto para Urgências)</li>
+                        <li><strong>Domingo:</strong> Encerrado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <footer id="footer">
+    <div class="footer_menu">
+        <div class="socials">
+            <ul class="socials1">
+                <li class="fade-in">
+                    <a href="https://www.facebook.com/ClinicaGynebe/" target="_blank"> <i
+                            class="fa fa-facebook"></i></a>
+                </li>
+                <li class="fade-in"><a href="https://www.instagram.com/clinica_gynebe/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="fade-in"><a href="index">Início</a></li>
+                <li class="fade-in"><a href="specialties">Especialidades</a></li>
+                <li class="fade-in"><a href="agreements">Convenções</a></li>
+                <li class="fade-in"><a href="contacts">Contactos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="privacy-block fade-in">
+        <a href="index">Clínica Gynébe</a> &copy; <span id="copyright-year">2021</span>. <a href="privacy">Política de
+            Privacidade </a><br><a>Design by Francisco Araújo</a>
+    </div>
+</footer>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/mapPorto.js"></script>
+</body>
+
+</html>

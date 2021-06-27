@@ -116,6 +116,16 @@ h6 a:hover {
     margin: 28px 0px;
 }
 
+.heading1 h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.heading1 h3 strong {
+    color: #00284d;
+    font-weight: 400;
+}
+
 .heading2 h5 {
     color: #00284d;
     margin-bottom: 42px;
@@ -387,7 +397,6 @@ h6 a:hover {
 .sf-menu > li {
     opacity: 0;
     width: 200px;
-    margin: 5px;
 }
 
 .sf-menu > li:nth-child(1) {
@@ -540,7 +549,7 @@ h1 a .second {
 .scroll-down {
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom: 10%;
     display: block;
     font-size: 20px;
     z-index: 5;
@@ -1311,7 +1320,141 @@ h1 a .second {
     text-align: center;
 }
 
-/*  ======= Privacy Policy  ======= */
+/* ======= Doctors ======= */
+.box8-wrapper1 {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+.box8 {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+            "image language sick"
+            "image apoint areas";
+    font: 400 20px/30px "Roboto Slab", sans-serif;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;   
+}
+
+.box8 img {
+    border-radius: 10px;
+    grid-area: image;
+}
+
+.doctorsDescription.language {
+    grid-area: language;
+}
+
+.doctorsDescription.sick {
+    grid-area: sick;
+}
+
+.doctorsDescription.apoint {
+    grid-area: apoint;
+}
+
+.doctorsDescription.areas {
+    grid-area: areas;
+}
+
+.doctorsDescription {
+    display: flex;
+    align-items: center;
+}
+
+.box8 i {
+    color: #00284d;
+    font-size: 300%;
+}
+
+.box8 strong {
+    font-weight: 400;
+    color: #00284d;
+}
+
+.box8 p{
+    margin-left: 2%;
+    display: inline;
+    font-weight: 300;
+}
+
+.box9-wrapper1 {
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.box9 {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+            "activity formation science sociaty"
+            "text text text text";
+    font: 400 20px/30px "Roboto Slab", sans-serif;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.box9 .activity {
+    grid-area: activity;
+}
+
+.box9 .formation {
+    grid-area: formation;
+}
+
+.box9 .science {
+    grid-area: science;
+}
+
+.box9 .sociaty {
+    grid-area: sociaty;
+}
+
+.box9 .activity, .box9 .formation, .box9 .sociaty, .box9 .science {
+    max-width: fit-content;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.box9 .activity h4, .box9 .formation h4, .box9 .sociaty h4, .box9 .science h4 {
+    padding: 6px 12px;
+}
+
+.box9-background {
+    position: absolute;
+    z-index: -1;
+    border-radius: 16px;
+    background: linear-gradient(to left,#4DFFF3, #007EA7);
+    transition: all 0.6s ease-in-out;
+}
+
+.box9 .text-activity, .box9 .text-formation, .box9 .text-sociaty, .box9 .text-science {
+    grid-area: text;
+    display: none;
+}
+
+.box9 .text-activity.open, .box9 .text-formation.open, .box9 .text-sociaty.open, .box9 .text-science.open {
+    display: block;
+}
+
+.box9 h4 {
+    font: 400 22px/32px "Roboto Slab", sans-serif;
+    color: #00284d;
+}
+
+.box9 ul {
+    list-style-type: disc;
+    padding-inline-start: 100px;
+}
+/* ======= Privacy Policy  ======= */
 .box7-wrapper1 {
     position: relative;
     width: 90%;

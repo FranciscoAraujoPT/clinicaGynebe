@@ -1,8 +1,8 @@
 const ejs = require("ejs");
 const fs = require("fs");
 
-const files = ["agreements", "contacts_santo_tirso", "contacts", "gallery", "galleryST", "index", "privacy", "specialties"];
-const titles = ["Conveções", "Contactos", "Contactos", "Galeria do Porto", "Galeria de S.Tirso", "Início", "Política de Privacidade", "Especialidades"]
+const files = ["ac", "agreements", "contacts_santo_tirso", "contacts", "ds", "gallery", "galleryST", "gv", "index", "lc", "mb", "mca", "privacy", "specialties"];
+const titles = ["Dra. Ana Carriço", "Conveções", "Contactos", "Contactos", "Dra. Dília Soares", "Galeria do Porto", "Galeria de S.Tirso", "Dra. Gabriela Vasconcellos", "Início", "Dra. Leonilde Coelho", "Dra. Marta Baltar", "Dra. Manuela Calado Araújo", "Política de Privacidade", "Especialidades"]
 let counter = 0;
 
 files.forEach(name => {
@@ -15,7 +15,7 @@ files.forEach(name => {
             if (err !== null) {
                 console.log(err);
             }
-            fs.writeFile(`./html/${name}.html`, html, (err) => {
+            fs.writeFile(`./html/${name}`, html, (err) => {
                 if (err !== null) {
                     console.log(err);
                 }

@@ -10,7 +10,7 @@ const concat = require("gulp-concat")
 const del = require("del");
 
 gulp.task("html", function () {
-    return gulp.src("./html/*.html")
+    return gulp.src("./html/*")
         .pipe(useref())
         .pipe(gulp.dest("build"))
 });

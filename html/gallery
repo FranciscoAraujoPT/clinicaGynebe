@@ -28,7 +28,7 @@
     <header id="header">
     <div id="logo">
         <h1 class="fadeInDown">
-            <a href="index.html">
+            <a href="index">
                 <span class="second">Clínica</span>
                 <span class="first">Gynébe</span>
             </a>
@@ -45,100 +45,100 @@
         </div>
         <ul class="sf-menu">
             <li class="top">
-                <a href="index.html">Início</a>
+                <a href="index">Início</a>
                 <div class="dropdown dropdownIndex">
                     <ul>
                         <li>
-                            <i class="fas fa-user-md"></i><a href="index.html#wrapper2">A Nossa Missão</a>
+                            <i class="fas fa-user-md"></i><a href="index#wrapper2">A Nossa Missão</a>
                         </li>
                         <li>
-                            <i class="fas fa-user-friends"></i><a href="index.html#wrapper3">A Equipa</a>
+                            <i class="fas fa-user-friends"></i><a href="index#wrapper3">A Equipa</a>
                         </li>
                         <li>
-                            <i class="fas fa-hospital-user"></i><a href="index.html#wrapper4">Os Melhores Cuidados de
+                            <i class="fas fa-hospital-user"></i><a href="index#wrapper4">Os Melhores Cuidados de
                                 Saúde</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="specialties.html">Especialidades</a>
+                <a href="specialties">Especialidades</a>
                 <div class="dropdown dropdownSpecialties">
                     <ul>
                         <li>
                             <i class="fas fa-female"></i>
-                            <a href="specialties.html#gyne">Ginecologia/Obstetrícia</a>
+                            <a href="specialties#gyne">Ginecologia/Obstetrícia</a>
                         </li>
                         <li>
                             <i class="fas fa-baby"></i>
-                            <a href="specialties.html#ped">Pediatria</a>
+                            <a href="specialties#ped">Pediatria</a>
                         </li>
                         <li>
                             <i class="fas fa-pills"></i>
-                            <a href="specialties.html#endo">Endocrinologia</a>
+                            <a href="specialties#endo">Endocrinologia</a>
                         </li>
                         <li>
                             <i class="fas fa-comment-medical"></i>
-                            <a href="specialties.html#psy">Psicologia</a>
+                            <a href="specialties#psy">Psicologia</a>
                         </li>
                         <li>
                             <i class="fas fa-utensils"></i>
-                            <a href="specialties.html#nut">Nutrição</a>
+                            <a href="specialties#nut">Nutrição</a>
                         </li>
                         <!-- <li>
                             <i class="fas fa-spa"></i>
-                            <a href="specialties.html#fisio">Fisioterapia</a>
+                            <a href="specialties#fisio">Fisioterapia</a>
                         </li> -->
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="agreements.html">Convenções</a>
+                <a href="agreements">Convenções</a>
                 <div class="dropdown dropdownAgreements">
                     <ul>
                         <li><img src="../images/advanceCare_logo.png" alt="Advancecare Logo">
-                            <a href="agreements.html#advanceCare">AdvanceCare</a>
+                            <a href="agreements#advanceCare">AdvanceCare</a>
                         </li>
                         <li><img src="../images/allianz_logo.png" alt="Allianz Logo">
-                            <a href="agreements.html#allianz">Allianz</a>
+                            <a href="agreements#allianz">Allianz</a>
                         </li>
                         <li><img src="../images/fh_logo.png" alt="Future Healthcare Logo">
-                            <a href="agreements.html#furureHealth">Future Healthcare</a>
+                            <a href="agreements#furureHealth">Future Healthcare</a>
                         </li>
                         <li><img src="../images/medicare_logo.png" alt="Medicare Logo">
-                            <a href="agreements.html#medicare">Medicare</a>
+                            <a href="agreements#medicare">Medicare</a>
                         </li>
                         <li><img src="../images/medis_logo.png" alt="Médis Logo">
-                            <a href="agreements.html#medis">Médis</a>
+                            <a href="agreements#medis">Médis</a>
                         </li>
                         <li><img src="../images/rna_logo.png" alt="RNA Logo">
-                            <a href="agreements.html#rna">RNA</a>
+                            <a href="agreements#rna">RNA</a>
                         </li>
                         <li><img src="../images/sib_logo.png" alt="SAMS/SIB Logo">
-                            <a href="agreements.html#samsSib">SAMS/SIB</a>
+                            <a href="agreements#samsSib">SAMS/SIB</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="gallery.html">Clínicas</a>
+                <a href="gallery">Clínicas</a>
                 <div class="dropdown dropdownGallery">
                     <ul>
-                        <li><i class="fas fa-images"></i><a href="gallery.html">Clínica do Porto</a></li>
-                        <li><i class="far fa-images"></i><a href="galleryST.html">Clínica de Santo Tirso</a>
+                        <li><i class="fas fa-images"></i><a href="gallery">Clínica do Porto</a></li>
+                        <li><i class="far fa-images"></i><a href="galleryST">Clínica de Santo Tirso</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="contacts.html">Contactos</a>
+                <a href="contacts">Contactos</a>
                 <div class="dropdown dropdownContacts">
                     <ul>
                         <li><i class="fas fa-address-book"></i>
-                            <a href="contacts.html">Clínica do Porto</a>
+                            <a href="contacts">Clínica do Porto</a>
                         </li>
                         <li><i class="far fa-address-book"></i>
-                            <a href="contacts_santo_tirso.html">Clínica de Santo Tirso</a>
+                            <a href="contacts_santo_tirso">Clínica de Santo Tirso</a>
                         </li>
                     </ul>
                 </div>
@@ -162,7 +162,7 @@
         <a href="tel:00351915424413">
             <address>915 424 413</address>
         </a>
-        <p>Atendimento telefónico<br>de urgência 24h</p>
+        <p>Atendimento telefónico<br>para emergência 24h</p>
     </div>
 </header>
         <!--========================================================
@@ -381,16 +381,16 @@
         </div>
         <nav>
             <ul>
-                <li class="fade-in"><a href="index.html">Início</a></li>
-                <li class="fade-in"><a href="specialties.html">Especialidades</a></li>
-                <li class="fade-in"><a href="agreements.html">Convenções</a></li>
-                <li class="fade-in"><a href="contacts.html">Contactos</a></li>
+                <li class="fade-in"><a href="index">Início</a></li>
+                <li class="fade-in"><a href="specialties">Especialidades</a></li>
+                <li class="fade-in"><a href="agreements">Convenções</a></li>
+                <li class="fade-in"><a href="contacts">Contactos</a></li>
             </ul>
         </nav>
     </div>
     <div class="privacy-block fade-in">
-        <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year">2021</span>. <a
-            href="privacy.html">Política de Privacidade </a><br><a>Design by Francisco Araújo</a>
+        <a href="index">Clínica Gynébe</a> &copy; <span id="copyright-year">2021</span>. <a href="privacy">Política de
+            Privacidade </a><br><a>Design by Francisco Araújo</a>
     </div>
 </footer>
             <script src="../js/app.js"></script>
