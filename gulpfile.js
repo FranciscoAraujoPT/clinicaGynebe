@@ -6,12 +6,20 @@ const useref = require("gulp-useref");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const gulpIf = require("gulp-if");
-const concat = require("gulp-concat")
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
+const replace = require('gulp-replace');
 const del = require("del");
 
 gulp.task("html", function () {
     return gulp.src("./html/*")
+        .pipe(replace(".html", ""))
         .pipe(useref())
+        .pipe(rename(function (path) {
+            if (path.extname === ".html") {
+                path.extname = "";
+            }
+        }))
         .pipe(gulp.dest("build"))
 });
 

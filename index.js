@@ -15,7 +15,7 @@ files.forEach(name => {
             if (err !== null) {
                 console.log(err);
             }
-            fs.writeFile(`./html/${name}`, html, (err) => {
+            fs.writeFile(`./html/${name}.html`, html, (err) => {
                 if (err !== null) {
                     console.log(err);
                 }

@@ -3,7 +3,8 @@ const imgContent = Array.from(document.querySelectorAll(".box6 img")),
     bulletsContainer = sld.querySelector(".sliderBullets"),
     bull = Array.from(bulletsContainer.children),
     sldChildren = sld.querySelector(".slides"),
-    background = document.querySelector(".backgroundCover");
+    backgroundCover = document.querySelector(".backgroundCover"),
+    headerClose = document.querySelector("#header");
 
 function showImgContent(event) {
 
@@ -35,13 +36,31 @@ function carousel(event) {
     bullToRemove.classList.remove("currentSlide");
     bull[targetIndex].classList.add("currentSlide");
     index = targetIndex;
-    background.classList.add("active");
+    backgroundCover.classList.add("active");
     setTimeout(() => sld.classList.add("transition"), 100);
+    if (window.innerHeight < 550) {
+        headerClose.classList.add("close");
+        sld.style.height = "90%";
+        sld.style.top = "50%";
+    }
 }
 
 function closeCarousel() {
     sld.classList.remove("transition");
-    setTimeout(() => background.classList.remove("active"), 100);
+    setTimeout(() => backgroundCover.classList.remove("active"), 100);
+    if (window.innerHeight < 550) {
+        headerClose.classList.remove("close");
+        if (window.innerWidth > 1950) {
+            sld.style.height = "80%";
+        } else if (window.innerWidth > 1336) {
+            sld.style.height = "70%";
+        } else if (window.innerWidth > 501) {
+            sld.style.height = "60%";
+        } else {
+            sld.style.height = "40%";
+        }
+        sld.style.top = "55%";
+    }
 }
 
 imgContent.forEach(img => {
@@ -51,4 +70,24 @@ imgContent.forEach(img => {
     img.addEventListener("click", carousel);
 });
 
-background.addEventListener("click", closeCarousel);
+window.addEventListener("resize", (event) => {
+    if (window.innerHeight < 550 && backgroundCover.classList.contains("active")) {
+        headerClose.classList.add("close");
+        sld.style.height = "90%";
+        sld.style.top = "50%";
+    } else {
+        headerClose.classList.remove("close");
+        if (window.innerWidth > 1950) {
+            sld.style.height = "80%";
+        } else if (window.innerWidth > 1336) {
+            sld.style.height = "70%";
+        } else if (window.innerWidth > 501) {
+            sld.style.height = "60%";
+        } else {
+            sld.style.height = "40%";
+        }
+        sld.style.top = "55%";
+    }
+});
+
+backgroundCover.addEventListener("click", closeCarousel);

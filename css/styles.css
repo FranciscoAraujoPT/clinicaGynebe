@@ -281,6 +281,10 @@ h6 a:hover {
     transform: translateY(-100%);
 }
 
+#header.close {
+    display: none;
+}
+
 #header.scroll::before {
     transform: translateY(0);
 }
@@ -400,6 +404,7 @@ h6 a:hover {
 }
 
 .sf-menu > li:nth-child(1) {
+    margin-top: 5%;
     transition: all 0.5s ease 0.2s;
 }
 
@@ -423,16 +428,36 @@ h6 a:hover {
     opacity: 1;
 }
 
+.sf-menu > li.close {
+    transform: translateX(500%);
+}
+
 .sf-menu > li li {
-    display: none;
+    display: none;   
 }
 
-.sf-menu .dropdownContacts, .sf-menu .dropdownGallery{
-    width: max-content;
-    padding: 10px;
+.sf-menu > li li:first-child{
+    transition: transform 0.4s ease-in-out;
 }
 
-.sf-menu .dropdownContacts li, .sf-menu .dropdownGallery li {
+.sf-menu > li li:last-child{
+    transition: transform 0.6s ease-in-out;
+}
+
+.sf-menu > li li.block {
+    transform: translateX(-1000%);
+    display: block;
+}
+
+.sf-menu > li li.open {
+    transform: translateX(-500%);
+}
+
+.sf-menu > li li.open:last-child {
+    margin-bottom: 50%;
+}
+
+.sf-menu .dropdownContacts.open li, .sf-menu .dropdownGallery.open li {
     display: block;
     color: #c0c0c0;
 }
@@ -585,6 +610,7 @@ h1 a .second {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
+    z-index: 5;
 }
 
 .backgroundCover.active {
@@ -600,7 +626,6 @@ h1 a .second {
     width: 90%;
     height: 40%;
     left: 5%;
-    right: 10%;
     border-radius: 5%;
 }
 
@@ -1540,22 +1565,6 @@ h1 a .second {
         padding: 20px 25px;
     }
 
-    h1 a .first {
-        font: 700 55px/55px "Roboto Slab", sans-serif;
-    }
-
-    h1 a .second {
-        font: 300 32px/32px "Roboto Slab", sans-serif;
-    }
-
-    h2 {
-        font: 400 57px/63px "Roboto Slab", sans-serif;
-    }
-
-    h6 {
-        font: 300 26px/38px "Roboto Slab", sans-serif;
-    }
-
     .img-container {
         top: -127px;
         height: 400px;
@@ -1603,6 +1612,22 @@ h1 a .second {
 }
 
 @media (min-width: 1024px) {
+    h1 a .first {
+        font: 700 55px/55px "Roboto Slab", sans-serif;
+    }
+
+    h1 a .second {
+        font: 300 32px/32px "Roboto Slab", sans-serif;
+    }
+
+    h2 {
+        font: 400 57px/63px "Roboto Slab", sans-serif;
+    }
+
+    h6 {
+        font: 300 26px/38px "Roboto Slab", sans-serif;
+    }
+    
     .img-container {
         top: -133px;
         height: 600px;
@@ -1640,6 +1665,10 @@ h1 a .second {
         display: block;
     }
 
+    .sf-menu > li:first-child {
+        margin-top: 0;
+    }
+
     .sf-menu .dropdownContacts, .sf-menu .dropdownGallery{
         background-color: transparent;
         margin: 0;
@@ -1654,7 +1683,6 @@ h1 a .second {
     .sf-menu .dropdownContacts i, .sf-menu .dropdownGallery i {
         display: inline;
     }
-    
 
     .sf-menu .socials2 {
         display: none;

@@ -81,8 +81,8 @@ function slide(wrapper, items, prev, next) {
 
         updateBullets(currentBullet, targetIndex);
         items.classList.add('shifting');
-        items.style.left = -(targetIndex + 1) * (slideSize) + "px";
         index = targetIndex;
+        items.style.setProperty("left", `${-100 * (index + 1)}%`);
     });
 
     // Transition events
@@ -122,30 +122,25 @@ function slide(wrapper, items, prev, next) {
         } else if (posFinal - posInitial > threshold) {
             shiftSlide(-1, 'drag');
         } else {
-            items.style.left = (posInitial) + "px";
+            items.style.setProperty("left", `${-100 * (index + 1)}%`);
         }
 
         document.onmouseup = null;
         document.onmousemove = null;
     }
 
-    function shiftSlide(dir, action) {
+    function shiftSlide(dir) {
         items.classList.add('shifting');
 
         if (allowShift) {
-            if (!action) {
-                posInitial = items.offsetLeft;
-            }
-
             if (dir === 1) {
-                items.style.left = (posInitial - slideSize) + "px";
                 index++;
+                items.style.setProperty("left", `${-100 * (index + 1)}%`);
             } else if (dir === -1) {
-                items.style.left = (posInitial + slideSize) + "px";
                 index--;
+                items.style.setProperty("left", `${-100 * (index + 1)}%`);
             }
         };
-
         allowShift = false;
     }
 
@@ -153,18 +148,22 @@ function slide(wrapper, items, prev, next) {
         items.classList.remove('shifting');
 
         if (index === -1) {
-            items.style.left = -(slidesLength * slideSize) + "px";
             index = slidesLength - 1;
+            items.style.setProperty("left", `${-100 * (index + 1)}%`);
         }
 
         if (index === slidesLength) {
-            items.style.left = -(1 * slideSize) + "px";
             index = 0;
+            items.style.setProperty("left", `${-100 * (index + 1)}%`);
         }
 
         updateBullets(slider.querySelector(".currentSlide"), index);
         allowShift = true;
     }
+
+    window.addEventListener("resize", (event) => {
+        slideSize = slides[0].offsetWidth;
+    });
 }
 
 initBullets();
