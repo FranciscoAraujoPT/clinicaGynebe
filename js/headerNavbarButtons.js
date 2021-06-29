@@ -5,11 +5,15 @@ const clinica = menu.querySelector(".sf-menu > li:nth-child(4)");
 const contacts = menu.querySelector(".sf-menu > li:nth-child(5)");
 
 clinica.addEventListener("click", (event) => {
-    menuPrevent(event, clinica);
+    if (window.innerWidth < 1024) {
+        menuPrevent(event, clinica);
+    }
 });
 
 contacts.addEventListener("click", (event) => {
-    menuPrevent(event, contacts);
+    if (window.innerWidth < 1024) {
+        menuPrevent(event, contacts);
+    }
 });
 
 function menuPrevent(event, option) {
