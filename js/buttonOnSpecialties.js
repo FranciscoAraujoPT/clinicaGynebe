@@ -8,6 +8,24 @@ function removeUl(ul, lis) {
     lis.forEach(li => li.classList.remove("active"));
 }
 
+window.addEventListener("resize", (event) => {
+    if (overlay.style.height !== "" && overlay.style.height !== "0px") {
+        overlay.style.setProperty("height", "0px");
+        overlay.style.setProperty("width", "0px");
+        const ul = body.querySelector("ul.active")
+        const lis = ul.querySelectorAll("li");
+        removeUl(ul, lis);
+    }
+});
+
+overlay.addEventListener("click", () => {
+    overlay.style.setProperty("height", `0px`);
+    overlay.style.setProperty("width", `0px`);
+    const ul = body.querySelector("ul.active")
+    const lis = ul.querySelectorAll("li");
+    removeUl(ul, lis);
+});
+
 containers.forEach(container => container.addEventListener("click", (event) => {
     const target = event.target.closest("button");
     const ulTarget = target.nextElementSibling;
@@ -25,12 +43,6 @@ containers.forEach(container => container.addEventListener("click", (event) => {
     overlay.style.setProperty("height", `${body.offsetHeight}px`);
     overlay.style.setProperty("width", `${body.offsetWidth}px`);
     let lis = ulTarget.querySelectorAll("li");
-
-    overlay.addEventListener("click", () => {
-        overlay.style.setProperty("height", `0px`);
-        overlay.style.setProperty("width", `0px`);
-        removeUl(ulTarget, lis);
-    });
 
     ulTarget.classList.toggle("active");
     setTimeout(() => ulTarget.classList.toggle("transition"), 100);

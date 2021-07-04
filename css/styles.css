@@ -222,7 +222,6 @@ h6 a:hover {
 .wrapper6 {
     position: relative;
     top: 0px;
-    z-index: 5;
     box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.03);
     background: #FFF;
     border-bottom-left-radius: 50% 49px;
@@ -231,7 +230,6 @@ h6 a:hover {
 }
 
 .wrapper6__inset1 {
-    z-index: 0;
     margin-top: -49px;
     padding-top: 81px;
     background: url(../images/backgroundAgreements.jpg) no-repeat center;
@@ -844,6 +842,7 @@ h1 a .second {
 
 .chevronDown {
     position: relative;
+    z-index: 7;
     top: 0;
 }
 
@@ -1347,24 +1346,23 @@ h1 a .second {
 
 /* ======= Doctors ======= */
 .box8-wrapper1 {
-    position: relative;
     width: 90%;
-    left: 5%;
+    margin: 0 auto;
 }
 
 .box8 {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas: 
-            "image language sick"
-            "image apoint areas";
-    font: 400 20px/30px "Roboto Slab", sans-serif;
+    font: 400 16px/25px "Roboto Slab", sans-serif;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 10px;   
+    padding: 10px;
 }
 
 .box8 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 268px;
     border-radius: 10px;
     grid-area: image;
 }
@@ -1388,6 +1386,7 @@ h1 a .second {
 .doctorsDescription {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 
 .box8 i {
@@ -1407,24 +1406,19 @@ h1 a .second {
 }
 
 .box9-wrapper1 {
-    position: relative;
     width: 90%;
-    max-width: 1024px;
+    max-width: 1336px;
     margin: 0 auto;
 }
 
 .box9 {
-    display: grid;
-    grid-gap: 0.5em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-            "activity formation science sociaty"
-            "text text text text";
-    font: 400 20px/30px "Roboto Slab", sans-serif;
+    position: relative;
+    z-index: 5;
+    font: 400 16px/25px "Roboto Slab", sans-serif;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 10px;
-    margin-top: 50px;
+    margin: 50px 0px;
 }
 
 .box9 .activity {
@@ -1443,17 +1437,23 @@ h1 a .second {
     grid-area: sociaty;
 }
 
-.box9 .activity, .box9 .formation, .box9 .sociaty, .box9 .science {
+.box9 > .activity, .box9 > .formation, .box9 > .sociaty, .box9 > .science {
     max-width: fit-content;
     cursor: pointer;
     margin: 0 auto;
+    display: none;
 }
 
-.box9 .activity h4, .box9 .formation h4, .box9 .sociaty h4, .box9 .science h4 {
+.box9 > .activity.show, .box9 > .formation.show, .box9 > .sociaty.show, .box9 > .science.show {
+    display: block;
+}
+
+.box9 > .activity h4, .box9 > .formation h4, .box9 > .sociaty h4, .box9 > .science h4 {
     padding: 6px 12px;
 }
 
 .box9-background {
+    display: none;
     position: absolute;
     z-index: -1;
     border-radius: 16px;
@@ -1461,23 +1461,87 @@ h1 a .second {
     transition: all 0.6s ease-in-out;
 }
 
+.box9-background.show {
+    display: block;
+}
+
 .box9 .text-activity, .box9 .text-formation, .box9 .text-sociaty, .box9 .text-science {
     grid-area: text;
     display: none;
+    margin-top: 10px;
 }
 
 .box9 .text-activity.open, .box9 .text-formation.open, .box9 .text-sociaty.open, .box9 .text-science.open {
     display: block;
 }
 
-.box9 h4 {
-    font: 400 22px/32px "Roboto Slab", sans-serif;
-    color: #00284d;
+.box9 ul:not(.tab-holder) {
+    list-style-type: disc;
+    padding-inline-start: 20px;
 }
 
-.box9 ul {
-    list-style-type: disc;
-    padding-inline-start: 100px;
+.tab-holder {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top;
+    background-color: white;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    font: 400 18px/28px "Roboto Slab", sans-serif;
+    color: #00284d;
+    z-index: 6;
+    transition: all 0.5s ease-out;
+}
+
+.tab-holder.show {
+    transform: translateX(-50%) scaleY(1);
+}
+
+.tab-holder li {
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.tab-holder.show li {
+    opacity: 1;
+}
+
+.bar-holder {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    color: white;
+    border-radius: 16px;
+    font: 400 18px/28px "Roboto Slab", sans-serif;
+    padding: 8px 15px;
+    background: linear-gradient(to left,#4DFFF3, #007EA7);
+}
+
+.bar-holder .chevronDown {
+    position: absolute;
+    right: 5%;
+    top: 14px;
+    display: block;
+    font-size: 20px;
+    z-index: 5;
+    text-shadow: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.bar-holder.show {
+    display: block;
 }
 /* ======= Privacy Policy  ======= */
 .box7-wrapper1 {
@@ -2023,6 +2087,32 @@ h1 a .second {
         width: 60%;
         height: 450px;
     }
+    .box8 {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas: 
+                "image language sick"
+                "image apoint areas";
+    }
+
+    .box9 {
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+                "activity formation science sociaty"
+                "text text text text";
+        margin-bottom: 0px;
+    }
+
+    .box9 h4 {
+        font: 400 22px/32px "Roboto Slab", sans-serif;
+        color: #00284d;
+    }
+
+    .box9 ul {
+        padding-inline-start: 100px !important;
+    }
 }
 
 
@@ -2071,6 +2161,14 @@ h1 a .second {
 
     .box6.img4 img, .box6.img8 img, .box6.img15 img, .box6.img16 img, .box6.img20 img {
         min-height: 1010px;
+    }
+
+    .box8 {
+        font: 400 20px/30px "Roboto Slab", sans-serif;
+    }
+
+    .box9 {
+        font: 400 20px/30px "Roboto Slab", sans-serif;
     }
 }
 

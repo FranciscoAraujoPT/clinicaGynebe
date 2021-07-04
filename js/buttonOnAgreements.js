@@ -1,6 +1,5 @@
 const buttons = document.querySelectorAll("button");
 const body = document.querySelector("body");
-const overlay = body.querySelector(".overlay");
 
 buttons.forEach(button => button.addEventListener("click", (event) => {
     const target = event.target.closest("button");
