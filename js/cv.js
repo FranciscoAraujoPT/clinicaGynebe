@@ -108,7 +108,7 @@ function smallScreen() {
 }
 
 window.addEventListener("resize", (event) => {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth >= 1024) {
         if (!activity.classList.contains("show")) {
             activity.classList.add("show");
             formation.classList.add("show");
@@ -150,7 +150,7 @@ window.addEventListener("resize", (event) => {
     }
 });
 
-if (window.innerWidth > 1024) {
+if (window.innerWidth >= 1024) {
     activity.classList.add("show");
     formation.classList.add("show");
     science.classList.add("show");

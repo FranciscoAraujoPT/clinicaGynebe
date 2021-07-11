@@ -20,7 +20,7 @@ gulp.task("html", function () {
                 path.extname = "";
             }
         }))
-        .pipe(gulp.dest("build"))
+        .pipe(gulp.dest("./build"))
 });
 
 gulp.task("css", function () {
@@ -37,13 +37,13 @@ gulp.task("css", function () {
 gulp.task("js", function () {
     return gulp.src("./js/*.js")
         .pipe(uglify())
-        .pipe(gulp.dest("build/js"))
+        .pipe(gulp.dest("./build/js"))
 })
 
 gulp.task("images", function () {
     return gulp.src("images/**/*.+(png|jpg|gif|svg)")
         .pipe(imagemin())
-        .pipe(gulp.dest("build/images"))
+        .pipe(gulp.dest("./build/images"))
 });
 
 gulp.task("clean", function () {
