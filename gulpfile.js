@@ -15,11 +15,6 @@ gulp.task("html", function () {
     return gulp.src("./html/*")
         .pipe(replace(".html", ""))
         .pipe(useref())
-        .pipe(rename(function (path) {
-            if (path.extname === ".html") {
-                path.extname = "";
-            }
-        }))
         .pipe(gulp.dest("./build"))
 });
 
@@ -46,6 +41,9 @@ gulp.task("images", function () {
         .pipe(gulp.dest("./build/images"))
 });
 
-gulp.task("clean", function () {
-    return del.sync("build");
+gulp.task("clean", function (done) {
+    del.sync("build");
+    return done();
 })
+
+gulp.task("dist", gulp.series("clean", "html", "css", "js", "images"));
