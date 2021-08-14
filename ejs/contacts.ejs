@@ -18,7 +18,9 @@
         <section id="content" class="common">
             <div class="wrapper1 wrapper1__inset3">
                 <div class="heading1 fadeIn">
-                    <h2>Clínica Gynébe do Porto</h2>
+                    <h2>
+                        <%= contacts.title %>
+                    </h2>
                 </div>
                 <div id="map"></div>
                 <address class="our-address fadeIn">
@@ -34,15 +36,45 @@
                     </span>
                 </address>
                 <div class="schedule fade-in">
-                    <h3>Horario:</h3>
+                    <h3>
+                        <%= contacts.schedule.title %>
+                    </h3>
                     <ul>
-                        <li><strong>Segunda-feira:</strong> 9h-14h</li>
-                        <li><strong>Terça-feira:</strong> 9h-20h</li>
-                        <li><strong>Quarta-feira:</strong> 14h-20h</li>
-                        <li><strong>Quinta-feira:</strong> Encerrado (exceto para Urgências)</li>
-                        <li><strong>Sexta-feira:</strong> 09h-20h</li>
-                        <li><strong>Sábado:</strong> Encerrado (exceto para Urgências)</li>
-                        <li><strong>Domingo:</strong> Encerrado</li>
+                        <li><strong>
+                                <%= contacts.schedule.monday %>
+                            </strong>
+                            <%= contacts.schedule.mondayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.tuesday %>
+                            </strong>
+                            <%= contacts.schedule.tuesdayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.wednesday %>
+                            </strong>
+                            <%= contacts.schedule.wednesdayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.thursday %>
+                            </strong>
+                            <%= contacts.schedule.thursdayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.friday %>
+                            </strong>
+                            <%= contacts.schedule.fridayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.saturday %>
+                            </strong>
+                            <%= contacts.schedule.saturdayTime %>
+                        </li>
+                        <li><strong>
+                                <%= contacts.schedule.sunday %>
+                            </strong>
+                            <%= contacts.schedule.sundayTime %>
+                        </li>
                     </ul>
                 </div>
             </div>

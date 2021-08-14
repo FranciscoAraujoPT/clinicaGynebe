@@ -12,16 +12,30 @@
         </div>
         <nav>
             <ul>
-                <li class="fade-in"><a href="index.html">Início</a></li>
-                <li class="fade-in"><a href="specialties.html">Especialidades</a></li>
-                <li class="fade-in"><a href="agreements.html">Convenções</a></li>
-                <li class="fade-in"><a href="contacts.html">Contactos</a></li>
+                <li class="fade-in"><a href="index.html">
+                        <%= footer.index %>
+                    </a></li>
+                <li class="fade-in"><a href="specialties.html">
+                        <%= footer.specialties %> >
+                    </a></li>
+                <li class="fade-in"><a href="agreements.html">
+                        <%= footer.agreements %> >
+                    </a></li>
+                <li class="fade-in"><a href="contacts.html">
+                        <%= footer.contacts %>
+                    </a></li>
             </ul>
         </nav>
     </div>
     <div class="privacy-block fade-in">
-        <a href="index.html">Clínica Gynébe</a> &copy; <span id="copyright-year">2021</span>. <a
-            href="privacy.html">Política de
-            Privacidade </a><br><a>Design by Francisco Araújo</a>
+        <a href="index.html">
+            <%= footer.privacy.index %>
+        </a> &copy; <span id="copyright-year">
+            <%= footer.privacy.copyrightYear %>
+        </span>. <a href="privacy.html">
+            <%= footer.privacy.policy %>
+        </a><br><a href="https://github.com/FranciscoAraujoPT">
+            <%= footer.privacy.god %>
+        </a>
     </div>
 </footer>

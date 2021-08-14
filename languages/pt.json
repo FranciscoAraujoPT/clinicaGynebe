@@ -1,0 +1,321 @@
+{
+    "footer": {
+        "index": "Início",
+        "specialties": "Especialidades",
+        "agreements": "Convenções",
+        "contacts": "Contactos",
+        "privacy": {
+            "index": "Clínica Gynébe",
+            "copyrightYear": "2021",
+            "policy": "Política de Privacidade",
+            "god": "Design by Francisco Araújo"
+        }
+    },
+    "head": {},
+    "header": {
+        "logo": {
+            "second": "Clínica",
+            "first": "Gynébe"
+        },
+        "index": {
+            "title": "Início",
+            "mission": "A nossa Missão",
+            "team": "A Equipa",
+            "bestCare": "Os Melhores Cuidados de Saúde"
+        },
+        "specialties": {
+            "title": "Especialidades",
+            "gyne": "Ginecologia/Obstetrícia",
+            "pedo": "Pediatria",
+            "endo": "Endocrinologia",
+            "psi": "Psicologia",
+            "nut": "Nutrição"
+        },
+        "agreements": {
+            "title": "Convenções",
+            "advanceCare": "AdvanceCare",
+            "allianz": "Allianz",
+            "futureHealthcare": "Future Healthcare",
+            "medicare": "Medicare",
+            "medis": "Médis",
+            "rna": "RNA",
+            "samsSib": "SAMS/SIB"
+        },
+        "gallery": {
+            "title": "Clínicas",
+            "porto": "Clínica do Porto",
+            "santoTirso": "Clínica de Santo Tirso"
+        },
+        "contacts": {
+            "title": "Contactos",
+            "porto": "Clínica do Porto",
+            "santoTirso": "Clínica de Santo Tirso"
+        },
+        "phone": {
+            "title": "Ligue-nos:",
+            "landline": "225 432 135",
+            "number": "915 424 413",
+            "text": "Atendimento telefónico",
+            "text2": "para emergência 24h"
+        }
+    },
+    "ac": {},
+    "agreements": {
+        "title": "Convenções e Acordos",
+        "advanceCare": {
+            "title": "AdvanceCare - Gestão de Serviços de Saúde, S.A.",
+            "text": "Visite o ",
+            "link": "site AdvanceCare",
+            "text2": "Seguros de saúde das seguintes seguradoras:"
+        },
+        "allianz": {
+            "title": "Allianz Saúde",
+            "text": "Visite o ",
+            "link": "site Allianz"
+        },
+        "futureHealthcare": {
+            "title": "Future Healthcare",
+            "text": "Visite o ",
+            "link": "site Future Healthcare",
+            "text2": "Seguros de saúde das seguintes seguradoras:"
+        },
+        "medicare": {
+            "title": "Medicare",
+            "text": "Visite o ",
+            "link": "site Medicare"
+        },
+        "medis": {
+            "title": "Médis - Companhia Portuguesa de Seguros de Saúde, S.A.",
+            "text": "Visite o ",
+            "link": "site Médis",
+            "text2": "Seguros de saúde das seguintes seguradoras:"
+        },
+        "rna": {
+            "title": "RNA Medical",
+            "text": "Visite o ",
+            "link": "site RNA Medical"
+        },
+        "samsSib": {
+            "title": "SAMS-SIB",
+            "text": "Visite o ",
+            "link": "site SAMS-SIB"
+        },
+        "ami": {
+            "title": "Assistência Médica Internacional",
+            "text": "Visite o ",
+            "link": "site AMI"
+        }
+    },
+    "contactsSantoTirso": {
+        "title": "Clinica Gynébe de Santo Tirso",
+        "schedule": {
+            "title": "Horario:",
+            "monday": "Segunda-feira:",
+            "mondayTime": " 14h-20h",
+            "tuesday": "Terça-feira:",
+            "tuesdayTime": " Encerrado (exceto para atendimento telefónico)",
+            "wednesday": "Quarta-feira:",
+            "wednesdayTime": " 09h-14h",
+            "thursday": "Quinta-feira:",
+            "thursdayTime": " Encerrado (exceto para atendimento telefónico)",
+            "friday": "Sexta-feira:",
+            "fridayTime": " Encerrado (exceto para atendimento telefónico)",
+            "saturday": "Sábado:",
+            "saturdayTime": " Encerrado (exceto para atendimento telefónico)",
+            "sunday": "Domingo:",
+            "sundayTime": " Encerrado"
+        }
+    },
+    "contacts": {
+        "title": "Clínica Gynébe do Porto",
+        "schedule": {
+            "title": "Horario:",
+            "monday": "Segunda-feira:",
+            "mondayTime": " 9h-14h",
+            "tuesday": "Terça-feira:",
+            "tuesdayTime": " 9h-20h",
+            "wednesday": "Quarta-feira:",
+            "wednesdayTime": " 14h-20h",
+            "thursday": "Quinta-feira:",
+            "thursdayTime": " Encerrado (exceto para Urgências)",
+            "friday": "Sexta-feira:",
+            "fridayTime": " 09h-20h",
+            "saturday": "Sábado:",
+            "saturdayTime": " Encerrado (exceto para Urgências)",
+            "sunday": "Domingo:",
+            "sundayTime": " Encerrado"
+        }
+    },
+    "ds": [],
+    "gallery": {
+        "title": "Clínica Gynébe do Porto",
+        "text": "A Clínica Gynébe nasceu em 2003 no coração da cidade do Porto como um espaço dedicado essencialmente à saúde da mulher e da criança. Em 2005 abriu uma segunda unidade em Santo Tirso. Ambas as clínicas oferecem uma localização central com excelente acessibilidade pedonal, por meio de transportes públicos ou viaturas próprias, dada a facilidade de vários parques próximos.",
+        "images": {
+            "text": "Sala de",
+            "waitRoom": "Espera",
+            "area": "Área Interna",
+            "ped": "Pediatria",
+            "exams": "Exames",
+            "gyne": "Ginecologia e Obstetrícia",
+            "copa": "Copa",
+            "babyChangingRoom": "Fraldário/",
+            "toilet": "Quarto de Banho",
+            "sterilization": "Esterilização"
+        }
+    },
+    "galleryST": {
+        "title": "Clínica Gynébe de Santo Tirso",
+        "text": "A Clínica Gynébe nasceu em 2003 no coração da cidade do Porto como um espaço dedicado essencialmente à saúde da mulher e da criança. Em 2005 abriu uma segunda unidade em Santo Tirso. Ambas as clínicas oferecem uma localização central com excelente acessibilidade pedonal, por meio de transportes públicos ou viaturas próprias, dada a facilidade de vários parques próximos.",
+        "images": {
+            "text": "Sala de",
+            "waitRoom": "Espera",
+            "logoText": "Logo da",
+            "logo": "Clínica Gynébe",
+            "gyne": "Ginecologia e Obstetrícia"
+        }
+    },
+    "gv": [],
+    "index": {
+        "teaserFirst": "Paixão pela Vida",
+        "teaserSecond": "inspirada por si",
+        "mission": {
+            "title": "A nossa Missão",
+            "first": "Na Clínica Gynébe todos os colaboradores estão vocacionados e orientados para o servir melhor através de uma ampla oferta de serviços dirigidos à mulher, à criança e à família.",
+            "second": "Em suma, uma organização especialmente pensada para a prevenção e combate à doença, bem como para a promoção da qualidade de vida, em termos físicos e psíquicos, e sempre com respeito pela sensibilidade emocional e individualidade humana."
+        },
+        "team": {
+            "title": "A Equipa",
+            "mca": {
+                "name": "Dra. Manuela Calado Araújo",
+                "specialty": "Ginecologista/Obstetra"
+            },
+            "gv": {
+                "name": "Dra. Gabriela Vasconcellos",
+                "specialty": "Pediatra/Neonatologista"
+            },
+            "ac": {
+                "name": "Dra. Ana Carriço",
+                "specialty": "Cardiologista Pedriátrica"
+            },
+            "lc": {
+                "name": "Dra. Leonilde Coelho",
+                "specialty": "Endocrinologista"
+            },
+            "ds": {
+                "name": "Dra. Dília Soares",
+                "specialty": "Nutricionista"
+            },
+            "mb": {
+                "name": "Dra. Marta Baltar",
+                "specialty": "Psicóloga/Psicoterapeuta"
+            },
+            "fg": {
+                "name": "Filipa Gomes",
+                "specialty": "Assistente Operacional"
+            },
+            "fa": {
+                "name": "Francisco Araújo",
+                "specialty": "Assistente Informático"
+            }
+        },
+        "bestCare": {
+            "title": "Os Melhores Cuidados de Saúde",
+            "first": "Atendimento personalizado",
+            "seconde": "Consultas em português, inglês e espanhol",
+            "third": "Espaço infantil",
+            "fourth": "Forte componente humana de todos os profissionais",
+            "fifth": "Profissionais com elevada experiência clínica",
+            "sixth": "Fácil acesso para pessoas de mobilidade reduzida",
+            "seventh": "Respeito pela individualidade e sensibilidade pessoal",
+            "eighth": "Diferenciação técnica dos serviços prestados",
+            "ninth": "Localização em pelo coração da cidade do Porto",
+            "tenth": "Amplos serviços na saúde da mulher, da criança e da família",
+            "eleventh": "Reconhecimento dos serviços prestados pelos nossos utentes",
+            "twelfth": "Acordos e Parcerias com a maioria das convenções"
+        }
+    },
+    "lc": [],
+    "mb": [],
+    "mca": [],
+    "privacy": {
+        "title": "Política Privacidade"
+    },
+    "specialties": {
+        "title": "Os nossos serviços",
+        "text": "A Clínica Gynébe é caracterizada pela qualidade do corpo clínico, diferenciação técnica dos serviços prestados e a forte componente humana e empenho de todos os profissionais na satisfação e bem estar do doente. A Clínica Gynébe pauta-se pelo seu dinamismo e constante inovação e actualização de conhecimentos científicos, aliada à disponibilidade de tecnologia avançada, adaptada à prestação de cuidados de saúde personalizados e diferenciados. Nesta clínica há uma estreita inter-relação com outras áreas clínicas e especialidades médicas, permitindo sempre que necessário, consulta multidisciplinar, com estudo e tratamento das várias patologias do doente, totalmente integradas.",
+        "gyne": {
+            "title": "Ginecologia",
+            "text": "O seguimento ginecológico regular desde a adolescência até a menopausa é essencial na prevenção e tratamento de doenças ginecológicas e de transmissão sexual, bem como no rastreio do cancro ginecológico.",
+            "text2": "A Ginecologia engloba:",
+            "list1": "Planeamento Familiar/Contraceção (incluindo introdução e remoção de DIU e Implante)",
+            "list2": "Sexualidade",
+            "list3": "Hemorragias Uterinas",
+            "list4": "Miomas Uterinos",
+            "list5": "Endometriose",
+            "list6": "Estudo da Infertilidade do Casal",
+            "list7": "Menopausa",
+            "list8": "Ecografia Ginecológica 3D/4D",
+            "list9": "Pequena Cirurgia",
+            "list10": "Cirurgias Ginecológicas"
+        },
+        "obs": {
+            "title": "Obstetrícia",
+            "text": "A Obstetrícia faz o acompanhamento desde da pré-concepção ao pós-parto, em situações normais e com patologia.",
+            "text2": "A Obstetrícia engloba uma vasta área de cuidados, tais como:",
+            "list1": "Aconselhamento Pré-concepcional",
+            "list2": "Vigilância de Gravidez Normal e de Risco",
+            "list3": "Ecografia obstétrica 1ºTrimestre diferenciada",
+            "list4": "Rastreio de Trissomias",
+            "list5": "Rastreio de Pré-Eclâmpsia e Parto Pré-termo",
+            "list6": "Rastreio de Restrição de Crescimento Fetal",
+            "list7": "Ecografias obstétricas 3D/4D",
+            "list8": "Cardiotocografia",
+            "list9": "Acompanhamento durante o Parto Normal, Instrumentado e Cirúrgico"
+        },
+        "ped": {
+            "title": "Pediatria",
+            "text": "A pediatria acompanha o recém-nascido desde o parto até ao início da vida adulta. O seguimento regular em Pediatria tem como objetivo o crescimento saudável e promoção do bem-estar físico e psíquico das crianças e adolescentes, actuando com carácter preventivo e curativo.",
+            "text2": "A consulta de Pediatria engloba uma vasta área, tal como:",
+            "list1": "Crescimento e desenvolvimento saudável e adequado",
+            "list2": "Aconselhamento sobre alimentação",
+            "list3": "Aconselhamento sobre vacinação",
+            "list4": "Diagnóstico e decisão terapêutica das situações com patologia",
+            "list5": "Identificação de casos com necessidade de intervenção multidisciplinar com outras áreas clínicas"
+        },
+        "endo": {
+            "title": "Endocrinologia",
+            "text": "A endocrinologia é a especialidade médica que se dedica ao diagnóstico e tratamento das perturbações do sistema endócrino, composto pelas glândulas produtoras de hormonas responsáveis pelo desenvolvimento, reprodução e metabolismo normais.",
+            "text2": "A tiróide, o pâncreas, a hipófise, as suprarrenais, as paratiróides, os ovários e os testículos, são as glândulas endócrinas mais conhecidas, no entanto o osso e o tecido adiposo têm também um papel importante na produção de hormonas.",
+            "text3": "As situações que mais levam o paciente a consulta são:",
+            "list1": "Diabetes",
+            "list2": "Obesidade",
+            "list3": "Doença metabólica",
+            "list4": "Patologia da tiróide (hipertiroidismo, hipotiroidismo, nódulos, cancro)",
+            "list5": "Distúrbios do crescimento e da puberdade",
+            "list6": "Hirsutismo (pelo em excesso)",
+            "list7": "Infertilidade"
+        },
+        "psy": {
+            "title": "Psicologia",
+            "text": "Nesta consulta, destacam-se:",
+            "text2": "A Avaliação psicológica",
+            "text3": "A Intervenção Psicoterapêutica de crianças, jovens e adultos em situações de:",
+            "list1": "Ansiedade/ou Depressão",
+            "list2": "Distúrbios do Sono",
+            "list3": "Problemas de Aprendizagem",
+            "list4": "Dificuldade no Ensino Superior",
+            "list5": "Problemas Laborais",
+            "list6": "Problemas Conjugais",
+            "list7": "Depressão Pós-Parto",
+            "list8": "Problemas de Infertilidade",
+            "list9": "Dificuldades Parentais",
+            "list10": "Separação e Divórcio"
+        },
+        "nut": {
+            "title": "Nutrição",
+            "text": "Na consulta de nutrição efectua-se a avaliação das necessidades nutricionais e o planeamento alimentar personalizado a cada situação e objectivo específico.",
+            "text2": "Aprender a ter hábitos alimentares saudáveis, além da perda de peso, visa uma melhoria da qualidade de vida física e emocional, bem como das mais diversas patologias.",
+            "text3": "Os nutricionistas trabalham em estreita relação com os outros profissionais de saúde e em especial com a endocrinologia."
+        }
+    }
+}

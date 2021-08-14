@@ -8,7 +8,7 @@ const imagemin = require("gulp-imagemin");
 const gulpIf = require("gulp-if");
 const concat = require("gulp-concat");
 const rename = require("gulp-rename");
-const replace = require('gulp-replace');
+const replace = require("gulp-replace");
 const del = require("del");
 
 gulp.task("html", function () {

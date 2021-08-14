@@ -2,8 +2,12 @@
     <div id="logo">
         <h1 class="fadeInDown">
             <a href="index.html">
-                <span class="second">Clínica</span>
-                <span class="first">Gynébe</span>
+                <span class="second">
+                    <%= header.logo.second %>
+                </span>
+                <span class="first">
+                    <%= header.logo.first %>
+                </span>
             </a>
         </h1>
     </div>
@@ -18,45 +22,64 @@
         </div>
         <ul class="sf-menu">
             <li class="top">
-                <a href="index.html">Início</a>
+                <a href="index.html">
+                    <%= header.index.title %>
+                </a>
                 <div class="dropdown dropdownIndex">
                     <ul>
                         <li>
-                            <i class="fas fa-user-md"></i><a href="index.html#wrapper2">A Nossa Missão</a>
+                            <i class="fas fa-user-md"></i><a href="index.html#wrapper2">
+                                <%= header.index.mission %>
+                            </a>
                         </li>
                         <li>
-                            <i class="fas fa-user-friends"></i><a href="index.html#wrapper3">A Equipa</a>
+                            <i class="fas fa-user-friends"></i><a href="index.html#wrapper3">
+                                <%= header.index.team %>
+                            </a>
                         </li>
                         <li>
-                            <i class="fas fa-hospital-user"></i><a href="index.html#wrapper4">Os Melhores Cuidados de
-                                Saúde</a>
+                            <i class="fas fa-hospital-user"></i><a href="index.html#wrapper4">
+                                <%= header.index.bestCare %>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="specialties.html">Especialidades</a>
+                <a href="specialties.html">
+                    <%= header.specialties.title %>
+                </a>
                 <div class="dropdown dropdownSpecialties">
                     <ul>
                         <li>
                             <i class="fas fa-female"></i>
-                            <a href="specialties.html#gyne">Ginecologia/Obstetrícia</a>
+                            <a href="specialties.html#gyne">
+                                <%= header.specialties.gyne %>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-baby"></i>
-                            <a href="specialties.html#ped">Pediatria</a>
+                            <a href="specialties.html#ped">
+                                <%= header.specialties.pedo %>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-pills"></i>
-                            <a href="specialties.html#endo">Endocrinologia</a>
+                            <a href="specialties.html#endo">
+                                <%= header.specialties.endo %>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-comment-medical"></i>
-                            <a href="specialties.html#psy">Psicologia</a>
+                            <a href="specialties.html#psy">
+                                <%= header.specialties.psi %>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-utensils"></i>
-                            <a href="specialties.html#nut">Nutrição</a>
+                            <a href="specialties.html#nut">
+                                <%= header.specialties.nut %>
+                            </a>
                         </li>
                         <!-- <li>
                             <i class="fas fa-spa"></i>
@@ -66,52 +89,80 @@
                 </div>
             </li>
             <li class="top">
-                <a href="agreements.html">Convenções</a>
+                <a href="agreements.html">
+                    <%= header.agreements.title %>
+                </a>
                 <div class="dropdown dropdownAgreements">
                     <ul>
                         <li><img src="../images/advanceCare_logo.png" alt="Advancecare Logo">
-                            <a href="agreements.html#advanceCare">AdvanceCare</a>
+                            <a href="agreements.html#advanceCare">
+                                <%= header.agreements.advanceCare %>
+                            </a>
                         </li>
                         <li><img src="../images/allianz_logo.png" alt="Allianz Logo">
-                            <a href="agreements.html#allianz">Allianz</a>
+                            <a href="agreements.html#allianz">
+                                <%= header.agreements.allianz %>
+                            </a>
                         </li>
                         <li><img src="../images/fh_logo.png" alt="Future Healthcare Logo">
-                            <a href="agreements.html#furureHealth">Future Healthcare</a>
+                            <a href="agreements.html#furureHealth">
+                                <%= header.agreements.futureHealthcare %>
+                            </a>
                         </li>
                         <li><img src="../images/medicare_logo.png" alt="Medicare Logo">
-                            <a href="agreements.html#medicare">Medicare</a>
+                            <a href="agreements.html#medicare">
+                                <%= header.agreements.medicare %>
+                            </a>
                         </li>
                         <li><img src="../images/medis_logo.png" alt="Médis Logo">
-                            <a href="agreements.html#medis">Médis</a>
+                            <a href="agreements.html#medis">
+                                <%= header.agreements.medis %>
+                            </a>
                         </li>
                         <li><img src="../images/rna_logo.png" alt="RNA Logo">
-                            <a href="agreements.html#rna">RNA</a>
+                            <a href="agreements.html#rna">
+                                <%= header.agreements.rna %>
+                            </a>
                         </li>
                         <li><img src="../images/sib_logo.png" alt="SAMS/SIB Logo">
-                            <a href="agreements.html#samsSib">SAMS/SIB</a>
+                            <a href="agreements.html#samsSib">
+                                <%= header.agreements.samsSib %>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="gallery.html">Clínicas</a>
+                <a href="gallery.html">
+                    <%= header.gallery.title %>
+                </a>
                 <div class="dropdown dropdownGallery">
                     <ul>
-                        <li><i class="fas fa-images"></i><a href="gallery.html">Clínica do Porto</a></li>
-                        <li><i class="far fa-images"></i><a href="galleryST.html">Clínica de Santo Tirso</a>
+                        <li><i class="fas fa-images"></i><a href="gallery.html">
+                                <%= header.gallery.porto %>
+                            </a></li>
+                        <li><i class="far fa-images"></i><a href="galleryST.html">
+                                <%= header.gallery.santoTirso %>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="top">
-                <a href="contacts.html">Contactos</a>
+                <a href="contacts.html">
+                    <%= header.contacts.title %>
+                </a>
                 <div class="dropdown dropdownContacts">
                     <ul>
                         <li><i class="fas fa-address-book"></i>
-                            <a href="contacts.html">Clínica do Porto</a>
+                            <a href="contacts.html">
+                                <%= header.contacts.porto %>
+                            </a>
                         </li>
                         <li><i class="far fa-address-book"></i>
-                            <a href="contacts_santo_tirso.html">Clínica de Santo Tirso</a>
+                            <a href="contacts_santo_tirso.html">
+                                <%= header.contacts.santoTirso %>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -128,13 +179,24 @@
         </ul>
     </nav>
     <div class="phone">
-        <span class="first">Ligue-nos:</span>
+        <span class="first">
+            <%= header.phone.title %>
+        </span>
         <a href="tel:00351225432135">
-            <address>225 432 135</address>
+            <address>
+                <%= header.phone.landline %>
+            </address>
         </a>
         <a href="tel:00351915424413">
-            <address>915 424 413</address>
+            <address>
+                <%= header.phone.number %>
+            </address>
         </a>
-        <p>Atendimento telefónico<br>para emergência 24h</p>
+        <p>
+            <%= header.phone.text %>
+        </p>
+        <p>
+            <%= header.phone.text2 %>
+        </p>
     </div>
 </header>
