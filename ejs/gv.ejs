@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
+    <title>
+        <%= head.gv %>
+    </title>
     <%- include("parcials/head") %>
 </head>
 
@@ -17,35 +20,62 @@
             <div class="overlay"></div>
             <div class="wrapper7">
                 <div class="heading1 fade-in">
-                    <h2>Dra. Gabriela Vasconcellos</h2>
-                    <h3><strong>Especialidade:</strong> Pediatra-Neonatologista</h3>
+                    <h2>
+                        <%= gv.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= gv.specialty %>
+                        </strong>
+                        <%= gv.specialtyItems %>
+                    </h3>
                 </div>
                 <div class="box8-wrapper1">
                     <div class="box8 fade-in">
-                        <img src="../images/gv.jpg" alt="">
+                        <img src="<%= en %>../images/gv.jpg" alt="">
                         <div class="doctorsDescription language">
                             <i class="fas fa-globe-europe"></i>
-                            <p><strong>Idiomas:</strong> Português, Inglês e Francês</p>
+                            <p><strong>
+                                    <%= gv.languages %>
+                                </strong>
+                                <%= gv.languagesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription sick">
                             <i class="fas fa-clipboard-list"></i>
-                            <p><strong>Doenças:</strong> Icterícia Neonatal</p>
+                            <p><strong>
+                                    <%= gv.illnesses %>
+                                </strong>
+                                <%= gv.illnessesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription apoint">
                             <i class="fas fa-stethoscope"></i>
-                            <p><strong>Consultas:</strong> Consulta Neonatologia - Consulta Pediatria - Consulta
-                                Pré-Natal com Pediatra - Teleconsulta Pediatria</p>
+                            <p><strong>
+                                    <%= gv.appointment %>
+                                </strong>
+                                <%= gv.appointmentItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription areas">
                             <i class="fas fa-file-medical-alt"></i>
-                            <p><strong>Áreas de Diferenciação:</strong> Neonatologia</p>
+                            <p><strong>
+                                    <%= gv.areasOfDifferentiation %>
+                                </strong>
+                                <%= gv.areasOfDifferentiationItems %>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="schedule fade-in">
-                    <h3>Horario:</h3>
+                    <h3>
+                        <%= gv.schecule.title %>
+                    </h3>
                     <ul>
-                        <li><strong>Terça-feira:</strong> 15h30-18h30 (Clínica do Porto)</li>
+                        <li><strong>
+                                <%= gv.schecule.tuesday %>
+                            </strong>
+                            <%= gv.schecule.tuesdayItems %>
+                        </li>
                     </ul>
                 </div>
                 <div class="box9-wrapper1">
@@ -53,62 +83,108 @@
                         <div class="box9-background"></div>
                         <div class="bar-holder">
                             <div class="chevronDown"></div>
-                            <p>Atividade Clínica</p>
+                            <p>
+                                <%= gv.clinicalActivity.title %>
+                            </p>
                         </div>
                         <ul class="tab-holder">
-                            <li class="activity">Atividade Clínica</li>
-                            <li class="formation">Formação Académica</li>
-                            <li class="science">Atividade Científica</li>
-                            <li class="sociaty">Sociedades Científicas</li>
+                            <li class="activity">
+                                <%= gv.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= gv.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= gv.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= gv.scientificSocieties.title %>
+                            </li>
                         </ul>
                         <div class="activity">
-                            <h4>Atividade Clínica</h4>
+                            <h4>
+                                <%= gv.clinicalActivity.title %>
+                            </h4>
                         </div>
                         <div class="formation">
-                            <h4>Formação Académica</h4>
+                            <h4>
+                                <%= gv.academicEducation.title %>
+                            </h4>
                         </div>
                         <div class="science">
-                            <h4>Atividade Científica</h4>
+                            <h4>
+                                <%= gv.scientificActivity.title %>
+                            </h4>
                         </div>
                         <div class="sociaty">
-                            <h4>Sociedades Científicas</h4>
+                            <h4>
+                                <%= gv.scientificSocieties.title %>
+                            </h4>
                         </div>
                         <ul class="text-activity open">
-                            <li>Desde a titulação em Pediatria Médica que exerce actividade no sector privado,
-                                nomeadamente em clinicas, particularmente da área de apoio materno-infantil.
+                            <li>
+                                <%= gv.clinicalActivity.l1 %>
                             </li>
-                            <li>Desde 2010 - Coordenação da Neonatologia do Hospital CUF Porto</li>
-                            <li>2008 - Coordenadora do Sector de Perinatologia da UAG-Mulher e da Criança do H.S.João -
-                                Porto</li>
-                            <li>2007 - Grau de Consultor da Carreira Médica Hospitalar</li>
-                            <li>2006 - Grau de Assistente Hospitalar Graduada</li>
-                            <li>Desde 2000 - Chefia de equipa de urgência de Neonatologia no mesmo Serviço</li>
-                            <li>1997- Provimento para lugar de Assistente Hospitalar de Pediatria Médica no H.S.João -
-                                Porto</li>
-                            <li>1996-1997 - Ciclo de Estudos Especiais de Neonatologia</li>
-                            <li>1992 - Estágio de Pediatria no Queen Elizabeth Hospital for Children em Londres -
-                                Inglaterra</li>
-                            <li>1991-1995 - Internato Complementar de Pediatria Médica no Hospital de S. João - Porto
+                            <li>
+                                <%= gv.clinicalActivity.l2 %>
                             </li>
-                            <li>1990 - Internato Complementar de Clinica Geral e Medicina Familiar</li>
-                            <li>1988-1989 - Internato Geral no Hospital de V. N. Famalicão</li>
+                            <li>
+                                <%= gv.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l6 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l7 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l8 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l9 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l10 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l11 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l12 %>
+                            </li>
                         </ul>
                         <ul class="text-formation">
-                            <li>1987 - Intercâmbio hospitalar em Cirurgia Geral - Hospital Distrital de Torino - Itália
+                            <li>
+                                <%= gv.academicEducation.l1 %>
                             </li>
-                            <li>1986 -Intercâmbio hospitalar em Ginecologia - Hospital Universitário de Mainz - Alemanha
+                            <li>
+                                <%= gv.academicEducation.l2 %>
                             </li>
-                            <li>1981-1987 - Licenciatura em Medicina pela Faculdade de Medicina da Universidade do Porto
+                            <li>
+                                <%= gv.academicEducation.l3 %>
                             </li>
                         </ul>
                         <ul class="text-science">
-                            <li>Vários trabalhos de investigação, comunicações e publicações de âmbito nacional e
-                                internacional.</li>
+                            <li>
+                                <%= gv.scientificActivity.l1 %>
+                            </li>
                         </ul>
                         <ul class="text-sociaty">
-                            <li>Sociedade Portuguesa de Pediatria</li>
-                            <li>Sociedade Portuguesa de Neonatologia</li>
-                            <li>Sociedade Portuguesa de Doenças Metabólicas</li>
+                            <li>
+                                <%= gv.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= gv.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= gv.scientificSocieties.l3 %>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -118,11 +194,12 @@
                           FOOTER
 =========================================================-->
         <%- include("parcials/footer") %>
-            <script src="../js/app.js"></script>
-            <script src="../js/intersectionObservers.js"></script>
-            <script src="../js/headerNavbar.js"></script>
-            <script src="../js/headerNavbarButtons.js"></script>
-            <script src="../js/cv.js"></script>
+            <script src="<%= en %>../js/app.js"></script>
+            <script src="<%= en %>../js/intersectionObservers.js"></script>
+            <script src="<%= en %>../js/headerNavbar.js"></script>
+            <script src="<%= en %>../js/headerNavbarButtons.js"></script>
+            <script src="<%= en %>../js/cv.js"></script>
+            <script src="<%= en %>../js/languange.js"></script>
 </body>
 
 </html>

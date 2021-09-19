@@ -1,4 +1,5 @@
 {
+    "en": "",
     "footer": {
         "index": "Início",
         "specialties": "Especialidades",
@@ -11,7 +12,22 @@
             "god": "Design by Francisco Araújo"
         }
     },
-    "head": {},
+    "head": {
+        "ac": "Dra. Ana Carriço",
+        "agreements": "Conveções",
+        "contacts_santo_tirso": "Contactos",
+        "contacts": "Contactos",
+        "ds": "Dra. Dília Soares",
+        "gallery": "Galeria do Porto",
+        "galleryST": "Galeria de S.Tirso",
+        "gv": "Dra. Gabriela Vasconcellos",
+        "index": "Início",
+        "lc": "Dra. Leonilde Coelho",
+        "mb": "Dra. Marta Baltar",
+        "mca": "Dra. Manuela Calado Araújo",
+        "privacy": "Política de Privacidade",
+        "specialties": "Especialidades"
+    },
     "header": {
         "logo": {
             "second": "Clínica",
@@ -59,7 +75,40 @@
             "text2": "para emergência 24h"
         }
     },
-    "ac": {},
+    "ac": {
+        "name": "Dra. Ana Carriço",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Cardiologia Pediátrica",
+        "languages": "Idiomas:",
+        "languagesItems": " Português e Inglês",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Insuficiência cardíaca",
+        "appointment": "Exames:",
+        "appointmentItems": " Ecocardiografia Fetal e Eco-Doppler Cardíaco Fetal",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Medicina fetal e Ecocardiografia",
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "Cardiologista pediátrica no Hospital da Luz Arrábida",
+            "l2": "Desde 2008 - Assistente Hospitalar no Hospital de Vila Nova de Gaia",
+            "l3": "Desde 2005 - Cardiologista pediátrica na Clínica Gynébe do Porto",
+            "l4": "2004-2008 - Assistente Hospitalar Eventual no Hospital de São João, Porto",
+            "l5": "1999-2004 - Internato Complementar no Hospital de São João, Porto"
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "2004 - Grau de Especialista em Cardiologia Pediátrica",
+            "l2": "1996 - Licenciatura em Medicina no Instituto de Ciências Biomédicas Abel Salazar, Porto"
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "É autora de vários artigos, apresentações e comunicações livres.",
+            "l2": "Pertenceu à comissão organizadora de várias reuniões científicas"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas"
+        }
+    },
     "agreements": {
         "title": "Convenções e Acordos",
         "advanceCare": {
@@ -146,7 +195,48 @@
             "sundayTime": " Encerrado"
         }
     },
-    "ds": [],
+    "ds": {
+        "name": "Dra. Dília Soares",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Nutrição",
+        "languages": "Idiomas:",
+        "languagesItems": " Português, Inglês e Espanhol",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Obesidade, Diabetes e Dislipidemias",
+        "appointment": "Consultas:",
+        "appointmentItems": " Consulta de Nutrição",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Nutrição na gravidez, Nutrição na diabetes gestacional e Nutrição nas doenças metabólicas",
+        "schecule": {
+            "title": "Horario:",
+            "friday": "Sexta-feira:",
+            "fridayItems": " 14h-16h (na segunda semana de cada mês na Clínica do Porto)"
+        },
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "Desde 2012 - Nutricionista na OBER",
+            "l2": "03/2012 a 02/2016 - Nutricionista na Santa Casa da Misericórdia de Baião",
+            "l3": "Desde 2011 - Consulta de Nutrição e Avaliação da Composição Corporal na Clínica Gynébe Porto",
+            "l4": "11/2003 a 08/2004 - Elaboração de um Plano de Actividades de Nutrição do Centro de Saúde de Paredes",
+            "l5": "Desde 2002 - Consulta de Nutrição Clínica e elaboração do Manual de Dietas Hospitalares no Hospital das Forças Armadas do Porto",
+            "l6": "10/1999 a 09/2000 - Estágio académico realizado na Unidade de Endocrinologia do Hospital de São João do Porto."
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "1995-2000 - Licenciatura em Ciências da Nutrição e Alimentação"
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "Presente em vários congressos e reuniões científicas."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas",
+            "l1": "Sociedade Portuguesa para o Estudo da Saúde Escolar.",
+            "l2": "Associação Portuguesa dos Nutricionistas.",
+            "l3": "Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo.",
+            "l4": "Associação Portuguesa de Nutrição Entérica e Parentérica."
+        }
+    },
     "gallery": {
         "title": "Clínica Gynébe do Porto",
         "text": "A Clínica Gynébe nasceu em 2003 no coração da cidade do Porto como um espaço dedicado essencialmente à saúde da mulher e da criança. Em 2005 abriu uma segunda unidade em Santo Tirso. Ambas as clínicas oferecem uma localização central com excelente acessibilidade pedonal, por meio de transportes públicos ou viaturas próprias, dada a facilidade de vários parques próximos.",
@@ -174,7 +264,55 @@
             "gyne": "Ginecologia e Obstetrícia"
         }
     },
-    "gv": [],
+    "gv": {
+        "name": "Dra. Gabriela Vasconcellos",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Pediatra-Neonatologista",
+        "languages": "Idiomas:",
+        "languagesItems": " Português, Inglês e Francês",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Icterícia Neonatal",
+        "appointment": "Consultas:",
+        "appointmentItems": " Consulta Neonatologia - Consulta Pediatria - Consulta Pré-Natal com Pediatra - Teleconsulta Pediatria",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Neonatologia",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Terça-feira:",
+            "tuesdayItems": " 15h30-18h30 (Clínica do Porto)"
+        },
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "Desde a titulação em Pediatria Médica que exerce actividade no sector privado, nomeadamente em clinicas, particularmente da área de apoio materno-infantil.",
+            "l2": "Desde 2010 - Coordenação da Neonatologia do Hospital CUF Porto",
+            "l3": "2008 - Coordenadora do Sector de Perinatologia da UAG-Mulher e da Criança do H.S.João - Porto",
+            "l4": "2007 - Grau de Consultor da Carreira Médica Hospitalar",
+            "l5": "2006 - Grau de Assistente Hospitalar Graduada",
+            "l6": "Desde 2000 - Chefia de equipa de urgência de Neonatologia no mesmo Serviço",
+            "l7": "1997- Provimento para lugar de Assistente Hospitalar de Pediatria Médica no H.S.João - Porto",
+            "l8": "1996-1997 - Ciclo de Estudos Especiais de Neonatologia",
+            "l9": "1992 - Estágio de Pediatria no Queen Elizabeth Hospital for Children em Londres - Inglaterra",
+            "l10": "1991-1995 - Internato Complementar de Pediatria Médica no Hospital de S. João - Porto",
+            "l11": "1990 - Internato Complementar de Clinica Geral e Medicina Familiar",
+            "l12": "1988-1989 - Internato Geral no Hospital de V. N. Famalicão"
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "1987 - Intercâmbio hospitalar em Cirurgia Geral - Hospital Distrital de Torino - Itália",
+            "l2": "1986 -Intercâmbio hospitalar em Ginecologia - Hospital Universitário de Mainz - Alemanha",
+            "l3": "1981-1987 - Licenciatura em Medicina pela Faculdade de Medicina da Universidade do Porto"
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "Vários trabalhos de investigação, comunicações e publicações de âmbito nacional e internacional."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas",
+            "l1": "Sociedade Portuguesa de Pediatria",
+            "l2": "Sociedade Portuguesa de Neonatologia",
+            "l3": "Sociedade Portuguesa de Doenças Metabólicas"
+        }
+    },
     "index": {
         "teaserFirst": "Paixão pela Vida",
         "teaserSecond": "inspirada por si",
@@ -221,7 +359,7 @@
         "bestCare": {
             "title": "Os Melhores Cuidados de Saúde",
             "first": "Atendimento personalizado",
-            "seconde": "Consultas em português, inglês e espanhol",
+            "second": "Consultas em português, inglês e espanhol",
             "third": "Espaço infantil",
             "fourth": "Forte componente humana de todos os profissionais",
             "fifth": "Profissionais com elevada experiência clínica",
@@ -234,11 +372,166 @@
             "twelfth": "Acordos e Parcerias com a maioria das convenções"
         }
     },
-    "lc": [],
-    "mb": [],
-    "mca": [],
+    "lc": {
+        "name": "Dra. Leonilde Coelho",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Endocrinologia",
+        "languages": "Idiomas:",
+        "languagesItems": " Português",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Diabetes, Patologia da Tiroide",
+        "appointment": "Consultas:",
+        "appointmentItems": " Consulta de Endocrinologia - Consulta de Diabetes - Consulta Multidisciplinar de Cirurgia Bariátrica",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Diabetes e Cirurgia Bariátrica",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Terça-feira:",
+            "tuesdayItems": " 11h30-13h00 (Clínica do Porto)"
+        },
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "Desde 2008 - Assistente Graduada de Endocrinologia.",
+            "l2": "Desde 2006 - Colaboração na Consulta Multidisciplinar de Diabetes e Patologia da Tiroide na Gravidez na Clínica Gynébe do Porto",
+            "l3": "Desde 2005 - Assistente Hospitalar de Endocrinologia no Hospital Militar do Porto, agora denominado Hospital das Forças Armadas - Pólo do Porto.",
+            "l4": "2001-2005 - Assistente Hospitalar de Endocrinologia no Hospital de S. Marcos – Braga.",
+            "l5": "2000 - Assistente Eventual de Endocrinologia no IPO-Porto.",
+            "l6": "Até 2000 - Internato complementar de Endocrinologia no Hospital de Sto. António."
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "1991 - Licenciatura em Medicina e Cirurgia pela Faculdade de Medicina da Universidade do Porto"
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "Participação em diversos cursos de valorização e actualização profissional e reuniões científicas nacionais e internacionais",
+            "l2": "Organização, colaboração e participação em vários congressos, jornadas e workshops"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas",
+            "l1": "Membro do Grupo de Estudos da Ge-TNE",
+            "l2": "Membro do grupo de estudos da Tiróide",
+            "l3": "Sócia da SPEDM – Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo"
+        }
+    },
+    "mb": {
+        "name": "Dra. Marta Baltar",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Psicologia",
+        "languages": "Idiomas:",
+        "languagesItems": " Português",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Ansiedade e/ou depressão, Distúrbios do sono, Problemas conjugais, Depressão pós-parto, Problemas de fertilidade, Dificuldades parentais, Separação e divórcio",
+        "appointment": "Consultas:",
+        "appointmentItems": " Consulta Psicologia Clínica - Teleconsulta Psicologia",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Intervenção psicoterapêutica em crianças, jovens e adultos",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Terça-feira:",
+            "tuesdayItems": " 10h-13h (Teleconsulta)",
+            "thursday": "Quinta-feira:",
+            "thursdayItems": " 16h-20h (Teleconsulta)",
+            "friday": "Sexta-feira:",
+            "fridayItems": " 16h-20h (Consulta presencial na Clínica do Porto)"
+        },
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "Exerce funções no domínio da Psicologia Clínica e da Saúde ao nível do diagnóstico psicométrico, acompanhamento psicopedagógico e psicoterapêutico de crianças, jovens e adultos no Gabinete de Psicologia Clínica.",
+            "l2": "Desde 2006, é responsável pela Consulta de Psicologia na Clínica Gynébe. No âmbito da Consulta de Psicologia, e em colaboração com os profissionais que trabalham nesta clínica, tem desenvolvido actividades de avaliação/intervenção psicológica de crianças, jovens e adultos em situação de risco devido a problemas emocionais e/ou de aprendizagem, perturbações da parentalidade, problemas de infertilidade no casal, depressão pós-parto, problemas sexuais e conjugais, separação e divórcio.",
+            "l3": "Exerceu funções no domínio da Psicologia Clínica Infantil e Juvenil ao nível do diagnóstico psicométrico, acompanhamento psicoterapêutico e psicopedagógico, na Clínica Médico-Cirúrgica do Marco de Canaveses (1989-1990).",
+            "l4": "Participou no Programa Interministerial de Promoção do Sucesso Educativo no Ensino Básico (Ministério da Educação), sendo as modalidades de actuação e sua avaliação no domínio da dinamização psicopedagógica da comunidade, dos agentes de ensino, dos pais e dos alunos (1988-1992).",
+            "l5": "Formação de Especialidade na área de Psicoterapia: 2o ano do Curso de Pós- Graduação pela Sociedade Portuguesa de Psicologia Clínica (1991-1993)."
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "Doutoramento em Psicologia pela Faculdade de Psicologia e de Ciências da Educação da Universidade do Porto, em 2005.",
+            "l2": "Mestrado em Psicopatologia e Psicologia Clínica pelo Instituto Superior de Psicologia Aplicada, em 1998.",
+            "l3": "Licenciatura em Psicologia pela Faculdade de Psicologia e de Ciências da Educação da Universidade de Lisboa."
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "Vários trabalhos de investigação, comunicações e publicações de âmbito nacional."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas"
+        }
+    },
+    "mca": {
+        "name": "Dra. Manuela Calado Araújo",
+        "specialty": "Especialidade:",
+        "specialtyItems": " Ginecologia-Obstetrícia",
+        "languages": "Idiomas:",
+        "languagesItems": " Português, Inglês e Espanhol",
+        "illnesses": "Doenças:",
+        "illnessesItems": " Doenças do aparelho genital feminino, Gravidez, Infertilidade, Menopausa",
+        "appointment": "Consultas:",
+        "appointmentItems": " Consulta Ginecologia - Consulta Obstetrícia - Teleconsulta Ginecologia",
+        "areasOfDifferentiation": "Áreas de Diferenciação:",
+        "areasOfDifferentiationItems": " Gravidez de Alto Risco, Sexualidade, Estudo de Infertilidade, Ecografia Ginecológica e Obstétrica, Cirurgias e Partos",
+        "schecule": {
+            "title": "Horario:",
+            "monday": "Segunda-feira:",
+            "mondayItems": " 14h40-19h (Clínica de S.Tirso)",
+            "tuesday": "Terça-feira:",
+            "tuesdayItems": " 10h-19h (Clínica do Porto)",
+            "wednesday": "Quarta-feira:",
+            "wednesdayItems": " 9h-12h40 (Clínica de S.Tirso)",
+            "friday": "Sexta-feira:",
+            "fridayItems": " 10h-19h (Clínica do Porto)"
+        },
+        "clinicalActivity": {
+            "title": "Atividade Clínica",
+            "l1": "2013 - Assistente Graduada em Obstetrícia (Grau de Consultor)",
+            "l2": "Desde 2003 - Diretora Clínica na Clinica Gynébe",
+            "l3": "2000-2006 - Assistente em Obstetrícia, responsável pela Cirurgia Laparoscópica e Consulta de Alto Risco, Hospital de Braga",
+            "l4": "Desde 2000 - Exerce actividade no sector privado, nomeadamente em Clínicas e vários Hospitais Privados.",
+            "l5": "1999-2000 - Assistente eventual de Ginecologia e de Obstetrícia, Hospital de Santo António, Porto",
+            "l6": "1992-1998 - Internato complementar, Hospital de Santo António, Porto",
+            "l7": "1990-1991 - Internato geral, Hospital de Santo António, Porto"
+        },
+        "academicEducation": {
+            "title": "Formação Académica",
+            "l1": "2004 - Certificado de competência em Ecografia Fetal, Fetal Medicine Foundation",
+            "l2": "1999 - Licenciatura em Medicina pelo ICBAS - Universidade do Porto"
+        },
+        "scientificActivity": {
+            "title": "Atividade Científica",
+            "l1": "2004 - Assistente Convidada de Obstetrícia, Faculdade de Medicina de Braga",
+            "l2": "1994-1996 - Assistente Convidada de Ginecologia e de Obstetrícia, Instituto de Ciências Biomédicas Abel Salazar (ICBAS)",
+            "l3": "Publicações em revistas científicas",
+            "l4": "Participações em trabalhos de investigação clinica e elaboração de protocolos",
+            "l5": "Co-orientação em tese de doutoramento"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades Científicas",
+            "l1": "Sociedade Portuguesa de Obstetrícia e Medicina Materno Fetal",
+            "l2": "Sociedade Portuguesa de Ginecologia",
+            "l3": "Sociedade Portuguesa da Medicina da Reprodução",
+            "l4": "Associação Portuguesa de Neurourologia e Uroginecologia"
+        }
+    },
     "privacy": {
-        "title": "Política Privacidade"
+        "title": "Política Privacidade",
+        "p1": "A sua privacidade é importante para nós. É política do Clínica Gynébe respeitar a sua privacidade em relação a qualquer informação sua que possamos recolher no site da ",
+        "name": "Clínica Gynébe",
+        "p2": ", e outros sites que possuímos e operamos.",
+        "p3": "Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.",
+        "p4": "Apenas retemos as informações recolhidas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemo-los dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificações não autorizados.",
+        "p5": "Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.",
+        "p6": "O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas ",
+        "pp": "políticas de privacidade.",
+        "p7": "Qualquer pessoa é livre de recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.",
+        "p8": "O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.",
+        "subtitle": "Compromisso do Usuário",
+        "p9": "O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Clínica Gynébe oferece no site e com caráter enunciativo, mas não limitativo:",
+        "p10": {
+            "l1": "A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;",
+            "l2": "B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, ou apostas online, jogos de sorte e azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;",
+            "l3": "C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) da Clínica Gynébe, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados."
+        },
+        "subtitle2": "Mais informações",
+        "p11": "Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo de que não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que usa no nosso site."
     },
     "specialties": {
         "title": "Os nossos serviços",

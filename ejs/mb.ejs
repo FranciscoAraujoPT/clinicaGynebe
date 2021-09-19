@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
+    <title>
+        <%= head.mb %>
+    </title>
     <%- include("parcials/head") %>
 </head>
 
@@ -17,40 +20,72 @@
             <div class="overlay"></div>
             <div class="wrapper7">
                 <div class="heading1 fade-in">
-                    <h2>Dra. Marta Baltar</h2>
-                    <h3><strong>Especialidade:</strong> Psicologia</h3>
+                    <h2>
+                        <%= mb.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= mb.specialty %>
+                        </strong>
+                        <%= mb.specialtyItems %>
+                    </h3>
                 </div>
                 <div class="box8-wrapper1">
                     <div class="box8 fade-in">
-                        <img src="../images/profile.png" alt="">
+                        <img src="<%= en %>../images/profile.png" alt="">
                         <div class="doctorsDescription language">
                             <i class="fas fa-globe-europe"></i>
-                            <p><strong>Idiomas:</strong> Português</p>
+                            <p><strong>
+                                    <%= mb.languages %>
+                                </strong>
+                                <%= mb.languagesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription sick">
                             <i class="fas fa-clipboard-list"></i>
-                            <p><strong>Doenças:</strong> Ansiedade e/ou depressão, Distúrbios do sono, Problemas
-                                conjugais, Depressão pós-parto, Problemas de fertilidade, Dificuldades parentais,
-                                Separação e divórcio</p>
+                            <p><strong>
+                                    <%= mb.illnesses %>
+                                </strong>
+                                <%= mb.illnessesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription apoint">
                             <i class="fas fa-stethoscope"></i>
-                            <p><strong>Consultas:</strong> Consulta Psicologia Clínica - Teleconsulta Psicologia
+                            <p><strong>
+                                    <%= mb.appointment %>
+                                </strong>
+                                <%= mb.appointmentItems %>
                             </p>
                         </div>
                         <div class="doctorsDescription areas">
                             <i class="fas fa-file-medical-alt"></i>
-                            <p><strong>Áreas de Diferenciação:</strong> Intervenção psicoterapêutica em crianças,
-                                jovens e adultos</p>
+                            <p><strong>
+                                    <%= mb.areasOfDifferentiation %>
+                                </strong>
+                                <%= mb.areasOfDifferentiationItems %>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="schedule fade-in">
-                    <h3>Horario:</h3>
+                    <h3>
+                        <%= mb.schecule.title %>
+                    </h3>
                     <ul>
-                        <li><strong>Terça-feira:</strong> 10h-13h (Teleconsulta)</li>
-                        <li><strong>Quinta-feira:</strong> 16h-20h (Teleconsulta)</li>
-                        <li><strong>Sexta-feira:</strong> 16h-20h (Consulta presencial na Clínica do Porto)</li>
+                        <li><strong>
+                                <%= mb.schecule.tuesday %>
+                            </strong>
+                            <%= mb.schecule.tuesdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mb.schecule.thursday %>
+                            </strong>
+                            <%= mb.schecule.thursdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mb.schecule.friday %>
+                            </strong>
+                            <%= mb.schecule.fridayItems %>
+                        </li>
                     </ul>
                 </div>
                 <div class="box9-wrapper1">
@@ -58,57 +93,76 @@
                         <div class="box9-background"></div>
                         <div class="bar-holder">
                             <div class="chevronDown"></div>
-                            <p>Atividade Clínica</p>
+                            <p>
+                                <%= mb.clinicalActivity.title %>
+                            </p>
                         </div>
                         <ul class="tab-holder">
-                            <li class="activity">Atividade Clínica</li>
-                            <li class="formation">Formação Académica</li>
-                            <li class="science">Atividade Científica</li>
-                            <li class="sociaty">Sociedades Científicas</li>
+                            <li class="activity">
+                                <%= mb.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= mb.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= mb.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= mb.scientificSocieties.title %>
+                            </li>
                         </ul>
                         <div class="activity">
-                            <h4>Atividade Clínica</h4>
+                            <h4>
+                                <%= mb.clinicalActivity.title %>
+                            </h4>
                         </div>
                         <div class="formation">
-                            <h4>Formação Académica</h4>
+                            <h4>
+                                <%= mb.academicEducation.title %>
+                            </h4>
                         </div>
                         <div class="science">
-                            <h4>Atividade Científica</h4>
+                            <h4>
+                                <%= mb.scientificActivity.title %>
+                            </h4>
                         </div>
                         <div class="sociaty">
-                            <h4>Sociedades Científicas</h4>
+                            <h4>
+                                <%= mb.scientificSocieties.title %>
+                            </h4>
                         </div>
                         <ul class="text-activity open">
-                            <li>Exerce funções no domínio da Psicologia Clínica e da Saúde ao nível do
-                                diagnóstico psicométrico, acompanhamento psicopedagógico e psicoterapêutico
-                                de crianças, jovens e adultos no Gabinete de Psicologia Clínica.</li>
-                            <li>Desde 2006, é responsável pela Consulta de Psicologia na Clínica Gynébe. No
-                                âmbito da Consulta de Psicologia, e em colaboração com os profissionais que
-                                trabalham nesta clínica, tem desenvolvido actividades de avaliação/intervenção
-                                psicológica de crianças, jovens e adultos em situação de risco devido a problemas
-                                emocionais e/ou de aprendizagem, perturbações da parentalidade, problemas de
-                                infertilidade no casal, depressão pós-parto, problemas sexuais e conjugais,
-                                separação e divórcio.</li>
-                            <li>Exerceu funções no domínio da Psicologia Clínica Infantil e Juvenil ao nível do
-                                diagnóstico psicométrico, acompanhamento psicoterapêutico e psicopedagógico,
-                                na Clínica Médico-Cirúrgica do Marco de Canaveses (1989-1990).</li>
-                            <li>Participou no Programa Interministerial de Promoção do Sucesso Educativo no
-                                Ensino Básico (Ministério da Educação), sendo as modalidades de actuação e sua
-                                avaliação no domínio da dinamização psicopedagógica da comunidade, dos
-                                agentes de ensino, dos pais e dos alunos (1988-1992).</li>
-                            <li>Formação de Especialidade na área de Psicoterapia: 2o ano do Curso de Pós-
-                                Graduação pela Sociedade Portuguesa de Psicologia Clínica (1991-1993).</li>
+                            <li>
+                                <%= mb.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l5 %>
+                            </li>
                         </ul>
                         <ul class="text-formation">
-                            <li>Doutoramento em Psicologia pela Faculdade de Psicologia e de Ciências da
-                                Educação da Universidade do Porto, em 2005.</li>
-                            <li>Mestrado em Psicopatologia e Psicologia Clínica pelo Instituto Superior de
-                                Psicologia Aplicada, em 1998.</li>
-                            <li>Licenciatura em Psicologia pela Faculdade de Psicologia e de Ciências da
-                                Educação da Universidade de Lisboa.</li>
+                            <li>
+                                <%= mb.academicEducation.l1 %>
+                            </li>
+                            <li>
+                                <%= mb.academicEducation.l2 %>
+                            </li>
+                            <li>
+                                <%= mb.academicEducation.l3 %>
+                            </li>
                         </ul>
                         <ul class="text-science">
-                            <li>Vários trabalhos de investigação, comunicações e publicações de âmbito nacional.</li>
+                            <li>
+                                <%= mb.scientificActivity.l1 %>
+                            </li>
                         </ul>
                         <ul class="text-sociaty">
 
@@ -121,11 +175,12 @@
                           FOOTER
 =========================================================-->
         <%- include("parcials/footer") %>
-            <script src="../js/app.js"></script>
-            <script src="../js/intersectionObservers.js"></script>
-            <script src="../js/headerNavbar.js"></script>
-            <script src="../js/headerNavbarButtons.js"></script>
-            <script src="../js/cv.js"></script>
+            <script src="<%= en %>../js/app.js"></script>
+            <script src="<%= en %>../js/intersectionObservers.js"></script>
+            <script src="<%= en %>../js/headerNavbar.js"></script>
+            <script src="<%= en %>../js/headerNavbarButtons.js"></script>
+            <script src="<%= en %>../js/cv.js"></script>
+            <script src="<%= en %>../js/languange.js"></script>
 </body>
 
 </html>

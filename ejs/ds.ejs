@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
+    <title>
+        <%= head.ds %>
+    </title>
     <%- include("parcials/head") %>
 </head>
 
@@ -17,35 +20,61 @@
             <div class="overlay"></div>
             <div class="wrapper7">
                 <div class="heading1 fade-in">
-                    <h2>Dra. Dília Soares</h2>
-                    <h3><strong>Especialidade:</strong> Nutrição</h3>
+                    <h2>
+                        <%= ds.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= ds.specialty %>
+                        </strong>
+                        <%= ds.specialtyItems %>
+                    </h3>
                 </div>
                 <div class="box8-wrapper1">
                     <div class="box8 fade-in">
-                        <img src="../images/profile.png" alt="">
+                        <img src="<%= en %>../images/profile.png" alt="">
                         <div class="doctorsDescription language">
                             <i class="fas fa-globe-europe"></i>
-                            <p><strong>Idiomas:</strong> Português, Inglês e Espanhol</p>
+                            <p><strong>
+                                    <%= ds.languages %>
+                                </strong>
+                                <%= ds.languagesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription sick">
                             <i class="fas fa-clipboard-list"></i>
-                            <p><strong>Doenças:</strong> Obesidade, Diabetes e Dislipidemias</p>
+                            <p><strong>
+                                    <%= ds.illnesses %>
+                                </strong>
+                                <%= ds.illnessesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription apoint">
                             <i class="fas fa-stethoscope"></i>
-                            <p><strong>Consultas:</strong> Consulta de Nutrição</p>
+                            <p><strong>
+                                    <%= ds.appointment %>
+                                </strong>
+                                <%= ds.appointmentItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription areas">
                             <i class="fas fa-file-medical-alt"></i>
-                            <p><strong>Áreas de Diferenciação:</strong> Nutrição na gravidez, Nutrição na diabetes
-                                gestacional e Nutrição nas doenças metabólicas</p>
+                            <p><strong>
+                                    <%= ds.areasOfDifferentiation %>
+                                </strong>
+                                <%= ds.areasOfDifferentiationItems %>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="schedule fade-in">
-                    <h3>Horario:</h3>
+                    <h3>
+                        <%= ds.schecule.title %>
+                    </h3>
                     <ul>
-                        <li><strong>Sexta-feira:</strong> 14h-16h (na segunda semana de cada mês na Clínica do Porto)
+                        <li><strong>
+                                <%= ds.schecule.friday %>
+                            </strong>
+                            <%= ds.schecule.fridayItems %>
                         </li>
                     </ul>
                 </div>
@@ -54,50 +83,87 @@
                         <div class="box9-background"></div>
                         <div class="bar-holder">
                             <div class="chevronDown"></div>
-                            <p>Atividade Clínica</p>
+                            <p>
+                                <%= ds.clinicalActivity.title %>
+                            </p>
                         </div>
                         <ul class="tab-holder">
-                            <li class="activity">Atividade Clínica</li>
-                            <li class="formation">Formação Académica</li>
-                            <li class="science">Atividade Científica</li>
-                            <li class="sociaty">Sociedades Científicas</li>
+                            <li class="activity">
+                                <%= ds.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= ds.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= ds.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= ds.scientificSocieties.title %>
+                            </li>
                         </ul>
                         <div class="activity">
-                            <h4>Atividade Clínica</h4>
+                            <h4>
+                                <%= ds.clinicalActivity.title %>
+                            </h4>
                         </div>
                         <div class="formation">
-                            <h4>Formação Académica</h4>
+                            <h4>
+                                <%= ds.academicEducation.title %>
+                            </h4>
                         </div>
                         <div class="science">
-                            <h4>Atividade Científica</h4>
+                            <h4>
+                                <%= ds.scientificActivity.title %>
+                            </h4>
                         </div>
                         <div class="sociaty">
-                            <h4>Sociedades Científicas</h4>
+                            <h4>
+                                <%= ds.scientificSocieties.title %>
+                            </h4>
                         </div>
                         <ul class="text-activity open">
-                            <li>Desde 2012 - Nutricionista na OBER</li>
-                            <li>03/2012 a 02/2016 - Nutricionista na Santa Casa da Misericórdia de Baião</li>
-                            <li>Desde 2011 - Consulta de Nutrição e Avaliação da Composição Corporal na Clínica Gynébe
-                                Porto</li>
-                            <li>11/2003 a 08/2004 - Elaboração de um Plano de Actividades de Nutrição do
-                                Centro de Saúde de Paredes</li>
-                            <li>Desde 2002 - Consulta de Nutrição Clínica e elaboração do Manual de Dietas Hospitalares
-                                no Hospital das Forças Armadas do Porto</li>
-                            <li>10/1999 a 09/2000 - Estágio académico realizado na Unidade de Endocrinologia do Hospital
-                                de São
-                                João do Porto.</li>
+                            <li>
+                                <%= ds.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l6 %>
+                            </li>
                         </ul>
                         <ul class="text-formation">
-                            <li>1995-2000 - Licenciatura em Ciências da Nutrição e Alimentação</li>
+                            <li>
+                                <%= ds.academicEducation.l1 %>
+                            </li>
                         </ul>
                         <ul class="text-science">
-                            <li>Presente em vários congressos e reuniões científicas.</li>
+                            <li>
+                                <%= ds.scientificActivity.l1 %>
+                            </li>
                         </ul>
                         <ul class="text-sociaty">
-                            <li>Sociedade Portuguesa para o Estudo da Saúde Escolar.</li>
-                            <li>Associação Portuguesa dos Nutricionistas.</li>
-                            <li>Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo.</li>
-                            <li>Associação Portuguesa de Nutrição Entérica e Parentérica.</li>
+                            <li>
+                                <%= ds.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l3 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l4 %>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -107,11 +173,12 @@
                           FOOTER
 =========================================================-->
         <%- include("parcials/footer") %>
-            <script src="../js/app.js"></script>
-            <script src="../js/intersectionObservers.js"></script>
-            <script src="../js/headerNavbar.js"></script>
-            <script src="../js/headerNavbarButtons.js"></script>
-            <script src="../js/cv.js"></script>
+            <script src="<%= en %>../js/app.js"></script>
+            <script src="<%= en %>../js/intersectionObservers.js"></script>
+            <script src="<%= en %>../js/headerNavbar.js"></script>
+            <script src="<%= en %>../js/headerNavbarButtons.js"></script>
+            <script src="<%= en %>../js/cv.js"></script>
+            <script src="<%= en %>../js/languange.js"></script>
 </body>
 
 </html>

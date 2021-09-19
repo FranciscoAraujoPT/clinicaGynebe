@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
+    <title>
+        <%= head.lc %>
+    </title>
     <%- include("parcials/head") %>
 </head>
 
@@ -17,35 +20,62 @@
             <div class="overlay"></div>
             <div class="wrapper7">
                 <div class="heading1 fade-in">
-                    <h2>Dra. Leonilde Coelho</h2>
-                    <h3><strong>Especialidade:</strong> Endocrinologia</h3>
+                    <h2>
+                        <%= lc.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= lc.specialty %>
+                        </strong>
+                        <%= lc.specialtyItems %>
+                    </h3>
                 </div>
                 <div class="box8-wrapper1">
                     <div class="box8 fade-in">
-                        <img src="../images/lc.jpg" alt="">
+                        <img src="<%= en %>../images/lc.jpg" alt="">
                         <div class="doctorsDescription language">
                             <i class="fas fa-globe-europe"></i>
-                            <p><strong>Idiomas:</strong> Português</p>
+                            <p><strong>
+                                    <%= lc.languages %>
+                                </strong>
+                                <%= lc.languagesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription sick">
                             <i class="fas fa-clipboard-list"></i>
-                            <p><strong>Doenças:</strong> Diabetes, Patologia da Tiroide</p>
+                            <p><strong>
+                                    <%= lc.illnesses %>
+                                </strong>
+                                <%= lc.illnessesItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription apoint">
                             <i class="fas fa-stethoscope"></i>
-                            <p><strong>Consultas:</strong> Consulta de Endocrinologia - Consulta de Diabetes - Consulta
-                                Multidisciplinar de Cirurgia Bariátrica</p>
+                            <p><strong>
+                                    <%= lc.appointment %>
+                                </strong>
+                                <%= lc.appointmentItems %>
+                            </p>
                         </div>
                         <div class="doctorsDescription areas">
                             <i class="fas fa-file-medical-alt"></i>
-                            <p><strong>Áreas de Diferenciação:</strong> Diabetes e Cirurgia Bariátrica</p>
+                            <p><strong>
+                                    <%= lc.areasOfDifferentiation %>
+                                </strong>
+                                <%= lc.areasOfDifferentiationItems %>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="schedule fade-in">
-                    <h3>Horario:</h3>
+                    <h3>
+                        <%= lc.schecule.title %>
+                    </h3>
                     <ul>
-                        <li><strong>Terça-feira:</strong> 11h30-13h00 (Clínica do Porto)</li>
+                        <li><strong>
+                                <%= lc.schecule.tuesday %>
+                            </strong>
+                            <%= lc.schecule.tuesdayItems %>
+                        </li>
                     </ul>
                 </div>
                 <div class="box9-wrapper1">
@@ -53,51 +83,87 @@
                         <div class="box9-background"></div>
                         <div class="bar-holder">
                             <div class="chevronDown"></div>
-                            <p>Atividade Clínica</p>
+                            <p>
+                                <%= lc.clinicalActivity.title %>
+                            </p>
                         </div>
                         <ul class="tab-holder">
-                            <li class="activity">Atividade Clínica</li>
-                            <li class="formation">Formação Académica</li>
-                            <li class="science">Atividade Científica</li>
-                            <li class="sociaty">Sociedades Científicas</li>
+                            <li class="activity">
+                                <%= lc.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= lc.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= lc.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= lc.clinicalActivity.title %>
+                            </li>
                         </ul>
                         <div class="activity">
-                            <h4>Atividade Clínica</h4>
+                            <h4>
+                                <%= lc.clinicalActivity.title %>
+                            </h4>
                         </div>
                         <div class="formation">
-                            <h4>Formação Académica</h4>
+                            <h4>
+                                <%= lc.academicEducation.title %>
+                            </h4>
                         </div>
                         <div class="science">
-                            <h4>Atividade Científica</h4>
+                            <h4>
+                                <%= lc.scientificActivity.title %>
+                            </h4>
                         </div>
                         <div class="sociaty">
-                            <h4>Sociedades Científicas</h4>
+                            <h4>
+                                <%= lc.scientificSocieties.title %>
+                            </h4>
                         </div>
                         <ul class="text-activity open">
-                            <li>Desde 2008 - Assistente Graduada de Endocrinologia.</li>
-                            <li>Desde 2006 - Colaboração na Consulta Multidisciplinar de Diabetes e Patologia da Tiroide
-                                na Gravidez na Clínica Gynébe do Porto</li>
-                            <li>Desde 2005 - Assistente Hospitalar de Endocrinologia no Hospital Militar do Porto, agora
-                                denominado Hospital das Forças Armadas - Pólo do Porto.</li>
-                            <li>2001-2005 - Assistente Hospitalar de Endocrinologia no Hospital de S. Marcos – Braga.
+                            <li>
+                                <%= lc.clinicalActivity.l1 %>
                             </li>
-                            <li>2000 - Assistente Eventual de Endocrinologia no IPO-Porto.</li>
-                            <li>Até 2000 - Internato complementar de Endocrinologia no Hospital de Sto. António.</li>
+                            <li>
+                                <%= lc.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l6 %>
+                            </li>
                         </ul>
                         <ul class="text-formation">
-                            <li>1991 - Licenciatura em Medicina e Cirurgia pela Faculdade de Medicina da Universidade
-                                do Porto</li>
+                            <li>
+                                <%= lc.academicEducation.l1 %>
+                            </li>
                         </ul>
                         <ul class="text-science">
-                            <li>Participação em diversos cursos de valorização e actualização profissional e reuniões
-                                científicas nacionais e internacionais</li>
-                            <li>Organização, colaboração e participação em vários congressos, jornadas e
-                                workshops</li>
+                            <li>
+                                <%= lc.scientificActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificActivity.l2 %>
+                            </li>
                         </ul>
                         <ul class="text-sociaty">
-                            <li>Membro do Grupo de Estudos da Ge-TNE</li>
-                            <li>Membro do grupo de estudos da Tiróide</li>
-                            <li>Sócia da SPEDM – Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo</li>
+                            <li>
+                                <%= lc.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificSocieties.l3 %>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -107,11 +173,12 @@
                           FOOTER
 =========================================================-->
         <%- include("parcials/footer") %>
-            <script src="../js/app.js"></script>
-            <script src="../js/intersectionObservers.js"></script>
-            <script src="../js/headerNavbar.js"></script>
-            <script src="../js/headerNavbarButtons.js"></script>
-            <script src="../js/cv.js"></script>
+            <script src="<%= en %>../js/app.js"></script>
+            <script src="<%= en %>../js/intersectionObservers.js"></script>
+            <script src="<%= en %>../js/headerNavbar.js"></script>
+            <script src="<%= en %>../js/headerNavbarButtons.js"></script>
+            <script src="<%= en %>../js/cv.js"></script>
+            <script src="<%= en %>../js/languange.js"></script>
 </body>
 
 </html>

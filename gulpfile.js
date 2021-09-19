@@ -12,7 +12,7 @@ const replace = require("gulp-replace");
 const del = require("del");
 
 gulp.task("html", function () {
-    return gulp.src("./html/*")
+    return gulp.src("./html/**")
         .pipe(replace(".html", ""))
         .pipe(useref())
         .pipe(gulp.dest("./build"))

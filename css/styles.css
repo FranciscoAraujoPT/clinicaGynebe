@@ -1610,6 +1610,20 @@ h1 a .second {
     color: #00284d;
 }
 
+/* ======= Languange ======= */
+
+.languangeButton {
+    position: fixed;
+    bottom: 0;
+    left: 2%;
+    background-color: #00284d;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 10;
+}
+
 /*========================================================
                     Media Queries
 =========================================================*/
