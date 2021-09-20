@@ -18,7 +18,7 @@
         "contacts_santo_tirso": "Contacts",
         "contacts": "Contacts",
         "ds": "Dra. Dília Soares",
-        "gallery": "OPorto Gallery",
+        "gallery": "Oporto Gallery",
         "galleryST": "S.Tirso Gallery",
         "gv": "Dra. Gabriela Vasconcellos",
         "index": "Home",
@@ -71,8 +71,8 @@
             "title": "Call us:",
             "landline": "225 432 135",
             "number": "915 424 413",
-            "text": "Telephone assistance",
-            "text2": "for 24h emergency"
+            "text": "24H Emergency",
+            "text2": "Telephone assistance"
         }
     },
     "ac": {
@@ -136,23 +136,23 @@
         "medis": {
             "title": "Médis - Companhia Portuguesa de Seguros de Saúde, S.A.",
             "text": "Visit the ",
-            "link": "website Médis",
+            "link": "Médis website",
             "text2": "Health insurance from the following insurance companies:"
         },
         "rna": {
             "title": "RNA Medical",
             "text": "Visit the ",
-            "link": "website RNA Medical"
+            "link": "RNA Medical website"
         },
         "samsSib": {
             "title": "SAMS-SIB",
             "text": "Visit the ",
-            "link": "website SAMS-SIB"
+            "link": "SAMS-SIB website"
         },
         "ami": {
             "title": "Assistência Médica Internacional",
             "text": "Visit the ",
-            "link": "website AMI"
+            "link": "AMI website"
         }
     },
     "contactsSantoTirso": {
@@ -239,29 +239,29 @@
     },
     "gallery": {
         "title": "Gynébe Clinic in Oporto",
-        "text": "The Gynébe Clinic was born in 2003 in the heart of Porto as a space dedicated essentially to women's and children's health. In 2005 a second unit opened in Santo Tirso. Both clinics offer a central location with excellent accessibility on foot, by public transportation or by own car, given the ease of several nearby parks.",
+        "text": "The Gynébe Clinic was born in 2003 in the heart of Porto as a space dedicated essentially to women's and children's health. In 2005 a second unit opened in Santo Tirso. Both clinics offer a central location with excellent accessibility on foot, by public transportation or by own car with several nearby carparks.",
         "images": {
-            "text": "Sala de",
-            "waitRoom": "Espera",
-            "area": "Área Interna",
-            "ped": "Pediatria",
-            "exams": "Exames",
-            "gyne": "Ginecologia e Obstetrícia",
+            "text": "",
+            "waitRoom": "Waiting Room",
+            "area": "Restricted area",
+            "ped": "Pediatrics",
+            "exams": "Exams",
+            "gyne": "Gynecology/Obstetrics",
             "copa": "Copa",
-            "babyChangingRoom": "Fraldário/",
-            "toilet": "Quarto de Banho",
-            "sterilization": "Esterilização"
+            "babyChangingRoom": "Baby Changing",
+            "toilet": "Toilet",
+            "sterilization": "Sterilization"
         }
     },
     "galleryST": {
         "title": "Gynébe Clinic of Santo Tirso",
-        "text": "The Gynébe Clinic was born in 2003 in the heart of Porto as a space dedicated essentially to women's and children's health. In 2005 a second unit opened in Santo Tirso. Both clinics offer a central location with excellent accessibility on foot, by public transportation or by own car, given the ease of several nearby parks.",
+        "text": "The Gynébe Clinic was born in 2003 in the heart of Porto as a space dedicated essentially to women's and children's health. In 2005 a second unit opened in Santo Tirso. Both clinics offer a central location with excellent accessibility on foot, by public transportation or by own car with several nearby carparks.",
         "images": {
-            "text": "Sala de",
-            "waitRoom": "Espera",
-            "logoText": "Logo da",
+            "text": "",
+            "waitRoom": "Waiting Room",
+            "logoText": "Logo ",
             "logo": "Clínica Gynébe",
-            "gyne": "Ginecologia e Obstetrícia"
+            "gyne": "Gynecology/Obstetrics"
         }
     },
     "gv": {
@@ -272,7 +272,7 @@
         "languagesItems": " Portuguese, English and French",
         "illnesses": "Diseases:",
         "illnessesItems": "Neonatal Jaundice",
-        "appointment": "Consultations:",
+        "appointment": "Appointments:",
         "appointmentItems": " Neonatology Consultation - Pediatric Consultation - Prenatal Consultation with a Pediatrician - Pediatric Teleconsultation",
         "areasOfDifferentiation": "Areas of Differentiation:",
         "areasOfDifferentiationItems": " Neonatology",
@@ -366,7 +366,7 @@
             "sixth": "Easy access for people with reduced mobility",
             "seventh": "Respect for individuality and personal sensitivity",
             "eighth": "Technical differentiation of the services provided",
-            "ninth": "Location in the heart of OPorto city",
+            "ninth": "Location in the heart of Oporto city",
             "tenth": "Comprehensive women's, child, and family health services",
             "eleventh": "Recognition of the services provided by our users",
             "twelfth": "Agreements and Partnerships with most conventions"
@@ -380,7 +380,7 @@
         "languagesItems": " Portuguese",
         "illnesses": "Diseases:",
         "illnessesItems": " Diabetes, Thyroid Pathology",
-        "appointment": "Consultations:",
+        "appointment": "Appointments:",
         "appointmentItems": " Endocrinology Consultation - Diabetes Consultation - Multidisciplinary Bariatric Surgery Consultation",
         "areasOfDifferentiation": "Areas of Differentiation:",
         "areasOfDifferentiationItems": " Diabetes and Bariatric Surgery",
@@ -421,17 +421,17 @@
         "languages": "Languages:",
         "languagesItems": " Portuguese",
         "illnesses": "Diseases:",
-        "illnessesItems": " Ansiedade e/ou depressão, Distúrbios do sono, Problemas conjugais, Depressão pós-parto, Problemas de fertilidade, Dificuldades parentais, Separação e divórcio",
-        "appointment": "Consultations:",
-        "appointmentItems": " Clinical Psychology Consultation - Psychology Teleconsultation",
+        "illnessesItems": " Anxiety or depression, sleep issues, marital issues, postpartum depression, Infertility, parental difficulties, separation and divorce",
+        "appointment": "Appointments:",
+        "appointmentItems": " Clinical Psychology Appointments - Psychology Remote appointment",
         "areasOfDifferentiation": "Areas of Differentiation:",
         "areasOfDifferentiationItems": " Psychotherapeutic intervention in children, youth and adults",
         "schecule": {
             "title": "Schedule:",
             "tuesday": "Tuesday:",
-            "tuesdayItems": " 10h-13h (Teleconsultation)",
+            "tuesdayItems": " 10h-13h (Remote appointment)",
             "thursday": "Thursday:",
-            "thursdayItems": " 16h-20h (Teleconsultation)",
+            "thursdayItems": " 16h-20h (Remote appointment)",
             "friday": "Friday:",
             "fridayItems": " 16h-20h (Face-to-face consultation at Oporto Clinic)"
         },
@@ -465,7 +465,7 @@
         "languagesItems": " Portuguese, English and Spanish",
         "illnesses": "Diseases:",
         "illnessesItems": " Genital Diseases of the Female Genital Tract, Pregnancy, Infertility, Menopause",
-        "appointment": "Consultations:",
+        "appointment": "Appointments:",
         "appointmentItems": " Gynecology Consultation - Obstetrics Consultation - Gynecology Teleconsultation",
         "areasOfDifferentiation": "Areas of Differentiation:",
         "areasOfDifferentiationItems": " High Risk Pregnancy, Sexuality, Infertility Study, Gynecological and Obstetrical Ultrasound, Surgeries and Births",
@@ -545,7 +545,7 @@
             "list3": "Uterine Bleedings",
             "list4": "Uterine Myomas",
             "list5": "Endometriosis",
-            "list6": "Study of Couple Infertility",
+            "list6": "Study of the Couple Infertility",
             "list7": "Menopause",
             "list8": "3D/4D Gynecological Ultrasound",
             "list9": "Minor Surgery",
@@ -568,7 +568,7 @@
         "ped": {
             "title": "Pediatrics",
             "text": "Pediatrics follows the newborn from birth through early adulthood. Regular follow-up in Pediatrics aims at the healthy growth and promotion of the physical and psychological well-being of children and adolescents, acting with preventive and curative character.",
-            "text2": "Pediatrics consultation encompasses a wide area, such as:",
+            "text2": "Pediatrics encompasses a wide area, such as:",
             "list1": "Healthy and adequate growth and development",
             "list2": "Dietary advice",
             "list3": "Vaccination counseling",
@@ -579,7 +579,7 @@
             "title": "Endocrinology",
             "text": "Endocrinology is the medical specialty dedicated to the diagnosis and treatment of disorders of the endocrine system, composed of the hormone-producing glands responsible for normal development, reproduction, and metabolism.",
             "text2": "The thyroid, pancreas, pituitary glands, adrenals, parathyroid glands, ovaries, and testes are the best known endocrine glands, but bone and adipose tissue also play an important role in the production of hormones.",
-            "text3": "The situations that most bring the patient to the consultation are:",
+            "text3": "The situations that most bring the patient to the practise are:",
             "list1": "Diabetes",
             "list2": "Obesity",
             "list3": "Metabolic disease",
@@ -598,15 +598,15 @@
             "list3": "Learning Problems",
             "list4": "Difficulty in Higher Education",
             "list5": "Work Problems",
-            "list6": "Marital Problems",
+            "list6": "Marital Issues",
             "list7": "Postpartum Depression",
-            "list8": "Infertility Problems",
+            "list8": "Infertility",
             "list9": "Parental Difficulties",
             "list10": "Separation and Divorce"
         },
         "nut": {
             "title": "Nutrition",
-            "text": "In the nutrition consultation, the nutritional needs are evaluated and the dietary planning is customized to each situation and specific goal.",
+            "text": "In our nutrition appointments, the nutritional needs are evaluated and the dietary planning is customized to each individual situation and specific goal.",
             "text2": "Learning to have healthy eating habits, in addition to weight loss, aims at improving the quality of physical and emotional life, as well as the most diverse pathologies.",
             "text3": "Nutritionists work closely with other health professionals and in particular with endocrinology."
         }
