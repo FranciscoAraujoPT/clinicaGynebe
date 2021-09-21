@@ -14,7 +14,7 @@ const del = require("del");
 gulp.task("html", function () {
     return gulp.src("./html/**")
         .pipe(replace(".html", ""))
-        .pipe(useref())
+        .pipe(replace('"../', '"'))
         .pipe(gulp.dest("./build"))
 });
 
