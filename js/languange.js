@@ -9,13 +9,13 @@ if (path.includes("/clinicaGynebe")) {
 }
 
 if (path.includes("/html")) {
-    path = path.replace("/html/", "");
+    path = path.replace("/html", "");
     aux = aux + "/html";
 }
 
 if (path.includes("en/")) {
-    path = path.replace("en", "");
+    path = path.replace("/en/", "");
     link.setAttribute('href', window.location.origin + aux + path);
 } else {
-    link.setAttribute('href', window.location.origin + aux + "/en/" + path);
+    link.setAttribute('href', window.location.origin + aux + "/en" + path);
 }

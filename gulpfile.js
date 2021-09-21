@@ -22,8 +22,9 @@ gulp.task("html", function () {
 gulp.task("htmlEn", function () {
     return gulp.src("./html/en/*.html")
         .pipe(replace(".html", ""))
-        .pipe(replace('"../', '"'))
-        .pipe(replace('<link rel="stylesheet" href="../css/reset.css">', ""))
+        .pipe(replace("../css/styles.css", "../css/style.css"))
+        .pipe(replace("images/favicon.ico", "../images/favicon.ico"))
+        .pipe(replace('<link rel="stylesheet" href="../../css/reset.css">', ""))
         .pipe(gulp.dest("./build/en"))
 });
 
