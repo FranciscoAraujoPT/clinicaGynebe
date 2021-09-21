@@ -12,10 +12,19 @@ const replace = require("gulp-replace");
 const del = require("del");
 
 gulp.task("html", function () {
-    return gulp.src("./html/**")
+    return gulp.src("./html/*.html")
         .pipe(replace(".html", ""))
         .pipe(replace('"../', '"'))
+        .pipe(useref())
         .pipe(gulp.dest("./build"))
+});
+
+gulp.task("htmlEn", function () {
+    return gulp.src("./html/en/*.html")
+        .pipe(replace(".html", ""))
+        .pipe(replace('"../', '"'))
+        .pipe(replace('<link rel="stylesheet" href="../css/reset.css">', ""))
+        .pipe(gulp.dest("./build/en"))
 });
 
 gulp.task("css", function () {
@@ -46,4 +55,4 @@ gulp.task("clean", function (done) {
     return done();
 })
 
-gulp.task("dist", gulp.series("clean", "html", "css", "js", "images"));
+gulp.task("dist", gulp.series("clean", "html", "htmlEn", "css", "js", "images"));
