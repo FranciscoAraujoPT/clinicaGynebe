@@ -4,11 +4,14 @@ function navButtonClick() {
     const navLinks = document.querySelector(".sf-menu");
     const links = document.querySelectorAll(".sf-menu > li");
     const logo = document.querySelector("#logo");
+    const languageButton = document.querySelector(".languageButton");
+    const socials = document.querySelector(".socials2");
 
     document.body.classList.toggle("open");
     navButton.classList.toggle("open");
     navLinks.classList.toggle("open");
     logo.classList.toggle("open");
+    socials.classList.toggle("open");
 
     links.forEach(link => {
         if (link.classList.contains("close")) {

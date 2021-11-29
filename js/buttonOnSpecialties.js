@@ -22,8 +22,10 @@ overlay.addEventListener("click", () => {
     overlay.style.setProperty("height", `0px`);
     overlay.style.setProperty("width", `0px`);
     const ul = body.querySelector("ul.active")
-    const lis = ul.querySelectorAll("li");
-    removeUl(ul, lis);
+    if (ul !== null) {
+        const lis = ul.querySelectorAll("li");
+        removeUl(ul, lis);
+    }
 });
 
 containers.forEach(container => container.addEventListener("click", (event) => {

@@ -1,7 +1,11 @@
 {
-    "en": "",
+    "otherLang": "",
     "footer": {
         "index": "Início",
+        "languages": "Idiomas",
+        "pt": "Português",
+        "es": "Espanhol",
+        "en": "Inglês",
         "specialties": "Especialidades",
         "agreements": "Convenções",
         "contacts": "Contactos",
@@ -9,7 +13,7 @@
             "index": "Clínica Gynébe",
             "copyrightYear": "2021",
             "policy": "Política de Privacidade",
-            "god": "Design by Francisco Araújo"
+            "god": "Design por Francisco Araújo"
         }
     },
     "head": {
@@ -70,9 +74,7 @@
         "phone": {
             "title": "Ligue-nos:",
             "landline": "225 432 135",
-            "number": "915 424 413",
-            "text": "Atendimento telefónico",
-            "text2": "para emergência 24h"
+            "number": "915 424 413"
         }
     },
     "ac": {

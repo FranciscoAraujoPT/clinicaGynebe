@@ -28,6 +28,15 @@ gulp.task("htmlEn", function () {
         .pipe(gulp.dest("./build/en"))
 });
 
+gulp.task("htmlEs", function () {
+    return gulp.src("./html/es/*.html")
+        .pipe(replace(".html", ""))
+        .pipe(replace("../css/styles.css", "../css/style.css"))
+        .pipe(replace("images/favicon.ico", "../images/favicon.ico"))
+        .pipe(replace('<link rel="stylesheet" href="../../css/reset.css">', ""))
+        .pipe(gulp.dest("./build/es"))
+});
+
 gulp.task("css", function () {
     const plugins = [
         autoprefixer({ browsers: ["last 1 version"] }),
@@ -56,4 +65,4 @@ gulp.task("clean", function (done) {
     return done();
 })
 
-gulp.task("dist", gulp.series("clean", "html", "htmlEn", "css", "js", "images"));
+gulp.task("dist", gulp.series("clean", "html", "htmlEn", "htmlEs", "css", "js", "images"));

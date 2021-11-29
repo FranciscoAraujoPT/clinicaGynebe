@@ -1,0 +1,616 @@
+{
+    "otherLang": "../",
+    "footer": {
+        "index": "Inicio",
+        "languages": "Idiomas",
+        "pt": "Portugués",
+        "es": "Español",
+        "en": "Inglés",
+        "specialties": "Especialidades",
+        "agreements": "Convenios",
+        "contacts": "Contactos",
+        "privacy": {
+            "index": "Clínica Gynébe",
+            "copyrightYear": "2021",
+            "policy": "Política de Privacidade",
+            "god": "Diseño de Francisco Araújo"
+        }
+    },
+    "head": {
+        "ac": "Dra. Ana Carriço",
+        "agreements": "Convenios",
+        "contacts_santo_tirso": "Contactos",
+        "contacts": "Contactos",
+        "ds": "Dra. Dília Soares",
+        "gallery": "Galería Oporto",
+        "galleryST": "Galería de S. Tirso",
+        "gv": "Dra. Gabriela Vasconcellos",
+        "index": "Inicio",
+        "lc": "Dra. Leonilde Coelho",
+        "mb": "Dra. Marta Baltar",
+        "mca": "Dra. Manuela Calado Araújo",
+        "privacy": "Política de privacidad",
+        "specialties": "Especialidades"
+    },
+    "header": {
+        "logo": {
+            "second": "Clínica",
+            "first": "Gynébe"
+        },
+        "index": {
+            "title": "Inicio",
+            "mission": "Nuestra Misión",
+            "team": "El Equipo",
+            "bestCare": "La mejor atención médica"
+        },
+        "specialties": {
+            "title": "Especialidades",
+            "gyne": "Ginecología\/Obstetricia",
+            "pedo": "Pediatría",
+            "endo": "Endocrinología",
+            "psi": "Psicología",
+            "nut": "Nutrición"
+        },
+        "agreements": {
+            "title": "Convenios",
+            "advanceCare": "AdvanceCare",
+            "allianz": "Allianz",
+            "futureHealthcare": "Asistencia sanitaria futura",
+            "medicare": "Medicare",
+            "medis": "Médis",
+            "rna": "RNA",
+            "samsSib": "SAMS\/SIB"
+        },
+        "gallery": {
+            "title": "Clínicas",
+            "porto": "Clínica Oporto",
+            "santoTirso": "Clínica Santo Tirso"
+        },
+        "contacts": {
+            "title": "Contacto",
+            "porto": "Clínica Oporto",
+            "santoTirso": "Clínica Santo Tirso"
+        },
+        "phone": {
+            "title": "Llámenos:",
+            "landline": "225 432 135",
+            "number": "915 42413"
+        }
+    },
+    "ac": {
+        "name": "Dra. Ana Carriço",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Cardiología pediátrica",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués e inglés",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": " Insuficiencia cardiaca",
+        "appointment": "Exámenes:",
+        "appointmentItems": " Ecocardiografía fetal y eco-Doppler cardíaco fetal",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Medicina fetal y ecocardiografía",
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "Cardióloga pediátrica en el Hospital da Luz Arrábida",
+            "l2": "Desde 2008-Hospital Asistente del Hospital Vila Nova de Gaia",
+            "l3": "Desde 2005-Cardiólogo Pediátrico en la Clínica Gynébe de Oporto",
+            "l4": "2004-2008-Hospital Asistente del Hospital São João, Porto",
+            "l5": "1999-2004-Prácticas complementarias en el Hospital São João, Porto"
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "2004-Especialista en Cardiología Pediátrica",
+            "l2": "1996-Licenciado en Medicina por el Instituto de Ciencias Biomédicas Abel Salazar, Porto"
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "Es autora de varios artículos, presentaciones y comunicaciones gratuitas.",
+            "l2": "Perteneció al comité organizador de varias reuniones científicas"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas"
+        }
+    },
+    "agreements": {
+        "title": "Convenios y acuerdos",
+        "advanceCare": {
+            "title": "AdvanceCare-Gestão de Serviços de Saúde, S.A.",
+            "text": "Visite el ",
+            "link": "AdvanceCare",
+            "text2": "Seguro médico de las siguientes compañías de seguros:"
+        },
+        "allianz": {
+            "title": "Allianz",
+            "text": "Visite el ",
+            "link": "Página web"
+        },
+        "futureHealthcare": {
+            "title": "Asistencia sanitaria futura",
+            "text": "Visite el ",
+            "link": "sitio web Future Healthcare",
+            "text2": "Seguro médico de las siguientes compañías de seguros:"
+        },
+        "medicare": {
+            "title": "Medicare",
+            "text": "Visite el ",
+            "link": "sitio web Medicare"
+        },
+        "medis": {
+            "title": "Médis-Companhia Portuguesa de Seguros de Saúde, S.A.",
+            "text": "Visite el ",
+            "link": "Sitio web",
+            "text2": "Seguro médico de las siguientes compañías de seguros:"
+        },
+        "rna": {
+            "title": "RNA Medical",
+            "text": "Visite el ",
+            "link": "Sitio web de ARN"
+        },
+        "samsSib": {
+            "title": "SAMS-SIB",
+            "text": "Visite el ",
+            "link": "Sitio web de SAMS-SIB"
+        },
+        "ami": {
+            "title": "Assistência Médica Internacional",
+            "text": "Visite el ",
+            "link": "Sitio web AMI"
+        }
+    },
+    "contactsSantoTirso": {
+        "title": "Clínica Gynébe de Santo Tirso",
+        "schedule": {
+            "title": "Horario:",
+            "monday": "Lunes:",
+            "mondayTime": " 14h-20h",
+            "tuesday": "Martes:",
+            "tuesdayTime": " Cerrado (excepto para asistencia telefónica)",
+            "wednesday": "Miércoles:",
+            "wednesdayTime": " 09h-14h",
+            "thursday": "Jueves:",
+            "thursdayTime": " Cerrado (excepto para asistencia telefónica)",
+            "friday": "Viernes:",
+            "fridayTime": " Cerrado (excepto para asistencia telefónica)",
+            "saturday": "Sábado:",
+            "saturdayTime": " Cerrado (excepto para asistencia telefónica)",
+            "sunday": "Domingo:",
+            "sundayTime": " Cerrado"
+        }
+    },
+    "contacts": {
+        "title": "Clínica Gynébe en Oporto",
+        "schedule": {
+            "title": "Horario:",
+            "monday": "Lunes:",
+            "mondayTime": " 9h-14h",
+            "tuesday": "Martes:",
+            "tuesdayTime": " 9h-20h",
+            "wednesday": "Miércoles:",
+            "wednesdayTime": " 14h-20h",
+            "thursday": "Jueves:",
+            "thursdayTime": " Cerrado (excepto para Emergencias)",
+            "friday": "Viernes:",
+            "fridayTime": " 09h-20h",
+            "saturday": "Sábado:",
+            "saturdayTime": " Cerrado (excepto para Emergencias)",
+            "sunday": "Domingo:",
+            "sundayTime": " Cerrado"
+        }
+    },
+    "ds": {
+        "name": "Dra. Dília Soares",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Nutrición",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués, inglés y español",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": " Obesidad, Diabetes y Dyslipidemias",
+        "appointment": "Nombramientos:",
+        "appointmentItems": " Designación nutricional",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Nutrición en el embarazo, nutrición en la diabetes gestacional y nutrición en enfermedades metabólicas",
+        "schecule": {
+            "title": "Horario:",
+            "friday": "Viernes:",
+            "fridayItems": " 14h-16h (en la segunda semana de cada mes en la Clínica de Oporto)"
+        },
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "Desde 2012-Nutricionista en OBER",
+            "l2": "03\/2012 a 02\/2016-Nutricionista en Santa Inicio da Misericordia de Baião",
+            "l3": "Desde 2011-Evaluación de la composición y composición corporal en la Clínica Gynébe Porto",
+            "l4": "11\/2003 a 08\/2004-Elaboración de un Plan de Actividades Nutricionales para el Centro de Salud de Paredes",
+            "l5": "Desde 2002-Consultor en Nutrición Clínica y elaboración del Manual de Dieta Hospitalaria en el Hospital das Forças Armadas do Porto",
+            "l6": "10\/1999 a 09\/2000-Prácticas académicas realizadas en la Unidad de Endocrinología del Hospital São João de Porto."
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "1995-2000-Licenciatura en Nutrición y Ciencias de la Alimentación"
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "Presente en varios congresos y reuniones científicas."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas",
+            "l1": "Sociedade Portuguesa para o Estudo da Saúde Escolar.",
+            "l2": "Associação Portuguesa dos Nutricionistas.",
+            "l3": "Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo.",
+            "l4": "Associação Portuguesa de Nutrição Entérica e Parentérica."
+        }
+    },
+    "gallery": {
+        "title": "Clínica Gynébe en Oporto",
+        "text": "La Clínica Gynébe nació en 2003 en el corazón de Oporto como un espacio dedicado esencialmente a la salud de las mujeres y los niños. En 2005 abrió una segunda unidad en Santo Tirso. Ambas clínicas ofrecen una ubicación céntrica con una excelente accesibilidad a pie, en transporte público o en coche propio con varios aparcamientos cercanos.",
+        "images": {
+            "text": "",
+            "waitRoom": "Sala de espera",
+            "area": "Zona restringida",
+            "ped": "Pediatría",
+            "exams": "Exámenes",
+            "gyne": "Ginecología\/Obstetricia",
+            "copa": "Copa",
+            "babyChangingRoom": "Cambio de bebé",
+            "toilet": "Inodoro",
+            "sterilization": "Esterilización"
+        }
+    },
+    "galleryST": {
+        "title": "Clínica Gynébe de Santo Tirso",
+        "text": "La Clínica Gynébe nació en 2003 en el corazón de Oporto como un espacio dedicado esencialmente a la salud de las mujeres y los niños. En 2005 abrió una segunda unidad en Santo Tirso. Ambas clínicas ofrecen una ubicación céntrica con una excelente accesibilidad a pie, en transporte público o en coche propio con varios aparcamientos cercanos.",
+        "images": {
+            "text": "",
+            "waitRoom": "Sala de espera",
+            "logoText": "Logotipo ",
+            "logo": "Clínica Gynébe",
+            "gyne": "Ginecología\/Obstetricia"
+        }
+    },
+    "gv": {
+        "name": "Dra. Gabriela Vasconcellos",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Pediatra-Neonatólogo",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués, inglés y francés",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": "Ictericia neonatal",
+        "appointment": "Nombramientos:",
+        "appointmentItems": " Cita de neonatología-Cita pediátrica-Cita prenatal con un Pediatra-Consulta Remota Pediátrica",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Neonatología",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Martes:",
+            "tuesdayItems": " 15h30-18h30 (Clínica de Oporto)"
+        },
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "Desde que se graduó en Pediatría Médica, ha trabajado en el sector privado, es decir, en clínicas, particularmente en el área materno-infantil.",
+            "l2": "Desde 2010-Coordinación de Neonatología en el Hospital CUF Porto",
+            "l3": "2008-Coordinadora del Sector de Perinatología de la UAG-Mulher e da Criança de S.S. João-Porto",
+            "l4": "2007-Grado de Consultor en la Carrera Médica Hospitalaria",
+            "l5": "2006-Grado de Asistencia Hospitalaria Graduada",
+            "l6": "Desde 2000-Jefe del equipo de emergencia de Neonatología en el mismo servicio",
+            "l7": "1997-Position of Medical Pediatrics Hospital Assistant at H.S. João-Porto",
+            "l8": "1996-1997-Ciclo de Estudios Especiales en Neonatología",
+            "l9": "1992-Pasantía pediátrica en el Hospital Queen Elizabeth para niños en Londres-Inglaterra",
+            "l10": "1991-1995-Internado complementario en pediatría médica en el Hospital de S. João-Porto",
+            "l11": "1990-Prácticas en la práctica general y medicina familiar",
+            "l12": "1988-1989-Internado General en el Hospital V. N. Famalicão"
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "1987-Intercambio hospitalario en Cirugía General-Hospital del Distrito de Torino-Italia",
+            "l2": "1986-Intercambio hospitalario en Ginecología-Hospital Universitario de Maguncia-Alemania",
+            "l3": "1981-1987-Grado en Medicina, Facultad de Medicina, Universidad de Oporto"
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "Varios trabajos de investigación, comunicaciones y publicaciones de ámbito nacional e internacional."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas",
+            "l1": "Sociedade Portuguesa de Pediatria",
+            "l2": "Sociedade Portuguesa de Neonatologia",
+            "l3": "Sociedade Portuguesa de Doenças Metabólicas"
+        }
+    },
+    "index": {
+        "teaserFirst": "Pasión por la vida",
+        "teaserSecond": "inspirado por usted",
+        "mission": {
+            "title": "Nuestra Misión",
+            "first": "En Gynébe Clinic todos los colaboradores están dedicados y orientados a servirle mejor a través de una amplia gama de servicios dirigidos a mujeres, niños y la familia.",
+            "second": "En definitiva, una organización especialmente diseñada para prevenir y combatir la enfermedad, así como para promover la calidad de vida, en términos físicos y psicológicos, y siempre con respeto a la sensibilidad emocional y la individualidad humana."
+        },
+        "team": {
+            "title": "El Equipo",
+            "mca": {
+                "name": "Dra. Manuela Calado Araújo",
+                "specialty": "Ginecólogo\/obstetra"
+            },
+            "gv": {
+                "name": "Dra. Gabriela Vasconcellos",
+                "specialty": "Pediatra\/Neonatólogo"
+            },
+            "ac": {
+                "name": "Dra. Ana Carriço",
+                "specialty": "Cardiólogo pediátrico"
+            },
+            "lc": {
+                "name": "Dra. Leonilde Coelho",
+                "specialty": "Endocrinólogo"
+            },
+            "ds": {
+                "name": "Dra. Dília Soares",
+                "specialty": "Nutricionista"
+            },
+            "mb": {
+                "name": "Dra. Marta Baltar",
+                "specialty": "Psicólogo\/psicoterapeuta"
+            },
+            "fg": {
+                "name": "Filipa Gomes",
+                "specialty": "Asistente operativo"
+            },
+            "fa": {
+                "name": "Francisco Araújo",
+                "specialty": "Asistente de sistema"
+            }
+        },
+        "bestCare": {
+            "title": "La mejor atención médica",
+            "first": "Servicio personalizado",
+            "second": "citas en portugués, inglés y español",
+            "third": "Espacio para niños",
+            "fourth": "Fuerte componente humano de todos los profesionales",
+            "fifth": "Profesionales con alta experiencia clínica",
+            "sixth": "Fácil acceso para personas con movilidad reducida",
+            "seventh": "Respeto de la individualidad y sensibilidad personal",
+            "eighth": "Diferenciación técnica de los servicios prestados",
+            "ninth": "Ubicación en el corazón de la ciudad de Oporto",
+            "tenth": "Servicios de salud integral de la mujer, el niño y la familia",
+            "eleventh": "Reconocimiento de los servicios prestados por nuestros usuarios",
+            "twelfth": "Acuerdos y asociaciones con la mayoría de convenios"
+        }
+    },
+    "lc": {
+        "name": "Dra. Leonilde Coelho",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Endocrinología",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": " Diabetes, Patología Tiroidea",
+        "appointment": "Nombramientos:",
+        "appointmentItems": " Cita de endocrinología-Nombramiento de diabetes-Cita de cirugía bariátrica multidisciplinaria",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Diabetes y Cirugía Bariátrica",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Martes:",
+            "tuesdayItems": " 11h30-13h00 (Clínica de Oporto)"
+        },
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "Desde 2008-Asistente Graduado en Endocrinología.",
+            "l2": "Desde 2006-Colaboración en el nombramiento multidisciplinar de la diabetes y la patología tiroidea en el embarazo en la clínica Gynébe de Oporto",
+            "l3": "Desde 2005-Hospital Asistente en Endocrinología del Hospital Militar do Porto, ahora llamado Hospital das Forças Armadas-Pólo do Porto.",
+            "l4": "2001-2005-Hospital Asistente de Endocrinología del Hospital S. Marcos-Braga.",
+            "l5": "2000-Eventual Asistente de Endocrinología en el IPO-Porto.",
+            "l6": "Hasta 2000-Internship in Endocrinology at Hospital de Sto. António."
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "1991-Grado en Medicina y Cirugía por la Facultad de Medicina de la Universidad de Oporto"
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "Participación en varios cursos de valorización y actualización profesional y reuniones científicas nacionales e internacionales",
+            "l2": "Organización, colaboración y participación en varios congresos, conferencias y talleres"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas",
+            "l1": "Miembro del Grupo de Estudos da Ge-TNE",
+            "l2": "Miembro del grupo de estudios da Tiróide",
+            "l3": "Socio de SPEDM-Sociedade Portuguesa de Endocrinologia, Diabetes e Metabolismo"
+        }
+    },
+    "mb": {
+        "name": "Dra. Marta Baltar",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Psicología",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": " Ansiedad o depresión, problemas de sueño, problemas matrimoniales, depresión posparto, Infertilidad, dificultades parentales, separación y divorcio",
+        "appointment": "Nombramientos:",
+        "appointmentItems": " Citas de Psicología Clínica-Psychology Remote",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Intervención psicoterapéutica en niños, jóvenes y adultos",
+        "schecule": {
+            "title": "Horario:",
+            "tuesday": "Martes:",
+            "tuesdayItems": " 10h-13h (Cita remota)",
+            "thursday": "Jueves:",
+            "thursdayItems": " 16h-20h (cita remota)",
+            "friday": "Viernes:",
+            "fridayItems": " 16h-20h (Consulta presencial en la Clínica de Oporto)"
+        },
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "Trabaja en el campo de la Psicología Clínica y Sanitaria en diagnóstico psicométrico, seguimiento psicopedagógico y psicoterapéutico de niños, jóvenes y adultos en la Oficina de Psicología Clínica.",
+            "l2": "Desde 2006, es responsable de la cita de Psicología en la Clínica Gynébe. Dentro de la cita de Psicología, y en colaboración con los profesionales que trabajan en esta clínica, ha desarrollado actividades de evaluación\/intervención psicológica para niños, jóvenes y adultos en riesgo por problemas emocionales y\/o de aprendizaje, trastornos de crianza, problemas de infertilidad en parejas, depresión posparto, problemas sexuales y matrimoniales, separación y divorcio.",
+            "l3": "Trabajó en el campo de la Psicología Clínica Infantil y Juvenil en diagnóstico psicométrico, seguimiento psicoterapéutico y psicopedagógico en la Clínica Médica-Quirúrgica Marco de Canaveses (1989-1990).",
+            "l4": "Participó en el Programa Interministerial de Promoción del Éxito Educativo en la Educación Básica (Ministerio de Educación), siendo las modalidades de actuación y su evaluación en el campo de la estimulación psicopedagógica de la comunidad, agentes docentes, padres y alumnos (1988-1992).",
+            "l5": "Formación especializada en Psicoterapia: 2º año del Curso de Posgrado por la Sociedad Portuguesa de Psicología Clínica (1991-1993)."
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "Doctora en Psicología por la Facultad de Psicología y Ciencias de la Educación de la Universidad de Oporto, en 2005.",
+            "l2": "Máster en Psicopatología y Psicología Clínica del Instituto Superior de Psicologia Aplicada, en 1998.",
+            "l3": "Licenciada en Psicología por la Facultad de Psicología y Ciencias de la Educación de la Universidad de Lisboa."
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "Varios trabajos de investigación, comunicaciones y publicaciones de ámbito nacional."
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas"
+        }
+    },
+    "mca": {
+        "name": "Dra. Manuela Calado Araújo",
+        "specialty": "Especialidad:",
+        "specialtyItems": " Gineco-obstetricia",
+        "languages": "Idiomas:",
+        "languagesItems": " Portugués, inglés y español",
+        "illnesses": "Enfermedades:",
+        "illnessesItems": " Enfermedades genitales del tracto genital femenino, embarazo, infertilidad, menopausia",
+        "appointment": "Nombramientos:",
+        "appointmentItems": " Nombramiento de ginecología-Nombramiento de obstetricia-cita remota de ginecología",
+        "areasOfDifferentiation": "Áreas de diferenciación:",
+        "areasOfDifferentiationItems": " Embarazo de alto riesgo, sexualidad, estudio de infertilidad, ultrasonido ginecológico y obstétrico, cirugías y nacimientos",
+        "schecule": {
+            "title": "Horario:",
+            "monday": "Lunes:",
+            "mondayItems": " 14h40-19h (Clínica S. Tirso)",
+            "tuesday": "Martes:",
+            "tuesdayItems": " 10h-19h (Clínica de Oporto)",
+            "wednesday": "Miércoles:",
+            "wednesdayItems": " 9h-12h40 (Clínica S. Tirso)",
+            "friday": "Viernes:",
+            "fridayItems": " 10h-19h (Clínica de Oporto)"
+        },
+        "clinicalActivity": {
+            "title": "Actividad Clínica",
+            "l1": "2013-Graduate Assistant en Obstetricia (Licenciada en Consultores)",
+            "l2": "Desde 2003-Director Clínico de Clinica Gynébe",
+            "l3": "2000-2006-Asistente de Obstetricia, responsable de Cirugía Laparoscópica y Alta Riesgo, Hospital Braga",
+            "l4": "Desde 2000-Ha trabajado en el sector privado, a saber, en clínicas y varios hospitales privados.",
+            "l5": "1999-2000-Asistente de Ginecología y Obstetricia, Hospital Santo António, Porto",
+            "l6": "1992-1998-Pasantía adicional, Hospital Santo António, Porto",
+            "l7": "1990-1991-General Internship, Santo António Hospital, Porto"
+        },
+        "academicEducation": {
+            "title": "Antecedentes académicos",
+            "l1": "2004-Certificado de competencia en Ultrasonido Fetal, Fundación Medicina Fetal",
+            "l2": "1999-Medical Degree by ICBAS-Universidade do Porto"
+        },
+        "scientificActivity": {
+            "title": "Actividad Científica",
+            "l1": "2004-Asistente de profesor invitado en Obstetricia, Facultad de Medicina, Braga",
+            "l2": "1994-1996-Invitado Profesor Asistente de Ginecología y Obstetricia, Instituto de Ciencias Biomédicas Abel Salazar (ICBAS)",
+            "l3": "Publicaciones en revistas científicas",
+            "l4": "Participación en investigación clínica y desarrollo de protocolos",
+            "l5": "Cosupervisión de la tesis doctoral"
+        },
+        "scientificSocieties": {
+            "title": "Sociedades científicas",
+            "l1": "Sociedade Portuguesa de Obstetricia e Medicina Materno Fetal",
+            "l2": "Sociedade Portuguesa de Ginecologia",
+            "l3": "Sociedade Portuguesa da Medicina da Reprodução",
+            "l4": "Associação Portuguesa de Neurourologia e Uroginecologia"
+        }
+    },
+    "privacy": {
+        "title": "Política de privacidad",
+        "p1": "Su privacidad es importante para nosotros. Es la política de Gynébe Clinic respetar su privacidad con respecto a cualquier información que podamos recopilar sobre usted en nuestro sitio web  ",
+        "name": "Clínica Gynébe",
+        "p2": ", y otros sitios que poseemos y operamos.",
+        "p3": "Solicitamos información personal sólo cuando realmente lo necesitamos para proporcionarle un servicio. Lo hacemos por medios justos y legales, con su conocimiento y consentimiento.",
+        "p4": "Sólo retenemos la información recopilada durante el tiempo que sea necesario para proporcionar el servicio solicitado. Cuando almacenamos datos, lo protegemos dentro de medios comercialmente aceptables para prevenir la pérdida y el robo, así como el acceso no autorizado, la divulgación, la copia, el uso o la modificación.",
+        "p5": "No compartimos información de identificación personal públicamente o con terceros excepto según lo requerido por la ley.",
+        "p6": "Nuestro sitio web puede tener enlaces a sitios externos que no son operados por nosotros. Por favor, tenga en cuenta que no tenemos control sobre el contenido y las prácticas de estos sitios y no podemos aceptar la responsabilidad de sus respectivos ",
+        "pp": "políticas de privacidad.",
+        "p7": "Cualquier persona es libre de rechazar nuestra solicitud de información personal, en el entendido de que es posible que no podamos proporcionar algunos de los servicios deseados.",
+        "p8": "Su uso continuado de nuestro sitio web se considerará la aceptación de nuestras prácticas en torno a la privacidad y la información personal. Si tiene alguna pregunta acerca de cómo manejamos los datos de usuario y la información personal, por favor póngase en contacto con nosotros.",
+        "subtitle": "Compromiso del usuario",
+        "p9": "El usuario se compromete a hacer un uso adecuado de los contenidos e información que la Clínica Gynébe ofrece en el sitio web y con un carácter enunciativo, pero no limitativo:",
+        "p10": {
+            "l1": "A) No participar en actividades ilegales o contrarias a la buena fe y al orden público;",
+            "l2": "B) No difundir propaganda o contenido de carácter racista, xenófobo, juegos de azar en línea, juegos de azar, cualquier tipo de pornografía ilegal, apología del terrorismo o contra los derechos humanos;",
+            "l3": "C) No causar daños en los sistemas físicos (hardware) y lógicos (software) de la Clínica Gynébe, sus proveedores o terceros, para introducir o difundir virus informáticos o cualquier otro sistema de hardware o software que sea capaz de causar el daño antes mencionado."
+        },
+        "subtitle2": "Más Información",
+        "p11": "Esperemos que eso sea claro, y como se mencionó anteriormente, si hay algo que no estás seguro de si necesitas o no, generalmente es más seguro dejar las cookies habilitadas si interactúas con una de las características que usas en nuestro sitio."
+    },
+    "specialties": {
+        "title": "Nuestros Servicios",
+        "text": "La Clínica Gynébe se caracteriza por la calidad de su personal clínico, la diferenciación técnica de los servicios prestados y el fuerte componente humano y el compromiso de todos los profesionales para la satisfacción y bienestar del paciente. La Clínica Gynébe se caracteriza por su dinamismo y constante innovación y actualización del conocimiento científico, aliado a la disponibilidad de tecnología avanzada, adaptada a la prestación de atención sanitaria personalizada y diferenciada. En esta clínica existe una estrecha interrelación con otras áreas clínicas y especialidades médicas, permitiendo, siempre que sea necesario, una consulta multidisciplinaria, con estudio y tratamiento de las diversas patologías del paciente, plenamente integradas.",
+        "gyne": {
+            "title": "Ginecología",
+            "text": "El seguimiento ginecológico regular de la adolescencia a través de la menopausia es esencial en la prevención y tratamiento de las enfermedades ginecológicas y de transmisión sexual, así como en la detección de cáncer ginecológico.",
+            "text2": "Ginecología abarca:",
+            "list1": "Planificación familiar\/anticoncepción (incluyendo inserción y eliminación de IUD e implante)",
+            "list2": "Sexualidad",
+            "list3": "Sangrado uterino",
+            "list4": "Miomas uterinos",
+            "list5": "endometriosis",
+            "list6": "Estudio de la Infertilidad de Pareja",
+            "list7": "Menopausia",
+            "list8": "Ecografía ginecológica 3D\/4D",
+            "list9": "Cirugía menor",
+            "list10": "Cirugías ginecológicas"
+        },
+        "obs": {
+            "title": "Obstetricia",
+            "text": "La obstetricia hace el seguimiento desde la preconcepción hasta el posparto, en situaciones normales y con patología.",
+            "text2": "La obstetricia abarca una amplia área de atención, como:",
+            "list1": "Asesoramiento previo",
+            "list2": "Vigilancia del embarazo normal y en riesgo",
+            "list3": "Ecografía obstétrica del 1er trimestre diferenciado",
+            "list4": "Cribado Trisomía",
+            "list5": "Pre-Eclampsia y Proyección Laboral Pre-término",
+            "list6": "Detección de restricciones de crecimiento fetal",
+            "list7": "Ecografía obstétrica 3D\/4D",
+            "list8": "Cardiotocografía",
+            "list9": "Acompañamiento durante el parto normal, instrumental y quirúrgico"
+        },
+        "ped": {
+            "title": "Pediatría",
+            "text": "La pediatría sigue al recién nacido desde el nacimiento hasta la edad adulta temprana. El seguimiento regular en Pediatría tiene como objetivo el crecimiento sano y la promoción del bienestar físico y psicológico de los niños y adolescentes, actuando con carácter preventivo y curativo.",
+            "text2": "Pediatrics abarca un área amplia, como:",
+            "list1": "Crecimiento y desarrollo sanos y adecuados",
+            "list2": "Consejos dietéticos",
+            "list3": "Orientación vacunal",
+            "list4": "Diagnóstico y decisión terapéutica de situaciones patológicas",
+            "list5": "Identificación de casos que requieren intervención multidisciplinaria con otras áreas clínicas"
+        },
+        "endo": {
+            "title": "Endocrinología",
+            "text": "La endocrinología es la especialidad médica dedicada al diagnóstico y tratamiento de los trastornos del sistema endocrino, compuesto por las glándulas productoras de hormonas responsables del desarrollo normal, la reproducción y el metabolismo.",
+            "text2": "La tiroides, el páncreas, las glándulas pituitarias, las adrenales, las glándulas paratiroides, los ovarios y los testículos son las mejores glándulas endocrinas conocidas, pero el tejido óseo y adiposo también juegan un papel importante en la producción de hormonas.",
+            "text3": "Las situaciones que más llevan al paciente a la práctica son:",
+            "list1": "Diabetes",
+            "list2": "Obesidad",
+            "list3": "Enfermedad metabólica",
+            "list4": "Patología tiroidea (hipertiroidismo, hipotiroidismo, nódulos, cáncer)",
+            "list5": "Trastornos del crecimiento",
+            "list6": "Hirsutismo (pelo excesivo)",
+            "list7": "Infertilidad"
+        },
+        "psy": {
+            "title": "Psicología",
+            "text": "En esta consulta, destacamos:",
+            "text2": "La evaluación psicológica",
+            "text3": "La intervención psicoterapéutica de niños, jóvenes y adultos en situaciones de:",
+            "list1": "Ansiedad y\/o depresión",
+            "list2": "Trastornos del sueño",
+            "list3": "Problemas de aprendizaje",
+            "list4": "Dificultad en la educación superior",
+            "list5": "Problemas de trabajo",
+            "list6": "Asuntos conyugales",
+            "list7": "Depresión postparto",
+            "list8": "Infertilidad",
+            "list9": "Dificultades parentales",
+            "list10": "Separación y divorcio"
+        },
+        "nut": {
+            "title": "Nutrición",
+            "text": "En nuestras citas de nutrición, las necesidades nutricionales son evaluadas y la planificación dietética se personaliza en cada situación individual y meta específica.",
+            "text2": "Aprender a tener hábitos de alimentación saludables, además de la pérdida de peso, tiene como objetivo mejorar la calidad de la vida física y emocional, así como las patologías más diversas.",
+            "text3": "Los nutricionistas trabajan de cerca con otros profesionales de la salud y en particular con la endocrinología."
+        }
+    }
+}

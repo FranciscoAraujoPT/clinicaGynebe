@@ -1,7 +1,11 @@
 {
-    "en": "../",
+    "otherLang": "../",
     "footer": {
         "index": "Home",
+        "languages": "Languages",
+        "pt": "Portuguese",
+        "es": "Spanish",
+        "en": "English",
         "specialties": "Specialties",
         "agreements": "Conventions",
         "contacts": "Contacts",
@@ -70,9 +74,7 @@
         "phone": {
             "title": "Call us:",
             "landline": "225 432 135",
-            "number": "915 424 413",
-            "text": "24H Emergency",
-            "text2": "Telephone assistance"
+            "number": "915 424 413"
         }
     },
     "ac": {

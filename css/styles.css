@@ -87,12 +87,6 @@ h4 a:hover {
     color: #66b3ff;
 }
 
-#search-results h4 {
-    text-align: left;
-    font-size: 18px;
-    line-height: 21px;
-}
-
 h5 {
     font: 400 37px/37px "Roboto Slab", sans-serif;
     color: #FFF;
@@ -298,6 +292,7 @@ h6 a:hover {
     padding: 5px 5px 0px;
     text-align: right;
     color: #00284d;
+    min-width: 256.14px;
 }
 
 #header.scroll .phone address{
@@ -305,7 +300,7 @@ h6 a:hover {
 }
 
 #header.scroll .phone .first, #header.scroll .phone p{
-    color: #777777;
+    color: #c0c0c0;
 }
 
 #header .phone .first {
@@ -323,15 +318,11 @@ h6 a:hover {
     font: 300 20px/20px "Roboto Slab", sans-serif;
 }
 
-#header #search {
-    margin-top: 14px;
-}
-
 .sf-menu {
     position: fixed;
     top: 0;
     right: 0;
-    color: #c0c0c0;
+    color: white;
     background-color: #00284d;
     display: flex;
     flex-direction: column;
@@ -422,6 +413,10 @@ h6 a:hover {
     transition: all 0.5s ease 0.6s;
 }
 
+.sf-menu > li:nth-child(6) {
+    transition: all 0.5s ease 0.7s;
+}
+
 .sf-menu > li.fade {
     opacity: 1;
 }
@@ -457,7 +452,7 @@ h6 a:hover {
 
 .sf-menu .dropdownContacts.open li, .sf-menu .dropdownGallery.open li {
     display: block;
-    color: #c0c0c0;
+    color: white;
 }
 
 .sf-menu .dropdownContacts i, .sf-menu .dropdownGallery i {
@@ -474,7 +469,7 @@ h6 a:hover {
     display: inline-block;
     position: relative;
     top: 0;
-    padding: 10px 0 10px 10px;
+    padding: 5px 0 5px 5px;
     z-index: 10;
     width: max-content;
     transition: opacity 0.3s ease-in-out;
@@ -517,6 +512,83 @@ h1 a .second {
     display: block;
     color: #00284d;
     font: 300 28px/28px "Roboto Slab", sans-serif;
+}
+
+/* ======= Languange ======= */
+
+.languageButton {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    z-index: 10;
+}
+
+.inicialLang {
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    padding: 10px;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-50%) translateY(0%);
+    width: fit-content;
+}
+
+.inicialLang.buttonPress {
+    transform: translateX(-50%) translateY(500%);
+}
+
+.language {
+    display: inline;
+}
+
+.languageList {
+    border: 1px solid #c0c0c0;
+    border-radius: 16px;
+    text-align: left;
+    padding: 10px 20px;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(500%);
+}
+
+.languageList img {
+    object-fit: fill;
+    width: 25px;
+    padding-right: 10px;
+}
+
+.languageList.buttonPress{
+    transform: translateY(-10%);
+}
+
+.languageList.buttonPress li{
+    display: block;
+}
+
+.langNavButton {
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    display: none;
+    z-index: 15;
+}
+
+.langNavButton.buttonPress {
+    display: block;
+}
+
+.langLineTop, .langLineBottom {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 3px;
+}
+
+.langLineTop {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+  
+.langLineBottom {
+    transform: rotate(45deg);
 }
 
 /*========================================================
@@ -1262,10 +1334,16 @@ h1 a .second {
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease 0.8s;
 }
 
 .socials2 li+li {
-    margin-left: 20px;
+    margin-left: 25px;
+}
+
+.socials2.open{
+    opacity: 1;
 }
 /* ======= Animations on scroll  ======= */
 
@@ -1610,20 +1688,6 @@ h1 a .second {
     color: #00284d;
 }
 
-/* ======= Languange ======= */
-
-.languangeButton {
-    position: fixed;
-    bottom: 0;
-    left: 2%;
-    background-color: #00284d;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    z-index: 10;
-}
-
 /*========================================================
                     Media Queries
 =========================================================*/
@@ -1640,7 +1704,7 @@ h1 a .second {
 
 @media (min-width: 501px) {
     #logo {
-        padding: 20px 25px;
+        padding: 20px 25px 10px;
     }
 
     .img-container {
@@ -1766,6 +1830,56 @@ h1 a .second {
         display: none;
     }
     
+    .sf-menu .languageButton {
+        position: fixed;
+        padding: 0;
+        bottom: 0;
+        left: 2%;
+    }
+
+    .sf-menu .inicialLang {
+        top: unset;
+        bottom: 0;
+        left: unset;
+        background-color: #00284d;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transform: translateY(0%);
+        height: fit-content;
+    }
+
+    .sf-menu .inicialLang.buttonPress {
+        transform: translateY(500%);
+    }
+
+    .sf-menu .language {
+        display: inline;
+    }
+
+    .sf-menu .languageList {
+        text-align: left;
+        border: 0;
+        background-color: #00284d;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .sf-menu .languageList.buttonPress{
+        transform: translateY(0%);
+    }
+
+    
+    #header.scroll .sf-menu .languageList > li{
+        color: white;
+    }
+
+    .sf-menu .langNavButton {
+        display: none;
+    }
     .dropdown {
         opacity: 0;
         position: absolute;
