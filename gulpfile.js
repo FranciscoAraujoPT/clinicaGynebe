@@ -25,7 +25,6 @@ gulp.task("htmlEn", function () {
     return gulp.src("./html/en/*.html")
         .pipe(replace(".html", ""))
         .pipe(replace("../css/styles.css", "../css/style.css"))
-        .pipe(replace("images/favicon.ico", "../images/favicon.ico"))
         .pipe(replace('<link rel="stylesheet" href="../../css/reset.css">', ""))
         .pipe(gulp.dest("./build/en"))
 });
@@ -34,7 +33,6 @@ gulp.task("htmlEs", function () {
     return gulp.src("./html/es/*.html")
         .pipe(replace(".html", ""))
         .pipe(replace("../css/styles.css", "../css/style.css"))
-        .pipe(replace("images/favicon.ico", "../images/favicon.ico"))
         .pipe(replace('<link rel="stylesheet" href="../../css/reset.css">', ""))
         .pipe(gulp.dest("./build/es"))
 });
