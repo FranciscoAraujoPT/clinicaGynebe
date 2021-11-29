@@ -10,6 +10,8 @@ const concat = require("gulp-concat");
 const rename = require("gulp-rename");
 const replace = require("gulp-replace");
 const del = require("del");
+const fs = require('fs');
+
 
 gulp.task("html", function () {
     return gulp.src("./html/*.html")
@@ -60,9 +62,14 @@ gulp.task("images", function () {
         .pipe(gulp.dest("./build/images"))
 });
 
+gulp.task("favicon", function (done) {
+    fs.createReadStream("images/favicon.ico").pipe(fs.createWriteStream("build/images/favicon.ico"))
+    return done();
+})
+
 gulp.task("clean", function (done) {
     del.sync("build");
     return done();
 })
 
-gulp.task("dist", gulp.series("clean", "html", "htmlEn", "htmlEs", "css", "js", "images"));
+gulp.task("dist", gulp.series("clean", "html", "htmlEn", "htmlEs", "css", "js", "images", "favicon"));
