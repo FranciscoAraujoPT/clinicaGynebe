@@ -61,7 +61,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("favicon", function (done) {
-    fs.createReadStream("images/favicon.ico").pipe(fs.createWriteStream("build/images/favicon.ico"))
+    fs.createReadStream("images/favicon.ico").pipe(fs.createWriteStream("build/favicon.ico"))
     return done();
 })
 
