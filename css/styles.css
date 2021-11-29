@@ -544,6 +544,7 @@ h1 a .second {
 .languageList {
     border: 1px solid #c0c0c0;
     border-radius: 16px;
+    background-color: #00284d;
     text-align: left;
     padding: 10px 20px;
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1330,7 +1331,7 @@ h1 a .second {
 }
 
 .socials2{
-    position: fixed;
+    position: absolute;
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
@@ -1860,7 +1861,6 @@ h1 a .second {
     .sf-menu .languageList {
         text-align: left;
         border: 0;
-        background-color: #00284d;
         padding: 10px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
