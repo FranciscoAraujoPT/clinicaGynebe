@@ -10,6 +10,8 @@
         "agreements": "Conventions",
         "contacts": "Contacts",
         "privacy": {
+            "landline": "Call to the national fixed network",
+            "phone": "Call to national mobile network",
             "index": "Clínica Gynébe",
             "copyrightYear": "2021",
             "policy": "Política de Privacidade",

@@ -125,6 +125,12 @@ h6 a:hover {
     margin-bottom: 42px;
 }
 
+.phone_sup{
+    position: relative;
+    bottom: 10px;
+    font-size: x-small;
+}
+
 /* ======= Wrappers ======= */
 .wrapper1 {
     position: relative;
@@ -1685,8 +1691,12 @@ h1 a .second {
 }
 
 #footer .privacy-block {
-    margin-top: 25px;
+    margin: 25px;
     color: #00284d;
+}
+ 
+.footer_phone {
+    font-size: x-small;
 }
 
 /*========================================================
@@ -2240,6 +2250,13 @@ h1 a .second {
 
     .box9 ul {
         padding-inline-start: 100px !important;
+    }
+
+    .footer_phone {
+        position: absolute;
+        right: 0;
+        font-size: smaller;
+        text-align: left;
     }
 }
 
