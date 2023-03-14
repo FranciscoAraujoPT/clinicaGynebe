@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.gv %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= gv.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= gv.specialty %>
+                        </strong>
+                        <%= gv.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/gv.jpg" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= gv.languages %>
+                                </strong>
+                                <%= gv.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= gv.illnesses %>
+                                </strong>
+                                <%= gv.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= gv.appointment %>
+                                </strong>
+                                <%= gv.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= gv.areasOfDifferentiation %>
+                                </strong>
+                                <%= gv.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule fade-in">
+                    <h3>
+                        <%= gv.schecule.title %>
+                    </h3>
+                    <ul>
+                        <li><strong>
+                                <%= gv.schecule.tuesday %>
+                            </strong>
+                            <%= gv.schecule.tuesdayItems %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= gv.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= gv.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= gv.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= gv.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= gv.scientificSocieties.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= gv.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= gv.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= gv.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= gv.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= gv.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l6 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l7 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l8 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l9 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l10 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l11 %>
+                            </li>
+                            <li>
+                                <%= gv.clinicalActivity.l12 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= gv.academicEducation.l1 %>
+                            </li>
+                            <li>
+                                <%= gv.academicEducation.l2 %>
+                            </li>
+                            <li>
+                                <%= gv.academicEducation.l3 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= gv.scientificActivity.l1 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+                            <li>
+                                <%= gv.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= gv.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= gv.scientificSocieties.l3 %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+</body>
+
+</html>

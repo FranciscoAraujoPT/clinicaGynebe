@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.mb %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= mb.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= mb.specialty %>
+                        </strong>
+                        <%= mb.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/profile.png" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= mb.languages %>
+                                </strong>
+                                <%= mb.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= mb.illnesses %>
+                                </strong>
+                                <%= mb.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= mb.appointment %>
+                                </strong>
+                                <%= mb.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= mb.areasOfDifferentiation %>
+                                </strong>
+                                <%= mb.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule fade-in">
+                    <h3>
+                        <%= mb.schecule.title %>
+                    </h3>
+                    <ul>
+                        <li><strong>
+                                <%= mb.schecule.tuesday %>
+                            </strong>
+                            <%= mb.schecule.tuesdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mb.schecule.thursday %>
+                            </strong>
+                            <%= mb.schecule.thursdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mb.schecule.friday %>
+                            </strong>
+                            <%= mb.schecule.fridayItems %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= mb.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= mb.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= mb.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= mb.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= mb.scientificSocieties.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= mb.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= mb.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= mb.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= mb.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= mb.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= mb.clinicalActivity.l5 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= mb.academicEducation.l1 %>
+                            </li>
+                            <li>
+                                <%= mb.academicEducation.l2 %>
+                            </li>
+                            <li>
+                                <%= mb.academicEducation.l3 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= mb.scientificActivity.l1 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+</body>
+
+</html>

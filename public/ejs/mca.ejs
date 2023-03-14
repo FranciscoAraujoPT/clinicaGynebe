@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.mca %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= mca.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= mca.specialty %>
+                        </strong>
+                        <%= mca.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/mca.jpg" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= mca.languages %>
+                                </strong>
+                                <%= mca.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= mca.illnesses %>
+                                </strong>
+                                <%= mca.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= mca.appointment %>
+                                </strong>
+                                <%= mca.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= mca.areasOfDifferentiation %>
+                                </strong>
+                                <%= mca.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule fade-in">
+                    <h3>
+                        <%= mca.schecule.title %>
+                    </h3>
+                    <ul>
+                        <li><strong>
+                                <%= mca.schecule.monday %>
+                            </strong>
+                            <%= mca.schecule.mondayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mca.schecule.tuesday %>
+                            </strong>
+                            <%= mca.schecule.tuesdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mca.schecule.wednesday %>
+                            </strong>
+                            <%= mca.schecule.wednesdayItems %>
+                        </li>
+                        <li><strong>
+                                <%= mca.schecule.friday %>
+                            </strong>
+                            <%= mca.schecule.fridayItems %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= mca.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= mca.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= mca.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= mca.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= mca.scientificSocieties.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= mca.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= mca.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= mca.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= mca.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= mca.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l6 %>
+                            </li>
+                            <li>
+                                <%= mca.clinicalActivity.l7 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= mca.academicEducation.l1 %>
+                            </li>
+                            <li>
+                                <%= mca.academicEducation.l2 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= mca.scientificActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificActivity.l5 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+                            <li>
+                                <%= mca.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificSocieties.l3 %>
+                            </li>
+                            <li>
+                                <%= mca.scientificSocieties.l4 %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+</body>
+
+</html>

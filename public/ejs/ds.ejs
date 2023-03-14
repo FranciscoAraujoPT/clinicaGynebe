@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.ds %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= ds.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= ds.specialty %>
+                        </strong>
+                        <%= ds.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/profile.png" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= ds.languages %>
+                                </strong>
+                                <%= ds.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= ds.illnesses %>
+                                </strong>
+                                <%= ds.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= ds.appointment %>
+                                </strong>
+                                <%= ds.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= ds.areasOfDifferentiation %>
+                                </strong>
+                                <%= ds.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule fade-in">
+                    <h3>
+                        <%= ds.schecule.title %>
+                    </h3>
+                    <ul>
+                        <li><strong>
+                                <%= ds.schecule.friday %>
+                            </strong>
+                            <%= ds.schecule.fridayItems %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= ds.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= ds.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= ds.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= ds.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= ds.scientificSocieties.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= ds.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= ds.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= ds.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= ds.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= ds.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= ds.clinicalActivity.l6 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= ds.academicEducation.l1 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= ds.scientificActivity.l1 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+                            <li>
+                                <%= ds.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l3 %>
+                            </li>
+                            <li>
+                                <%= ds.scientificSocieties.l4 %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+</body>
+
+</html>

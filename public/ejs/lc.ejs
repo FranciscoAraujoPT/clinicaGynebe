@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.lc %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= lc.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= lc.specialty %>
+                        </strong>
+                        <%= lc.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/lc.jpg" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= lc.languages %>
+                                </strong>
+                                <%= lc.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= lc.illnesses %>
+                                </strong>
+                                <%= lc.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= lc.appointment %>
+                                </strong>
+                                <%= lc.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= lc.areasOfDifferentiation %>
+                                </strong>
+                                <%= lc.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule fade-in">
+                    <h3>
+                        <%= lc.schecule.title %>
+                    </h3>
+                    <ul>
+                        <li><strong>
+                                <%= lc.schecule.tuesday %>
+                            </strong>
+                            <%= lc.schecule.tuesdayItems %>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= lc.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= lc.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= lc.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= lc.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= lc.clinicalActivity.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= lc.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= lc.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= lc.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= lc.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= lc.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l5 %>
+                            </li>
+                            <li>
+                                <%= lc.clinicalActivity.l6 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= lc.academicEducation.l1 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= lc.scientificActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificActivity.l2 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+                            <li>
+                                <%= lc.scientificSocieties.l1 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificSocieties.l2 %>
+                            </li>
+                            <li>
+                                <%= lc.scientificSocieties.l3 %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+</body>
+
+</html>

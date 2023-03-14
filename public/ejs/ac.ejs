@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.ac %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/header") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <section id="content" class="common">
+            <div class="overlay"></div>
+            <div class="wrapper7">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= ac.name %>
+                    </h2>
+                    <h3><strong>
+                            <%= ac.specialty %>
+                        </strong>
+                        <%= ac.specialtyItems %>
+                    </h3>
+                </div>
+                <div class="box8-wrapper1">
+                    <div class="box8 fade-in">
+                        <img src="../images/profile.png" alt="">
+                        <div class="doctorsDescription language">
+                            <i class="fas fa-globe-europe"></i>
+                            <p><strong>
+                                    <%= ac.languages %>
+                                </strong>
+                                <%= ac.languagesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription sick">
+                            <i class="fas fa-clipboard-list"></i>
+                            <p><strong>
+                                    <%= ac.illnesses %>
+                                </strong>
+                                <%= ac.illnessesItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription apoint">
+                            <i class="fas fa-stethoscope"></i>
+                            <p><strong>
+                                    <%= ac.appointment %>
+                                </strong>
+                                <%= ac.appointmentItems %>
+                            </p>
+                        </div>
+                        <div class="doctorsDescription areas">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <p><strong>
+                                    <%= ac.areasOfDifferentiation %>
+                                </strong>
+                                <%= ac.areasOfDifferentiationItems %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box9-wrapper1">
+                    <div class="box9 fade-in">
+                        <div class="box9-background"></div>
+                        <div class="bar-holder">
+                            <div class="chevronDown"></div>
+                            <p>
+                                <%= ac.clinicalActivity.title %>
+                            </p>
+                        </div>
+                        <ul class="tab-holder">
+                            <li class="activity">
+                                <%= ac.clinicalActivity.title %>
+                            </li>
+                            <li class="formation">
+                                <%= ac.academicEducation.title %>
+                            </li>
+                            <li class="science">
+                                <%= ac.scientificActivity.title %>
+                            </li>
+                            <li class="sociaty">
+                                <%= ac.scientificSocieties.title %>
+                            </li>
+                        </ul>
+                        <div class="activity">
+                            <h4>
+                                <%= ac.clinicalActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="formation">
+                            <h4>
+                                <%= ac.academicEducation.title %>
+                            </h4>
+                        </div>
+                        <div class="science">
+                            <h4>
+                                <%= ac.scientificActivity.title %>
+                            </h4>
+                        </div>
+                        <div class="sociaty">
+                            <h4>
+                                <%= ac.scientificSocieties.title %>
+                            </h4>
+                        </div>
+                        <ul class="text-activity open">
+                            <li>
+                                <%= ac.clinicalActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= ac.clinicalActivity.l2 %>
+                            </li>
+                            <li>
+                                <%= ac.clinicalActivity.l3 %>
+                            </li>
+                            <li>
+                                <%= ac.clinicalActivity.l4 %>
+                            </li>
+                            <li>
+                                <%= ac.clinicalActivity.l5 %>
+                            </li>
+                        </ul>
+                        <ul class="text-formation">
+                            <li>
+                                <%= ac.academicEducation.l1 %>
+                            </li>
+                            <li>
+                                <%= ac.academicEducation.l2 %>
+                            </li>
+                        </ul>
+                        <ul class="text-science">
+                            <li>
+                                <%= ac.scientificActivity.l1 %>
+                            </li>
+                            <li>
+                                <%= ac.scientificActivity.l2 %>
+                            </li>
+                        </ul>
+                        <ul class="text-sociaty">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/cv.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+
+</body>
+
+</html>
