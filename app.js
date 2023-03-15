@@ -3,10 +3,7 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-const session = require('express-session');
-const passport = require('passport');
-const OIDCStrategy = require('passport-openidconnect').Strategy;
-const MySQLStore = require('express-mysql-session')(session);
+
 const { OAuth2Client } = require('google-auth-library');
 const CLIENT_ID = "529448807183 - tctbbs5l01n3i1da262d1c5m52vjmlbp.apps.googleusercontent.com";
 
@@ -19,17 +16,9 @@ app.set('views', __dirname + '/public/ejs');
 
 // Connect to MySQL database
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'fcaraujo',
-    password: 'quico',
-    database: 'gynebe'
-});
-
-// Configure session middleware
-const sessionStore = new MySQLStore({
-    host: 'localhost',
-    user: 'fcaraujo',
-    password: 'quico',
+    host: 'database-1.cb8p8kuhqckt.eu-north-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'quico3105',
     database: 'gynebe'
 });
 
@@ -38,56 +27,12 @@ connection.connect();
 // Use helmet middleware for adding security headers
 app.use(helmet());
 
-//RETIRAR ISTO DEPOIS!!!
-app.use(helmet.contentSecurityPolicy({
-    directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://apis.google.com", "https://kit.fontawesome.com", "https://accounts.google.com"],
-    },
-}));
-
 // Use body-parser middleware for handling HTTP request data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Configure sessions
-app.use(session({
-    secret: 'your-secret-key',
-    resave: false,
-    saveUninitialized: false,
-    store: sessionStore
-}));
-
-// Configure passport
-app.use(passport.initialize());
-app.use(passport.session());
-
 // Serve static files from the 'public' directory
-app.use(express.static("public"));
-
-
-// Configure Autenticação.gov OpenID Connect endpoints
-passport.use(new OIDCStrategy({
-    issuer: 'https://am.biscuit.pt/auth/realms/autenticacaogov',
-    authorizationURL: 'https://am.biscuit.pt/auth/realms/autenticacaogov/protocol/openid-connect/auth',
-    tokenURL: 'https://am.biscuit.pt/auth/realms/autenticacaogov/protocol/openid-connect/token',
-    userInfoURL: 'https://am.biscuit.pt/auth/realms/autenticacaogov/protocol/openid-connect/userinfo',
-    clientID: 'your-client-id',
-    clientSecret: 'your-client-secret',
-    callbackURL: 'http://localhost:3000/auth/callback'
-}, (accessToken, refreshToken, profile, done) => {
-    // Save the user profile to the session
-    req.session.user = profile;
-    done(null, profile);
-}));
-
-// Configure passport serialization and deserialization
-passport.serializeUser((user, done) => {
-    done(null, user);
-});
-passport.deserializeUser((user, done) => {
-    done(null, user);
-});
+app.use(express.static(__dirname + "/public"));
 
 // Use rate-limit middleware for limiting API requests
 const apiLimiter = rateLimit({
@@ -110,8 +55,6 @@ app.get('/:lang/*', function (req, res, next) {
         res.status(404).send('Page not found');
     }
 });
-
-
 
 // Serve the home page for each language
 app.get('/:lang/', function (req, res) {
@@ -204,88 +147,6 @@ app.get('/:lang/specialties', function (req, res) {
     res.render('specialties', language);
 });
 
-app.get('/auth/callback', passport.authenticate('openidconnect', {
-    successRedirect: '/dashboard',
-    failureRedirect: '/login'
-}));
-
-// Handle form submissions
-app.post('/appointments', (req, res) => {
-    const { name, email, phone, date, time, notes } = req.body;
-    const appointment = { name, email, phone, date, time, notes };
-    connection.query('INSERT INTO appointments SET ?', appointment, (error, results, fields) => {
-        if (error) {
-            console.error('Error booking appointment:', error);
-            res.sendStatus(500);
-            return;
-        }
-        console.log('Appointment booked successfully:', appointment);
-        res.sendStatus(200);
-    });
-});
-
-// Add login route
-app.post('/auth/login', function (req, res) {
-    const { code } = req.body;
-
-    // Make a POST request to authentication.gov
-    request.post({
-        url: 'https://auth.gov.pt/oauth/access_token',
-        form: {
-            grant_type: 'authorization_code',
-            code,
-            client_id: 'your_client_id',
-            client_secret: 'your_client_secret',
-            redirect_uri: 'http://localhost:3000/auth/callback'
-        }
-    }, function (err, response, body) {
-        if (err) {
-            // Handle error
-            res.status(500).send('Error authenticating user');
-            return;
-        }
-
-        // Parse access token from response
-        const { access_token } = JSON.parse(body);
-
-        // Make a GET request to authentication.gov to retrieve user info
-        request.get({
-            url: 'https://auth.gov.pt/oauth/userinfo',
-            headers: {
-                Authorization: `Bearer ${access_token}`
-            }
-        }, function (err, response, body) {
-            if (err) {
-                // Handle error
-                res.status(500).send('Error retrieving user info');
-                return;
-            }
-
-            // Parse user info from response
-            const { sub, given_name, family_name, email } = JSON.parse(body);
-
-            // Store user info in session
-            req.session.user = { id: sub, firstName: given_name, lastName: family_name, email };
-
-            // Redirect to dashboard page
-            res.redirect('/dashboard');
-        });
-    });
-});
-
-// Add dashboard route
-app.get('/dashboard', function (req, res) {
-    // Check if user is logged in
-    if (!req.session.user) {
-        // Redirect to login page
-        res.redirect('/login');
-        return;
-    }
-
-    // Render dashboard page with user info
-    res.send(`Welcome, ${req.session.user.firstName} ${req.session.user.lastName}!`);
-});
-
 app.post('/google-login', async (req, res) => {
     const { id_token } = req.body;
 
@@ -314,7 +175,8 @@ app.use((error, req, res, next) => {
     res.status(500).json({ success: false, message: 'Something went wrong on the server.' });
 });
 
-// Start the server
+//Start the Server
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
+
