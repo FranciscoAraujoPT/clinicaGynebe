@@ -44,6 +44,7 @@
     "html": "^1.0.0",
     "mysql": "^2.18.1",
     "passport": "^0.6.0",
-    "passport-openidconnect": "^0.1.1"
+    "passport-openidconnect": "^0.1.1",
+    "roboto-fontface": "^0.10.0"
   }
 }

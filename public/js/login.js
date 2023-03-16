@@ -41,3 +41,8 @@ gapi.load('client:auth2', function () {
         console.log('Google API client initialized');
     });
 });
+
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'UA-225478188-1');
