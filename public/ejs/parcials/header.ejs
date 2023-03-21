@@ -191,8 +191,26 @@
                         </a></li>
                 </ul>
             </li>
-            <div class="login">
-                <i class="fa-regular fa-user"></i>
+            <div class="phone-wrapper">
+                <div class="phone-button">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="phone">
+                    <span class="first">
+                        <%= header.phone.title %>
+                    </span>
+                    <a href="tel:00351225432135">
+                        <address>
+                            <%= header.phone.landline %><sup class="phone_sup">1</sup>
+                        </address>
+                    </a>
+                    <a href="tel:00351915424413">
+                        <address>
+                            <%= header.phone.number %><sup class="phone_sup">2</sup>
+                        </address>
+                    </a>
+                </div>
             </div>
             <ul class="socials2">
                 <li class="fade-in">
@@ -205,22 +223,11 @@
             </ul>
         </ul>
     </nav>
-    <div class="phone">
-        <span class="first">
-            <%= header.phone.title %>
-        </span>
-        <a href="tel:00351225432135">
-            <address>
-                <%= header.phone.landline %><sup class="phone_sup">1</sup>
-            </address>
-        </a>
-        <a href="tel:00351915424413">
-            <address>
-                <%= header.phone.number %><sup class="phone_sup">2</sup>
-            </address>
-        </a>
+    <div id="login">
+        <i class="fa-regular fa-user"></i>
+        <span>|Marcar Consulta</span>
     </div>
     <div class="login-wrapper">
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="google-signIn"></div>
     </div>
 </header>

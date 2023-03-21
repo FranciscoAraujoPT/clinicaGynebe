@@ -5,7 +5,6 @@
 
 body {
     font: 400 19px/28px "Roboto Slab", sans-serif;
-    color: #777777;
     background-color: #FFF;
 }
 
@@ -136,7 +135,7 @@ h6 a:hover {
 /* ======= Wrappers ======= */
 .wrapper1 {
     position: relative;
-    box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.03);
     background: #FFF;
     border-bottom-left-radius: 50% 49px;
     border-bottom-right-radius: 50% 49px;
@@ -165,9 +164,9 @@ h6 a:hover {
 }
 
 .wrapper2 {
-    margin-top: -90px;
+    margin-top: 100vh;
     background: #f7f7f7;
-    padding: 0px 0 105px;
+    padding: 50px 0 105px;
 }
 
 .wrapper2__inset1 {
@@ -261,8 +260,10 @@ h6 a:hover {
 
 #header {
     display: flex;
-    position: sticky;
-    position: -webkit-sticky;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
     top: 0;
     left: 0;
     z-index: 10;
@@ -293,25 +294,77 @@ h6 a:hover {
     margin-bottom: 23px;
 }
 
-#header .phone {
-    position: relative;
-    display: none;
-    margin: 10px 20px 0px;
-    padding: 5px 5px 0px;
-    text-align: right;
-    color: #00284d;
-    min-width: 256.14px;
+#header .phone-button {
+    position: fixed;
+    right: 2.5%;
+    bottom: 2.5%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #00284d;
+    cursor: pointer;
+    z-index: 10;
+    outline: none;
+    box-shadow: 0 0 10px 10px #02a1cb, 0 0 20px 20px #02a1cb, 0 0 30px 30px #02a1cb, 0 0 40px 40px rgb(2, 161, 203);
+    animation: glowing 1s ease-out infinite;
 }
 
-#header.scroll .phone address{
+/* Define the glowing effect animation */
+@keyframes glowing {
+0% {
+    box-shadow: 0 0 0 0 rgba(2, 161, 203, 0.7);
+}
+100% {
+    box-shadow: 0 0 0 15px rgba(0, 119, 255, 0);
+}
+
+}
+#header .fa-phone-volume, #header .fa-x {
     color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-#header.scroll .phone .first, #header.scroll .phone p{
-    color: #c0c0c0;
+#header .fa-x{
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+#header .fa-phone-volume{
+    transition: transform 0.4s ease-out;
+}
+
+#header .phone-wrapper {
+    position: fixed;
+    right: 1.5%;
+    bottom: 0;
+}
+
+#header .phone {
+    transform: scale(0);
+    padding: 10px 15px;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s ease-out;
+    transform-origin: 12.5rem 2.5rem;
+}
+
+#header .phone a{
+    display: block;
+    width: fit-content;
+}
+
+#header .phone .first, #header .phone p{
+    color: black;
 }
 
 #header .phone .first {
+    width: fit-content;
     display: block;
     font: 300 20px/20px "Roboto Slab", sans-serif;
 }
@@ -319,6 +372,7 @@ h6 a:hover {
 #header .phone address {
     display: block;
     font: 400 20px/25px "Roboto Slab", sans-serif;
+    margin: 0 10px;
 }
 
 #header .phone p {
@@ -545,14 +599,8 @@ h1 a .second {
     transform: translateX(-50%) translateY(500%);
 }
 
-.login {
-    position: fixed;
-    right: 2.5%;
-    bottom: 2.5%;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background-color: #00284d;
+#login {
+    z-index: 10;
 }
 
 .login-wrapper {
@@ -568,9 +616,9 @@ h1 a .second {
     display: block;
 }
 
-.g-signin2 {
-    display: inline-block;
-    background-color: #4285f4;
+.google-signIn {
+    display: block;
+    background-color: white;
     color: #fff;
     border-radius: 2px;
     padding: 10px 16px;
@@ -582,6 +630,7 @@ h1 a .second {
 
 .language {
     display: inline;
+    cursor: pointer;
 }
 
 .languageList {
@@ -638,11 +687,15 @@ h1 a .second {
 /*========================================================
                     CONTENT styles
 =========================================================*/
+#content {
+    margin-top: 150px;
+}
+
 .img-container {
     width: 100%;
     height: 100vh;
-    position: relative;
-    top: -93px;
+    top: 0;
+    position: absolute;
     background: center / cover no-repeat url(../images/baby.jpg);
     /* https://unsplash.com/photos/p76UivR30oo */
 }
@@ -1751,12 +1804,15 @@ h1 a .second {
 }
 
 @media (min-width: 501px) {
+    .wrapper2 {
+        margin-top: 400px;
+    }
+
     #logo {
         padding: 20px 25px 10px;
     }
 
     .img-container {
-        top: -127px;
         height: 400px;
         background-image: url(../images/baby-cover.jpg);
         /* https://unsplash.com/photos/5arky4TZZ0Y */
@@ -1818,8 +1874,11 @@ h1 a .second {
         font: 300 26px/38px "Roboto Slab", sans-serif;
     }
     
+    .wrapper2 {
+        margin-top: 600px;
+    }
+
     .img-container {
-        top: -133px;
         height: 600px;
     }
 
@@ -1836,6 +1895,7 @@ h1 a .second {
         width: inherit;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         pointer-events: all;
         color: #00284d;
     }
@@ -1991,7 +2051,7 @@ h1 a .second {
         display: block;
         background-color: #FFF;
         transform: translateY(-50%) rotate(45deg);
-        box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: -3px -3px 0px -5px rgba(0, 0, 0, 0.1);
     }
 
     #header.scroll .sf-menu > li {
@@ -2299,12 +2359,12 @@ h1 a .second {
 
 
 @media (min-width: 1336px) {
-    #header {
-        justify-content: space-between;
+    #logo {
+        margin-right: auto;
     }
 
-    #header .phone {
-        display: block;
+    #login {
+        margin-left: auto;
     }
 
     .sf-menu > li{
@@ -2355,6 +2415,10 @@ h1 a .second {
 }
 
 @media (min-width: 1670px) {
+    .wrapper2 {
+        margin-top: 800px;
+    }
+
     .img-container {
         height: 800px;
     }

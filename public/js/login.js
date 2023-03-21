@@ -1,18 +1,9 @@
-const loginButton = document.querySelector(".login");
+const loginButton = document.querySelector("#login");
 const loginWrapper = document.querySelector(".login-wrapper");
 
 loginButton.addEventListener("click", (event) => {
     loginWrapper.classList.toggle("active");
 });
-
-function onSignIn(googleUser) {
-    // Get the Google ID token and other user information
-    var id_token = googleUser.getAuthResponse().id_token;
-    var name = googleUser.getBasicProfile().getName();
-    var email = googleUser.getBasicProfile().getEmail();
-    // Send the id_token to your server for authentication
-    sendTokenToServer(id_token);
-}
 
 function sendTokenToServer(token) {
     fetch('/google-login', {
@@ -34,13 +25,28 @@ function sendTokenToServer(token) {
         });
 }
 
-gapi.load('client:auth2', function () {
-    gapi.client.init({
-        clientId: '529448807183 - tctbbs5l01n3i1da262d1c5m52vjmlbp.apps.googleusercontent.com',
-    }).then(function () {
-        console.log('Google API client initialized');
+function onSignInGSI(response) {
+    sendTokenToServer(response.credential);
+}
+
+window.onload = function () {
+    google.accounts.id.initialize({
+        client_id: "529448807183-tctbbs5l01n3i1da262d1c5m52vjmlbp.apps.googleusercontent.com",
+        callback: onSignInGSI,
     });
-});
+    google.accounts.id.renderButton(
+        document.getElementById("google-signIn"),
+        {
+            type: "standard",
+            shape: "pill",
+            theme: "filled_blue",
+            text: "signin_with",
+            size: "large",
+            logo_alignment: "left"
+        }
+    );
+    google.accounts.id.prompt(); // also display the One Tap dialog
+}
 
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
