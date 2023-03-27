@@ -45,11 +45,11 @@ if (path.includes("/html")) {
 }
 
 
-if (path.includes("pt/")) {
+if (path.includes("/pt")) {
     path = path.replace("/pt", "");
-} else if (path.includes("en/")) {
+} else if (path.includes("/en")) {
     path = path.replace("/en", "");
-} else if (path.includes("es/")) {
+} else if (path.includes("/es")) {
     path = path.replace("/es", "");
 }
 

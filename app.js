@@ -7,6 +7,7 @@ const rateLimit = require('express-rate-limit');
 const cors = require('cors');
 
 const { OAuth2Client } = require('google-auth-library');
+const { use } = require('passport');
 const CLIENT_ID = "529448807183-tctbbs5l01n3i1da262d1c5m52vjmlbp.apps.googleusercontent.com";
 
 const client = new OAuth2Client(CLIENT_ID);
@@ -150,7 +151,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:lang/*', function (req, res, next) {
-    var lang = req.params.lang;
+    const lang = req.params.lang;
     if (lang === 'en' || lang === 'pt' || lang === 'es') {
         next();
     } else {
@@ -159,99 +160,129 @@ app.get('/:lang/*', function (req, res, next) {
 });
 
 // Serve the home page for each language
-app.get('/:lang/', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
-    res.render('index', language);
+app.get('/:lang', function (req, res) {
+    const lang = req.params.lang;
+    res.redirect("/" + lang + "/index");
 });
 
 app.get('/:lang/index', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('index', language);
 });
 
 app.get('/:lang/ac', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('ac', language);
 });
 
 app.get('/:lang/agreements', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('agreements', language);
 });
 
 app.get('/:lang/contacts_santo_tirso', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('contacts_santo_tirso', language);
 });
 
 app.get('/:lang/contacts', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('contacts', language);
 });
 
 app.get('/:lang/ds', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('ds', language);
 });
 
 app.get('/:lang/gallery', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('gallery', language);
 });
 
 app.get('/:lang/galleryST', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('galleryST', language);
 });
 
 app.get('/:lang/gv', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('gv', language);
 });
 
 app.get('/:lang/lc', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('lc', language);
 });
 
 app.get('/:lang/mb', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('mb', language);
 });
 
 app.get('/:lang/mca', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('mca', language);
 });
 
 app.get('/:lang/privacy', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('privacy', language);
 });
 
 app.get('/:lang/specialties', function (req, res) {
-    var lang = req.params.lang;
-    var language = require('./languages/' + lang + '.json');
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
     res.render('specialties', language);
 });
 
-app.post('/google-login', async (req, res, next) => {
-    const { id_token } = req.body;
+app.get('/:lang/dashboard', function (req, res) {
+    const lang = req.params.lang;
+    const id = req.session.user;
+    const language = require('./languages/' + lang + '.json');
+    if (id) {
+        res.redirect("/" + lang + "/dashboard/" + id);
+    } else {
+        res.redirect("/" + lang + "/index");
+    }
+});
 
+app.get('/:lang/dashboard/:id', function (req, res) {
+    const lang = req.params.lang;
+    const language = require('./languages/' + lang + '.json');
+    const user = getUserById(id);
+    if (user) {
+        res.render('dashboard', { language, user });
+    } else {
+        res.redirect("/" + lang + "/index");
+    }
+});
+
+app.post('/:lang/*', function (req, res, next) {
+    const lang = req.params.lang;
+    if (lang === 'en' || lang === 'pt' || lang === 'es') {
+        next();
+    } else {
+        res.status(404).send('Page not found');
+    }
+});
+
+app.post('/:lang/google-login', async (req, res, next) => {
+    const { id_token } = req.body;
+    const lang = req.params.lang;
     try {
         const ticket = await client.verifyIdToken({
             idToken: id_token,
@@ -267,12 +298,12 @@ app.post('/google-login', async (req, res, next) => {
         loginConnection
             .execute('SELECT * FROM users WHERE google_id = ? OR email = ?', [
                 userId,
-                email,
+                email
             ])
             .then(async ([rows, fields]) => {
                 if (rows.length > 0) {
-                    req.session.userIdentification = rows[0].id;
-                    res.status(200).send('Login Successful');
+                    req.session.user = rows[0].userId;
+                    res.redirect("/" + lang + "/dashboard/" + userId);
                 } else {
                     const insertConnection = await pool.getConnection();
                     const id = parseInt(Date.now() + Math.random());
@@ -282,8 +313,8 @@ app.post('/google-login', async (req, res, next) => {
                             [id, userId, email, name, picture]
                         )
                         .then(([rows, fields]) => {
-                            req.session.userIdentification = rows.id;
-                            res.status(200).send('Account creation successful');
+                            req.session.user = rows.userId;
+                            res.redirect("/" + lang + "/dashboard/" + userId);
                         })
                         .catch((err) => {
                             console.error(err);
@@ -317,3 +348,22 @@ app.use((error, req, res, next) => {
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
+
+//Aux functions
+async function getUserById(id) {
+    try {
+        // get a connection from the pool
+        const connection = await pool.getConnection();
+
+        // execute the SQL query with the ID parameter
+        const [rows] = await connection.execute('SELECT * FROM users WHERE id = ?', [id]);
+
+        // release the connection back to the pool
+        connection.release();
+
+        // return the user object
+        return rows[0];
+    } catch (error) {
+        console.error('Error while fetching user from database:', error);
+    }
+}

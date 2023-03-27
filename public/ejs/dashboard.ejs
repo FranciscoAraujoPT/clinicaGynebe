@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= head.index %>
+    </title>
+    <%- include("parcials/head") %>
+</head>
+
+<body id="dashBody">
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <%- include("parcials/dashHeader") %>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <main class="dashboard">
+            <%- include("parcials/dashNav") %>
+                <section class="dashContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quasi dicta unde est sed cum
+                        harum
+                        placeat obcaecati eius fuga quia quo porro blanditiis aut consequatur quaerat, nesciunt
+                        pariatur
+                        magni?</p>
+                </section>
+        </main>
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <%- include("parcials/dashFooter") %>
+</body>
+
+</html>

@@ -1,12 +1,13 @@
 const loginButton = document.querySelector("#login");
 const loginWrapper = document.querySelector(".login-wrapper");
+const lang = window.location.pathname.split('/');
 
 loginButton.addEventListener("click", (event) => {
     loginWrapper.classList.toggle("active");
 });
 
 function sendTokenToServer(token) {
-    fetch('/google-login', {
+    fetch('/' + lang[1] + '/google-login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -42,7 +43,8 @@ window.onload = function () {
             theme: "filled_blue",
             text: "signin_with",
             size: "large",
-            logo_alignment: "left"
+            logo_alignment: "left",
+            locale: lang[1]
         }
     );
     google.accounts.id.prompt(); // also display the One Tap dialog

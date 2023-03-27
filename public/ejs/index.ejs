@@ -1,249 +1,249 @@
 <!DOCTYPE html>
-<html">
+<html>
 
-    <head>
-        <title>
-            <%= head.index %>
-        </title>
-        <%- include("parcials/head") %>
-            <meta name="google-site-verification" content="53MDoHSYLfPjjOB4xKOcpDzR1PWCV3m-4wi6nup6TRU" />
-    </head>
+<head>
+    <title>
+        <%= head.index %>
+    </title>
+    <%- include("parcials/head") %>
+        <meta name="google-site-verification" content="53MDoHSYLfPjjOB4xKOcpDzR1PWCV3m-4wi6nup6TRU" />
+</head>
 
-    <body>
-        <!--========================================================
+<body>
+    <!--========================================================
                           HEADER
 =========================================================-->
-        <%- include("parcials/header") %>
-            <!--========================================================
+    <%- include("parcials/header") %>
+        <!--========================================================
                           CONTENT
 =========================================================-->
-            <section id="content">
-                <div class="overlay"></div>
-                <div class="img-container">
-                    <div class="teaser">
-                        <span class="first">
-                            <%= index.teaserFirst %>
-                        </span>
-                        <span class="second">
-                            <%= index.teaserSecond %>
-                        </span>
-                    </div>
-                    <div class="scroll-down"></div>
+        <section id="content">
+            <div class="overlay"></div>
+            <div class="img-container">
+                <div class="teaser">
+                    <span class="first">
+                        <%= index.teaserFirst %>
+                    </span>
+                    <span class="second">
+                        <%= index.teaserSecond %>
+                    </span>
                 </div>
-                <div id="wrapper2" class="wrapper2 wrapper2__inset1">
-                    <div class="heading1 fade-in">
-                        <h2>
-                            <%= index.mission.title %>
-                        </h2>
-                    </div>
-                    <div class="box4-wrapper1">
-                        <div class="box4">
-                            <img class="fade-in" src="<%= otherLang %>../images/page2_img1.png" alt="">
-                            <h6 class="fade-in">
-                                <%= index.mission.first %>
-                            </h6>
-                            <h6 class="fade-in">
-                                <%= index.mission.second %>
-                            </h6>
-                        </div>
+                <div class="scroll-down"></div>
+            </div>
+            <div id="wrapper2" class="wrapper2 wrapper2__inset1">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= index.mission.title %>
+                    </h2>
+                </div>
+                <div class="box4-wrapper1">
+                    <div class="box4">
+                        <img class="fade-in" src="<%= otherLang %>../images/page2_img1.png" alt="">
+                        <h6 class="fade-in">
+                            <%= index.mission.first %>
+                        </h6>
+                        <h6 class="fade-in">
+                            <%= index.mission.second %>
+                        </h6>
                     </div>
                 </div>
-                <div id="wrapper3" class="wrapper3">
-                    <div class="heading2 fade-in">
-                        <h5>
-                            <%= index.team.title %>
-                        </h5>
+            </div>
+            <div id="wrapper3" class="wrapper3">
+                <div class="heading2 fade-in">
+                    <h5>
+                        <%= index.team.title %>
+                    </h5>
+                </div>
+                <div class="box3-wrapper1">
+                    <div class="box3 fade-in">
+                        <a href="mca">
+                            <img src="<%= otherLang %>../images/mca.jpg" alt="">
+                        </a>
+                        <h3><a href="mca">
+                                <%= index.team.mca.name %>
+                            </a></h3>
+                        <p>
+                            <%= index.team.mca.specialty %>
+                        </p>
                     </div>
-                    <div class="box3-wrapper1">
-                        <div class="box3 fade-in">
-                            <a href="mca">
-                                <img src="<%= otherLang %>../images/mca.jpg" alt="">
+
+                    <div class="box3 fade-in">
+                        <a href="gv">
+                            <img src="<%= otherLang %>../images/gv.jpg" alt="">
+                        </a>
+                        <h3><a href="gv">
+                                <%= index.team.gv.name %>
+                            </a></h3>
+                        <p>
+                            <%= index.team.gv.specialty %>
+                        </p>
+                    </div>
+
+                    <div class="box3 fade-in">
+                        <a href="ac"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
+                        <h3>
+                            <a href="ac">
+                                <%= index.team.ac.name %>
                             </a>
-                            <h3><a href="mca">
-                                    <%= index.team.mca.name %>
-                                </a></h3>
-                            <p>
-                                <%= index.team.mca.specialty %>
-                            </p>
-                        </div>
+                        </h3>
+                        <p>
+                            <%= index.team.ac.specialty %>
+                        </p>
+                    </div>
 
-                        <div class="box3 fade-in">
-                            <a href="gv">
-                                <img src="<%= otherLang %>../images/gv.jpg" alt="">
+                    <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <a href="lc">
+                            <img src="<%= otherLang %>../images/lc.jpg" alt="">
+                        </a>
+                        <h3><a href="lc">
+                                <%= index.team.lc.name %>
+                            </a></h3>
+                        <p>
+                            <%= index.team.lc.specialty %>
+                        </p>
+                    </div>
+                    <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <a href="ds"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
+                        <h3>
+                            <a href="ds">
+                                <%= index.team.ds.name %>
                             </a>
-                            <h3><a href="gv">
-                                    <%= index.team.gv.name %>
-                                </a></h3>
-                            <p>
-                                <%= index.team.gv.specialty %>
-                            </p>
-                        </div>
-
-                        <div class="box3 fade-in">
-                            <a href="ac"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
-                            <h3>
-                                <a href="ac">
-                                    <%= index.team.ac.name %>
-                                </a>
-                            </h3>
-                            <p>
-                                <%= index.team.ac.specialty %>
-                            </p>
-                        </div>
-
-                        <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <a href="lc">
-                                <img src="<%= otherLang %>../images/lc.jpg" alt="">
+                        </h3>
+                        <p>
+                            <%= index.team.ds.specialty %>
+                        </p>
+                    </div>
+                    <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <a href="mb"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
+                        <h3>
+                            <a href="mb">
+                                <%= index.team.mb.name %>
                             </a>
-                            <h3><a href="lc">
-                                    <%= index.team.lc.name %>
-                                </a></h3>
-                            <p>
-                                <%= index.team.lc.specialty %>
-                            </p>
-                        </div>
-                        <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <a href="ds"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
-                            <h3>
-                                <a href="ds">
-                                    <%= index.team.ds.name %>
-                                </a>
-                            </h3>
-                            <p>
-                                <%= index.team.ds.specialty %>
-                            </p>
-                        </div>
-                        <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <a href="mb"><img src="<%= otherLang %>../images/profile.png" alt=""></a>
-                            <h3>
-                                <a href="mb">
-                                    <%= index.team.mb.name %>
-                                </a>
-                            </h3>
-                            <p>
-                                <%= index.team.mb.specialty %>
-                            </p>
-                        </div>
-                        <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <img src="<%= otherLang %>../images/profile.png" alt="">
-                            <h3>
-                                <a>
-                                    <%= index.team.fg.name %>
-                                </a>
-                            </h3>
-                            <p>
-                                <%= index.team.fg.specialty %>
-                            </p>
-                        </div>
-                        <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <img src="<%= otherLang %>../images/profile.png" alt="">
-                            <h3>
-                                <a>
-                                    <%= index.team.fa.name %>
-                                </a>
-                            </h3>
-                            <p>
-                                <%= index.team.fa.specialty %>
-                            </p>
-                        </div>
+                        </h3>
+                        <p>
+                            <%= index.team.mb.specialty %>
+                        </p>
+                    </div>
+                    <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <img src="<%= otherLang %>../images/profile.png" alt="">
+                        <h3>
+                            <a>
+                                <%= index.team.fg.name %>
+                            </a>
+                        </h3>
+                        <p>
+                            <%= index.team.fg.specialty %>
+                        </p>
+                    </div>
+                    <div class="box3 fade-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <img src="<%= otherLang %>../images/profile.png" alt="">
+                        <h3>
+                            <a>
+                                <%= index.team.fa.name %>
+                            </a>
+                        </h3>
+                        <p>
+                            <%= index.team.fa.specialty %>
+                        </p>
                     </div>
                 </div>
-                <div id="wrapper4" class="wrapper4">
-                    <div class="heading1 fade-in">
-                        <h2>
-                            <%= index.bestCare.title %>
-                        </h2>
+            </div>
+            <div id="wrapper4" class="wrapper4">
+                <div class="heading1 fade-in">
+                    <h2>
+                        <%= index.bestCare.title %>
+                    </h2>
+                </div>
+                <div class="list1">
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.first %>
+                        </p>
                     </div>
-                    <div class="list1">
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.first %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.second %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.third %>
-                            </p>
-                        </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.second %>
+                        </p>
+                    </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.third %>
+                        </p>
+                    </div>
 
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.fourth %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.fifth %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.sixth %>
-                            </p>
-                        </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.fourth %>
+                        </p>
+                    </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.fifth %>
+                        </p>
+                    </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.sixth %>
+                        </p>
+                    </div>
 
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.seventh %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.eighth %>
-                            </p>
-                        </div>
-                        <div class="slide-in">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.ninth %>
-                            </p>
-                        </div>
-                        <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.tenth %>
-                            </p>
-                        </div>
-                        <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.eleventh %>
-                            </p>
-                        </div>
-                        <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                            <p>
-                                <%= index.bestCare.twelfth %>
-                            </p>
-                        </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.seventh %>
+                        </p>
+                    </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.eighth %>
+                        </p>
+                    </div>
+                    <div class="slide-in">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.ninth %>
+                        </p>
+                    </div>
+                    <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.tenth %>
+                        </p>
+                    </div>
+                    <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.eleventh %>
+                        </p>
+                    </div>
+                    <div class="slide-in" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>
+                            <%= index.bestCare.twelfth %>
+                        </p>
                     </div>
                 </div>
-            </section>
-            <!--========================================================
+            </div>
+        </section>
+        <!--========================================================
                           FOOTER
 =========================================================-->
-            <%- include("parcials/footer") %>
-                <script src="../js/app.js"></script>
-                <script src="../js/intersectionObservers.js"></script>
-                <script src="../js/headerNavbar.js"></script>
-                <script src="../js/headerNavbarButtons.js"></script>
-                <script src="../js/scrollDown.js"></script>
-                <script src="../js/language.js"></script>
-                <script src="../js/login.js"></script>
-                <script src="../js/callmeButton.js"></script>
-    </body>
+        <%- include("parcials/footer") %>
+            <script src="../js/app.js"></script>
+            <script src="../js/intersectionObservers.js"></script>
+            <script src="../js/headerNavbar.js"></script>
+            <script src="../js/headerNavbarButtons.js"></script>
+            <script src="../js/scrollDown.js"></script>
+            <script src="../js/language.js"></script>
+            <script src="../js/login.js"></script>
+            <script src="../js/callmeButton.js"></script>
+</body>
 
-    </html>
+</html>

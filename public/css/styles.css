@@ -6,6 +6,7 @@
 body {
     font: 400 19px/28px "Roboto Slab", sans-serif;
     background-color: #FFF;
+    min-height: 100vh;
 }
 
 body.open {
@@ -547,13 +548,13 @@ h6 a:hover {
     background: url(../images/logoWhite.png) no-repeat center bottom / contain;
 }
 
-h1 a {
+#logo h1 a {
     display: block;
     padding-left: 60px;
     position: relative;
 }
 
-h1 a::before {
+#logo h1 a::before {
     position: absolute;
     display: block;
     width: 73px;
@@ -564,13 +565,13 @@ h1 a::before {
     background: url(../images/logo.png) no-repeat center bottom / contain;
 }
 
-h1 a .first {
+#logo h1 a .first {
     display: block;
     color: #00284d;
     font: 700 45px/45px "Roboto Slab", sans-serif;
 }
 
-h1 a .second {
+#logo h1 a .second {
     display: block;
     color: #00284d;
     font: 300 28px/28px "Roboto Slab", sans-serif;
@@ -682,6 +683,182 @@ h1 a .second {
   
 .langLineBottom {
     transform: rotate(45deg);
+}
+
+/* ======= dashboard ======= */
+#dashBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    flex: 1;
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 100vw;
+}
+
+#dashHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100vw;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#dashHeader::before {
+    position: absolute;
+    content: "";
+    display: block;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(27deg, #5CC8FF, #104F55);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+#dashLogo {
+    position: relative;
+    top: 0;
+    left: 2rem;
+    padding: 5px;
+    width: 15rem;
+    margin: 5px;
+}
+
+#dashLogo h1 a::before {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 100%;
+    content: '';
+    left: -2rem;
+    bottom: 0;
+    background: url(../images/logo.png) no-repeat center / contain;
+}
+
+#dashLogo h1 a .first {
+    display: inline;
+    color: #00284d;
+    font: 700 28px/28px "Roboto Slab", sans-serif;
+}
+
+#dashLogo h1 a .second {
+    display: inline;
+    color: #00284d;
+    font: 700 28px/28px "Roboto Slab", sans-serif;
+}
+
+.dashTitle {
+    position: relative;
+    z-index: 10;
+}
+
+.dashTitle h1 a .first{
+    color: white;
+    font: 700 35px/35px "Roboto Slab", sans-serif;
+}
+
+.dashTitle h1 a .second{
+    color: white;
+    font: 700 28px/28px "Roboto Slab", sans-serif;
+}
+
+.dashLang {
+    position: relative;
+    top: 0;
+    width: 15rem;
+    padding: 5px;
+}
+
+.dashLang p{
+    color: white;
+    font: 400 18px/18px "Roboto Slab", sans-serif;
+    text-align: right;
+}
+
+.dashLanguageList {
+    display: none;
+    position: relative;
+    top: 0;
+}
+
+.dashLanguageList img {
+    max-width: 1rem;
+}
+
+.dashNav {
+    height: 100%;
+    width: 15rem;
+    background-color: #f7f7f7;
+}
+
+.userInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.userInformation .userImg{
+    border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    margin: 1rem;
+    background-color: white;
+}
+
+.userInformation .userImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.apointmentButton {
+    background-color: #ffb300;
+    border: 2.5px solid #ffb300;
+    color: #37474f;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 1.5rem auto 2rem;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.dashDivider {
+    height: 1px;
+    width: 100%;
+    background-color: #00171F;
+    margin-bottom: 2rem;
+}
+
+.dashboardMenu p{
+    margin: 1rem;
+    font: 400 20px/20px "Roboto Slab", sans-serif;
+}
+
+.dashboardMenu p i {
+    margin-right: 0.5rem;
+    color: #00284d;
+}
+
+#dashFooter {
+    position: sticky;
+    bottom: 0;
+    left: 0;
 }
 
 /*========================================================
