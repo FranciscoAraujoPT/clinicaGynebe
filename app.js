@@ -41,9 +41,9 @@ app.set('views', __dirname + '/public/ejs');
 }); */
 
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'quico',
-    password: 'quico',
+    host: 'gynebe-database.cb8p8kuhqckt.eu-north-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'quico3105',
     database: 'gynebe',
     waitForConnections: true,
     connectionLimit: 100,
@@ -260,14 +260,21 @@ app.get('/:lang/dashboard', function (req, res) {
     }
 });
 
-app.get('/:lang/dashboard/:id', function (req, res) {
+app.get('/:lang/dashboard/:id', function (req, res, next) {
     const lang = req.params.lang;
     const language = require('./languages/' + lang + '.json');
-    const user = getUserById(id);
-    if (user) {
-        res.render('dashboard', { language, user });
-    } else {
-        res.redirect("/" + lang + "/index");
+    const id = req.params.id;
+    try {
+        const user = getUserById(id);
+    	if (user) {
+            const mergedData = {...language, ...user};
+            req.session.user = id;
+            res.render('dashboard', mergedData);
+    	} else {
+            res.redirect("/" + lang + "/specialties");
+        }
+    } catch(error) {
+        next(error);
     }
 });
 
@@ -300,10 +307,9 @@ app.post('/:lang/google-login', async (req, res, next) => {
                 userId,
                 email
             ])
-            .then(async ([rows, fields]) => {
+            .then(async ([rows]) => {
                 if (rows.length > 0) {
-                    req.session.user = rows[0].userId;
-                    res.redirect("/" + lang + "/dashboard/" + userId);
+                    res.status(302).redirect("/" + lang + "/dashboard/" + userId);
                 } else {
                     const insertConnection = await pool.getConnection();
                     const id = parseInt(Date.now() + Math.random());
@@ -312,9 +318,8 @@ app.post('/:lang/google-login', async (req, res, next) => {
                             'INSERT INTO users (id, google_id, email, name, picture) VALUES (?, ?, ?, ?, ?)',
                             [id, userId, email, name, picture]
                         )
-                        .then(([rows, fields]) => {
-                            req.session.user = rows.userId;
-                            res.redirect("/" + lang + "/dashboard/" + userId);
+                        .then(() => {
+                            res.status(302).redirect("/" + lang + "/dashboard/" + userId);
                         })
                         .catch((err) => {
                             console.error(err);
@@ -356,14 +361,17 @@ async function getUserById(id) {
         const connection = await pool.getConnection();
 
         // execute the SQL query with the ID parameter
-        const [rows] = await connection.execute('SELECT * FROM users WHERE id = ?', [id]);
-
+        const [rows] = await connection.execute('SELECT * FROM users WHERE google_id = ?', [id]);
         // release the connection back to the pool
         connection.release();
 
-        // return the user object
-        return rows[0];
+	if (rows && rows[0]) {
+	    return rows[0];
+	}
+
+	throw new Error("User: " + id);
     } catch (error) {
-        console.error('Error while fetching user from database:', error);
+        console.error('Error while fetching user from database.');
+	throw error;
     }
 }

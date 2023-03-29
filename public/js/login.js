@@ -15,9 +15,10 @@ function sendTokenToServer(token) {
         body: JSON.stringify({ id_token: token }),
     })
         .then(response => {
-            if (response.ok) {
-                console.log('User logged in successfully');
-            } else {
+	console.log(response);
+            if (response.status === 200) {
+                window.location.href = response.url;
+	    } else {
                 console.error('Login failed');
             }
         })
